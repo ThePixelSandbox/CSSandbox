@@ -1,4 +1,4 @@
-# [CSSandbox v0.0.1](http://localhost)
+# [CSSandbox v0.0.1](http://www.thepixelsandbox.com)
 
 Working on: Setting up local repository
 
