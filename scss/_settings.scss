@@ -2,10 +2,14 @@
 @charset "UTF-8";
 
 // Chose your components
-// Global/normalize contains reset variables, we dont recomend not to include this one.
+// Global/normalize/functions contains important stuff, we don't recomend NOT to include these.
 @import
   "cssandbox/global",
+  "cssandbox/functions",
   "cssandbox/normalize",
+
+// Feel free to pull out files you dont need
+@import
   "cssandbox/grids",
   "cssandbox/forms";
 
