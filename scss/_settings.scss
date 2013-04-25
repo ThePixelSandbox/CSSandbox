@@ -1,0 +1,17 @@
+// Setting css charset
+@charset "UTF-8";
+
+// Chose your components
+// Global/normalize contains reset variables, we dont recomend not to include this one.
+@import
+  "cssandbox/global",
+  "cssandbox/normalize",
+  "cssandbox/grids",
+  "cssandbox/forms";
+
+//
+// Overwrite variables
+//
+
+// Using the browser default font-size, normaly 16px
+$font-size: 100%;
