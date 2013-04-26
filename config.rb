@@ -1,3 +1,6 @@
+# This file is used by ruby(compass) to generate the final css
+# Use it by "compass watch" while standing in the root
+
 # You should be fine with these settings, 
 # feel welcomed to make your own structure if needed.
 css_dir = "stylesheets"
@@ -12,5 +15,5 @@ output_style = :nested
 # Relative patch assets
 relative_assets = true
 
-# Show comments to localize scss in css
+# Show comments to localize scss in css output
 line_comments = false

@@ -1,166 +1,74 @@
-@import url("http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,700,300");
-/* normalize.css v2.1.1 | MIT License | git.io/normalize */
-article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
-  display: block; }
+/*
+Syntax error: File to import not found or unreadable: cssandbox/grid.
+              Load paths:
+                C:/Users/Joachim/Documents/GitHub/CSSandbox/scss
+                C:/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/blueprint/stylesheets
+                C:/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets
+                Compass::SpriteImporter
+        on line 7 of C:/Users/Joachim/Documents/GitHub/CSSandbox/scss/application.scss
 
-audio, canvas, video {
-  display: inline-block; }
-
-audio:not([controls]) {
-  display: none;
-  height: 0; }
-
-[hidden] {
-  display: none; }
-
-/* ==========================================================================
-   Base
-   ========================================================================== */
-html {
-  background: #fff;
-  color: #000;
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%; }
-
-body {
-  margin: 0; }
-
-/* ==========================================================================
-   Links
-   ========================================================================== */
-a:focus {
-  outline: thin dotted; }
-
-a:active, a:hover {
-  outline: 0; }
-
-/* ==========================================================================
-   Typography
-   ========================================================================== */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0; }
-
-abbr[title] {
-  border-bottom: 1px dotted; }
-
-b, strong {
-  font-weight: bold; }
-
-dfn {
-  font-style: italic; }
-
-hr {
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  height: 0; }
-
-mark {
-  background: #ff0;
-  color: #000; }
-
-code, kbd, pre, samp {
-  font-family: monospace, serif;
-  font-size: 1em; }
-
-pre {
-  white-space: pre-wrap; }
-
-q {
-  quotes: "\201C" "\201D" "\2018" "\2019"; }
-
-small {
-  font-size: 80%; }
-
-sub, sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline; }
-
-sup {
-  top: -0.5em; }
-
-sub {
-  bottom: -0.25em; }
-
-/* ==========================================================================
-   Embedded content
-   ========================================================================== */
-img {
-  border: 0; }
-
-svg:not(:root) {
-  overflow: hidden; }
-
-/* ==========================================================================
-   Figures
-   ========================================================================== */
-figure {
-  margin: 0; }
-
-/* ==========================================================================
-   Forms
-   ========================================================================== */
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em; }
-
-legend {
-  border: 0;
-  padding: 0; }
-
-button, input, select, textarea {
-  font-family: inherit;
-  font-size: 100%;
-  margin: 0; }
-
-button, input {
-  line-height: normal; }
-
-button, select {
-  text-transform: none; }
-
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  -webkit-appearance: button;
-  cursor: pointer; }
-
-button[disabled],
-html input[disabled] {
-  cursor: default; }
-
-input[type="checkbox"],
-input[type="radio"] {
-  box-sizing: border-box;
-  padding: 0; }
-
-input[type="search"] {
-  -webkit-appearance: textfield;
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box; }
-
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none; }
-
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0; }
-
-textarea {
-  overflow: auto;
-  vertical-align: top; }
-
-/* ==========================================================================
-   Tables
-   ========================================================================== */
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
+Backtrace:
+C:/Users/Joachim/Documents/GitHub/CSSandbox/scss/application.scss:7
+C:/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.8/lib/sass/tree/import_node.rb:67:in `rescue in import'
+C:/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.8/lib/sass/tree/import_node.rb:45:in `import'
+C:/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.8/lib/sass/tree/import_node.rb:28:in `imported_file'
+C:/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.8/lib/sass/tree/import_node.rb:37:in `css_import?'
+C:/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:217:in `visit_import'
+C:/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.8/lib/sass/tree/visitors/base.rb:37:in `visit'
+C:/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:100:in `visit'
+C:/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.8/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+C:/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.8/lib/sass/tree/visitors/base.rb:53:in `map'
+C:/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.8/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+C:/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+C:/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+C:/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+C:/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.8/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+C:/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+C:/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.8/lib/sass/tree/visitors/base.rb:37:in `visit'
+C:/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:100:in `visit'
+C:/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:7:in `visit'
+C:/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.8/lib/sass/tree/root_node.rb:20:in `render'
+C:/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.8/lib/sass/engine.rb:315:in `_render'
+C:/Ruby/lib/ruby/gems/2.0.0/gems/sass-3.2.8/lib/sass/engine.rb:262:in `render'
+C:/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
+C:/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+C:/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `block in compile'
+C:/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
+C:/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
+C:/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
+C:/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `block (2 levels) in run'
+C:/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `each'
+C:/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `block in run'
+C:/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+C:/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
+C:/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
+C:/Ruby/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `call'
+C:/Ruby/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `run_callback'
+C:/Ruby/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/path.rb:55:in `callback_action'
+C:/Ruby/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/path.rb:35:in `update'
+C:/Ruby/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/state/directory.rb:39:in `block in modified'
+C:/Ruby/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `each'
+C:/Ruby/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `modified'
+C:/Ruby/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/state/directory.rb:18:in `refresh'
+C:/Ruby/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
+C:/Ruby/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `each'
+C:/Ruby/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `block in run'
+C:/Ruby/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:15:in `loop'
+C:/Ruby/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:15:in `run'
+C:/Ruby/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/monitor.rb:26:in `run'
+C:/Ruby/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm.rb:70:in `monitor'
+C:/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:87:in `perform'
+C:/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
+C:/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
+C:/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+C:/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+C:/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/bin/compass:30:in `block in <top (required)>'
+C:/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/bin/compass:44:in `call'
+C:/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/bin/compass:44:in `<top (required)>'
+C:/Ruby/bin/compass:23:in `load'
+C:/Ruby/bin/compass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: cssandbox/grid.\A               Load paths:\A                 C:/Users/Joachim/Documents/GitHub/CSSandbox/scss\A                 C:/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/blueprint/stylesheets\A                 C:/Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets\A                 Compass::SpriteImporter\A         on line 7 of C:/Users/Joachim/Documents/GitHub/CSSandbox/scss/application.scss"; }
