@@ -19,3 +19,8 @@
 		@return $px;
 	}
 }
+
+// Import webfonts
+@if $webfont != false { 
+	@import url($webfont);
+}

@@ -10,6 +10,10 @@ $font-size: 16px !default;
 // ** This can be fixed by using the variable both (will make rem calulations in pixels insted)
 $pixels: false !default;
 
+// ** Use google webfonts - Default Open Sans
+// ** If you want to disable webfonts, use the value false
+$webfont: "http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,700,300";
+
 // ** Global style variables
 $body-background: #ffffff !default;
 $body-font-color: #555555 !default;
