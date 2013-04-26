@@ -1,5 +1,21 @@
 // From pixels to em
+@function em($px) {
+	@if $pixels == true { 
+		@return $px;
+	} @else if $pixels == false {
+		@return $px / $font-size * 1em;
+	} @else if $pixels == both {
+		@return $px / $font-size * 1em;
+	}
+}
 
 // From pixels to rem
-
-// From em to rem
+@function rem($px) {
+	@if $pixels == true { 
+		@return $px;
+	} @else if $pixels == false {
+		@return $px / $font-size * 1rem;
+	} @else if $pixels == both {
+		@return $px;
+	}
+}

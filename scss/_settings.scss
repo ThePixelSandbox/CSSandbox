@@ -17,5 +17,19 @@
 // Overwrite variables
 //
 
-// ** Using the browser default font-size, normaly 16px
-// $font-size: 100%;
+// ** Calulations in pixels insted of em/rem
+// ** Options: True, False, Both
+// ** If you chose to use em/rem as intended, please note that rem doesn't work in IE8
+// ** This can be fixed by using the variable both (will make rem calulations in pixels insted)
+// $pixels: false;
+
+// ** Change the font-size of the project.
+// ** This project uses em/rem, so please be carefull with your font-sizes in your own css.
+// $font-size: 16px;
+
+// ** Global style variables
+// $body-background: #ffffff !default;
+// $body-font-color: #555555 !default;
+// $body-font-family: "Open Sans", Arial, sans-serif !default;
+// $body-font-weight: 400 !default;
+// $body-font-style: normal !default;
