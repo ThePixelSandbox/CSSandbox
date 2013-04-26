@@ -1,11 +1,9 @@
-# [CSSandbox v0.0.1](http://www.thepixelsandbox.com)
-
-Working on: Setting up local repository
+# [CSSandbox v0.0.2](http://www.thepixelsandbox.com)
+Simple yet powerfull responsive mobile first framework
 
 
 ## History
-Why make yet another responsive framework?
-
+Why make yet another responsive framework?<br>
 Because the market is needing one: Lightweight sass framework, but not too light!
 
 
