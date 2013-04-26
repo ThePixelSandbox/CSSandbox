@@ -6,7 +6,7 @@
 @import
   "cssandbox/global",
   "cssandbox/functions",
-  "cssandbox/normalize",
+  "cssandbox/normalize";
 
 // Feel free to pull out files you dont need
 @import
@@ -17,5 +17,5 @@
 // Overwrite variables
 //
 
-// Using the browser default font-size, normaly 16px
-$font-size: 100%;
+// ** Using the browser default font-size, normaly 16px
+// $font-size: 100%;
