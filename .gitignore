@@ -7,6 +7,8 @@ sample/
 tmp/
 Backup*/
 *.Cache
+images/
+stylesheets/
 
 Thumbs.db
 Desktop.ini
