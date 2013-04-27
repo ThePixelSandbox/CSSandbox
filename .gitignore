@@ -9,6 +9,7 @@ Backup*/
 *.Cache
 images/
 stylesheets/
+_site/
 
 Thumbs.db
 Desktop.ini
