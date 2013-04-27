@@ -1,4 +1,4 @@
-# [CSSandbox v0.0.2](http://www.thepixelsandbox.com)
+# [CSSandbox v0.0.3](http://www.thepixelsandbox.com)
 Simple yet powerfull responsive mobile first framework
 
 
