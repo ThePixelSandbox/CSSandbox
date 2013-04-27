@@ -19,19 +19,15 @@ $body-font-family: "Open Sans", Arial, sans-serif !default;
 $body-font-weight: 400 !default;
 $body-font-style: normal !default;
 
-//
-// Output begins
-
-/* ==========================================================================
-   CSSandbox version 0.0.3
-   http://www.thepixelsandbox.com
-   MIT License
-   ========================================================================== */
 
 // Import webfonts
 @if $webfont != false { 
 	@import url($webfont);
 }
+
+/* ==========================================================================
+   Global styles
+   ========================================================================== */
 
 // Styling the global variables
 body {
