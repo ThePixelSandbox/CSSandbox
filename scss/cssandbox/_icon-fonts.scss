@@ -1,13 +1,15 @@
 //
-//  Version 0.0.3
-//  Read the docs for more information howto use
+// Version 0.0.3
+// Read the docs for more information howto use
 
+// Chose your icons size
+$icon-size: em(24px) !default;
 
 // Import the fonts
 @font-face  {
     font-family:  'IconicStroke';
-    src:  url('iconic_stroke.eot');
-    src:  url('iconic_stroke.eot?#iefix') format('embedded-opentype'),  url('iconic_stroke.ttf') format('truetype'),  url('iconic_stroke.svg#iconic') format('svg');
+    src:  url('../iconic/iconic_stroke.eot');
+    src:  url('../iconic/iconic_stroke.eot?#iefix') format('embedded-opentype'),  url('../iconic/iconic_stroke.ttf') format('truetype'),  url('../iconic/iconic_stroke.svg#iconic') format('svg');
     font-weight:  normal;
     font-style:  normal;
 }
@@ -17,6 +19,8 @@
     display: inline;
     width: auto;
     height: auto;
+    font-size: $icon-size;
+    line-height: 1em;
 }
 
 [class*="iconic-"]:before {

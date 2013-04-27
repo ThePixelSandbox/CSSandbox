@@ -1,6 +1,16 @@
 //
-//  Version 0.0.2
-//  Read the docs for more information howto use
+// Version 0.0.3
+// Read the docs for more information howto use
+
+// Calulations in pixels insted of em/rem
+// Options: True, False, Both
+// If you chose to use em/rem as intended, please note that rem doesn't work in IE8
+// This can be fixed by using the variable both (will make rem calulations in pixels insted)
+$pixels: false !default;
+
+// Change the font-size of the project
+// This project uses em/rem, so please be carefull with your font-sizes in your own css
+$font-size: 16px !default;
 
 // From pixels to em
 @function em($px) {
@@ -22,9 +32,4 @@
 	} @else if $pixels == both {
 		@return $px;
 	}
-}
-
-// Import webfonts
-@if $webfont != false { 
-	@import url($webfont);
 }

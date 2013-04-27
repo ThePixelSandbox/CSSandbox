@@ -3,7 +3,10 @@
 @import "_settings.scss"; 
 
 // Feel free to pull out files you dont need
+// It's not recommended to out comment normalize and global
 @import
+  "cssandbox/normalize",
+  "cssandbox/global", 
   "cssandbox/grids",
   "cssandbox/icon-fonts",
   "cssandbox/typography",
