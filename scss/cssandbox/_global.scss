@@ -12,6 +12,9 @@ $line-height: 140% !default;
 // If you want to disable webfonts, use the value false
 $webfont: "http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,700,300";
 
+// Import webfonts
+@if $webfont != false { @import url($webfont); }
+
 // Global style variables
 $body-background: #ffffff !default;
 $body-font-color: #555555 !default;
@@ -19,11 +22,6 @@ $body-font-family: "Open Sans", Arial, sans-serif !default;
 $body-font-weight: 400 !default;
 $body-font-style: normal !default;
 
-
-// Import webfonts
-@if $webfont != false { 
-	@import url($webfont);
-}
 
 /* ==========================================================================
    Global styles
