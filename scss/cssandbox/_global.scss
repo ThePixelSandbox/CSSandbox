@@ -1,5 +1,5 @@
 //
-//  Version 0.0.2
+//  Version 0.0.3 WIP
 //  Read the docs for more information howto use
 
 // Global styles and variables
@@ -28,3 +28,15 @@ $body-font-color: #555555 !default;
 $body-font-family: "Open Sans", Arial, sans-serif !default;
 $body-font-weight: 400 !default;
 $body-font-style: normal !default;
+
+
+// ** Styling the global variables
+body {
+	background: $body-background;
+	color: $body-font-color;
+	font-family: $body-font-family;
+	font-size: $font-size;
+	font-weight: $body-font-weight;
+	font-style: $body-font-style;
+	line-height: $line-height;
+}
