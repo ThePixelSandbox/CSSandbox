@@ -37,6 +37,7 @@ $portrait: "only screen and (orientation: portrait)";
 	.row { max-width: $max-width; }
 	@for $i from 1 through $grid-collumns {
 		.#{$name}#{-$i} { width: gridCalculator($i, $grid-collumns) }
+		.#{$name}-offset#{-$i} { margin-left: gridCalculator($i, $grid-collumns) }
 	}
 }
 
