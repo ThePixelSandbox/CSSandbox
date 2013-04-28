@@ -276,6 +276,8 @@ body {
     float: left;
     padding-left: 0.625em;
     padding-right: 0.625em; }
+    .col.last {
+      float: right; }
 
   .row {
     position: relative;

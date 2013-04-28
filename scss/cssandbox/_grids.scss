@@ -21,6 +21,9 @@ $big-break: 		em(1280px) !default;
 // Default float
 $grid-float: left;
 
+$grid-opposite: "";
+@if ($grid-float != left) { $grid-opposite: left; } @else { $grid-opposite: right; }
+
 // Offset from left/right
 $offset-direction: left;
 
@@ -59,6 +62,9 @@ $portrait: "only screen and (orientation: portrait)";
 		float: #{$grid-float};
 		padding-left: $grid-gutter / 2;
 		padding-right: $grid-gutter / 2;
+		&.last {
+			float: #{$grid-opposite};
+		}
 	}
 
 	.row {
