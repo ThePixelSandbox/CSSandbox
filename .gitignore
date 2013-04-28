@@ -6,10 +6,11 @@
 sample/
 tmp/
 Backup*/
-*.Cache
 images/
 stylesheets/
 _site/
+
+*.Cache
 
 Thumbs.db
 Desktop.ini

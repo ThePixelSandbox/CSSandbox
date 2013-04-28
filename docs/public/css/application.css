@@ -1,8 +1,11 @@
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,700,300");
 /* ==========================================================================
-   Normalize.css v2.1.1 
-   git.io/normalize 
-   MIT License 
+   CSSandbox version 0.0.3
+   http://www.thepixelsandbox.com
+   MIT License
+   ========================================================================== */
+/* ==========================================================================
+   Normalize.css v2.1.1 | git.io/normalize | MIT License 
    ========================================================================== */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
   display: block; }
@@ -169,6 +172,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/* ==========================================================================
+   Global styles
+   ========================================================================== */
 body {
   background: white;
   color: #555555;
@@ -178,10 +184,13 @@ body {
   font-style: normal;
   line-height: 140%; }
 
+/* ==========================================================================
+   Icon classes
+   ========================================================================== */
 @font-face {
   font-family: 'IconicStroke';
-  src: url("../public/iconic/iconic_stroke.eot");
-  src: url("../public/iconic/iconic_stroke.eot?#iefix") format("embedded-opentype"), url("../public/iconic/iconic_stroke.ttf") format("truetype"), url("../public/iconic/iconic_stroke.svg#iconic") format("svg");
+  src: url("../iconic/iconic_stroke.eot");
+  src: url("../iconic/iconic_stroke.eot?#iefix") format("embedded-opentype"), url("../iconic/iconic_stroke.ttf") format("truetype"), url("../iconic/iconic_stroke.svg#iconic") format("svg");
   font-weight: normal;
   font-style: normal; }
 
