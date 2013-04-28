@@ -1,5 +1,5 @@
 //
-// Version 0.0.1
+// Version 0.0.2
 // Read the docs for more information howto use
 // See the docs on how to make your own breakpoints
 
@@ -13,7 +13,7 @@ $grid-collumns: 	12 !default;
 $grid-gutter: 		em(20px) !default;
 
 // Grid breakpoints
-$small-break: 		em(480px) default;
+$small-break: 		em(480px) !default;
 $medium-break: 		em(768px) !default;
 $large-break: 		em(960px) !default;
 $big-break: 		em(1280px) !default;
@@ -26,3 +26,50 @@ $large: "only screen and (min-width:"#{$large-break}")";
 $big: "only screen and (min-width:"#{$big-break}")";
 $landscape: "only screen and (orientation: landscape)";
 $portrait: "only screen and (orientation: portrait)"; 
+
+
+// Grid calulation width
+@function gridCalculator($colNumber, $totalColumns) {
+	@return percentage(($colNumber / $totalColumns));
+}
+
+// Generate breakpoint classes
+@mixin break-point($name, $max-width) {
+	.row { max-width: $max-width; }
+	@for $i from 1 through $grid-collumns {
+		.#{$name}#{-$i} { width: gridCalculator($i, $grid-collumns) }
+	}
+}
+
+@media #{$screen} {
+
+	@include break-point($name: "small", $max-width: $small-max-width);
+
+	[class*="col"] {
+		float: left;
+		padding-left: $grid-gutter / 2;
+		padding-right: $grid-gutter / 2;
+	}
+
+	[class*="row"] {
+		position: relative;
+		max-width: 100%;
+		margin: 0 auto;
+		width: 100%;
+		&:after {
+			clear: both;
+		}
+	}
+}
+
+@media #{$medium} {
+	@include break-point($name: "medium", $max-width: $medium-max-width);
+}
+
+@media #{$large} {
+	@include break-point($name: "large", $max-width: $large-max-width);
+}
+
+@media #{$big} {
+	@include break-point($name: "big", $max-width: $big-max-width);
+}
