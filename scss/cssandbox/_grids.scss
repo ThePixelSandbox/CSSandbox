@@ -3,20 +3,26 @@
 // Read the docs for more information howto use
 // See the docs on how to make your own breakpoints
 
-$micro-max-width: auto !default;
-$small-max-width: auto !default;
-$medium-max-width: auto !default;
-$small-desktop-max-width: auto !default;
-$large-desktop-max-width: 1280px !default;
+$small-max-width: 	auto !default;
+$medium-max-width: 	auto !default;
+$large-max-width: 	auto !default;
+$big-max-width: 	1280px !default;
 
 // Number of columns and space between
-$grid-collumns: 12 !default;
-$grid-gutter: em(20px) !default;
+$grid-collumns: 	12 !default;
+$grid-gutter: 		em(20px) !default;
 
 // Grid breakpoints
-$micro: em(0px) !default;
-$small: em(480px) !default;
-$medium: em(768px) !default;
-$small-desktop: em(960px) !default;
-$large-desktop: em(1280px) !default;
+$small-break: 		em(480px) default;
+$medium-break: 		em(768px) !default;
+$large-break: 		em(960px) !default;
+$big-break: 		em(1280px) !default;
 
+// Querys
+$screen: "only screen";
+$small: "only screen and (min-width:"#{$small-screen}")";
+$medium: "only screen and (min-width:"#{$medium-screen}")";
+$large: "only screen and (min-width:"#{$large-screen}")";
+$big: "only screen and (min-width:"#{$big-screen}")";
+$landscape: "only screen and (orientation: landscape)";
+$portrait: "only screen and (orientation: portrait)";
