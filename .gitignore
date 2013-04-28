@@ -5,7 +5,7 @@
 .sass-cache/*
 sample/
 tmp/
-Backup*/
+backup*/
 images/
 stylesheets/
 _site/
