@@ -20,9 +20,9 @@ $big-break: 		em(1280px) !default;
 
 // Querys
 $screen: "only screen";
-$small: "only screen and (min-width:"#{$small-screen}")";
-$medium: "only screen and (min-width:"#{$medium-screen}")";
-$large: "only screen and (min-width:"#{$large-screen}")";
-$big: "only screen and (min-width:"#{$big-screen}")";
+$small: "only screen and (min-width:"#{$small-break}")";
+$medium: "only screen and (min-width:"#{$medium-break}")";
+$large: "only screen and (min-width:"#{$large-break}")";
+$big: "only screen and (min-width:"#{$big-break}")";
 $landscape: "only screen and (orientation: landscape)";
-$portrait: "only screen and (orientation: portrait)";
+$portrait: "only screen and (orientation: portrait)"; 
