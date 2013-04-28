@@ -1,5 +1,5 @@
 //
-// Version 0.0.2
+// Version 0.0.3
 // Read the docs for more information howto use
 // See the docs on how to make your own breakpoints
 
@@ -45,19 +45,26 @@ $portrait: "only screen and (orientation: portrait)";
 
 	@include break-point($name: "small", $max-width: $small-max-width);
 
-	[class*="col"] {
+	.col {
 		float: left;
 		padding-left: $grid-gutter / 2;
 		padding-right: $grid-gutter / 2;
 	}
 
-	[class*="row"] {
+	.row {
 		position: relative;
 		max-width: 100%;
 		margin: 0 auto;
 		width: 100%;
+		clear: both;
 		&:after {
 			clear: both;
+		}
+		.row {
+			margin-left: -($grid-gutter / 2);
+			margin-right: -($grid-gutter / 2);
+			max-width: none;
+			width: auto;
 		}
 	}
 }

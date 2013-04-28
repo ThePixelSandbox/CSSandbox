@@ -233,18 +233,24 @@ body {
   .small-12 {
     width: 100%; }
 
-  [class*="col"] {
+  .col {
     float: left;
     padding-left: 0.625em;
     padding-right: 0.625em; }
 
-  [class*="row"] {
+  .row {
     position: relative;
     max-width: 100%;
     margin: 0 auto;
-    width: 100%; }
-    [class*="row"]:after {
-      clear: both; } }
+    width: 100%;
+    clear: both; }
+    .row:after {
+      clear: both; }
+    .row .row {
+      margin-left: -0.625em;
+      margin-right: -0.625em;
+      max-width: none;
+      width: auto; } }
 @media only screen and (min-width: 48em) {
   .row {
     max-width: auto; }
