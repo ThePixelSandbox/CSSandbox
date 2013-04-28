@@ -18,6 +18,12 @@ $medium-break: 		em(768px) !default;
 $large-break: 		em(960px) !default;
 $big-break: 		em(1280px) !default;
 
+// Default float
+$grid-float: left;
+
+// Offset from left/right
+$offset-direction: left;
+
 // Querys
 $screen: "only screen";
 $small: "only screen and (min-width:"#{$small-break}")";
@@ -37,7 +43,7 @@ $portrait: "only screen and (orientation: portrait)";
 	.row { max-width: $max-width; }
 	@for $i from 1 through $grid-collumns {
 		.#{$name}#{-$i} { width: gridCalculator($i, $grid-collumns) }
-		.#{$name}-offset#{-$i} { margin-left: gridCalculator($i, $grid-collumns) }
+		.#{$name}-offset#{-$i} { margin-#{$offset-direction}: gridCalculator($i, $grid-collumns) }
 	}
 }
 
@@ -50,7 +56,7 @@ $portrait: "only screen and (orientation: portrait)";
 	@include break-point($name: "small", $max-width: $small-max-width);
 
 	.col {
-		float: left;
+		float: #{$grid-float};
 		padding-left: $grid-gutter / 2;
 		padding-right: $grid-gutter / 2;
 	}
