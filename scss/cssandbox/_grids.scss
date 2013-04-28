@@ -27,7 +27,6 @@ $big: "only screen and (min-width:"#{$big-break}")";
 $landscape: "only screen and (orientation: landscape)";
 $portrait: "only screen and (orientation: portrait)"; 
 
-
 // Grid calulation width
 @function gridCalculator($colNumber, $totalColumns) {
 	@return percentage(($colNumber / $totalColumns));
@@ -40,6 +39,10 @@ $portrait: "only screen and (orientation: portrait)";
 		.#{$name}#{-$i} { width: gridCalculator($i, $grid-collumns) }
 	}
 }
+
+/* ==========================================================================
+   Grid styles
+   ========================================================================== */
 
 @media #{$screen} {
 
@@ -69,14 +72,23 @@ $portrait: "only screen and (orientation: portrait)";
 	}
 }
 
+/* ==========================================================================
+   Medium breakpoint
+   ========================================================================== */
 @media #{$medium} {
 	@include break-point($name: "medium", $max-width: $medium-max-width);
 }
 
+/* ==========================================================================
+   Large breakpoint
+   ========================================================================== */
 @media #{$large} {
 	@include break-point($name: "large", $max-width: $large-max-width);
 }
 
+/* ==========================================================================
+   Big breakpoint
+   ========================================================================== */
 @media #{$big} {
 	@include break-point($name: "big", $max-width: $big-max-width);
 }
