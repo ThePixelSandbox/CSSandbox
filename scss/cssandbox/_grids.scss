@@ -19,13 +19,14 @@ $large-break: 		em(960px) !default;
 $big-break: 		em(1280px) !default;
 
 // Default float
-$grid-float: left !default;
+$grid-float: 		left !default;
+
+// Offset from left/right
+$offset-direction: 	left !default;
+
 //Find the opposite to default float
 $grid-opposite: "";
 @if ($grid-float != left) { $grid-opposite: left; } @else { $grid-opposite: right; }
-
-// Offset from left/right
-$offset-direction: left !default;
 
 // Querys
 $screen: "only screen";
