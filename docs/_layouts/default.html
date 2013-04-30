@@ -8,8 +8,16 @@
 	</head>
 	<body>
 
-		<!-- Content -->
-		{{ content }}
+		<div class="row">
+			<div class="col small-2 sidebar">
+				<!-- Sidebar -->
+				{% include sidebar.html %}
+			</div>
+			<div class="col small-10">
+				<!-- Content -->
+				{{ content }}
+			</div>
+		</div>
 
 		<!-- Footer -->
 		{% include footer.html %}
