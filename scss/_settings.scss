@@ -1,3 +1,9 @@
+//
+// Version 0.0.4
+// Please make sure you always have the correct config file for your version
+// New variables are added all the time
+// You can always copy/paste new variables in where you want them
+
 // Setting CSS charset
 @charset "UTF-8";
 
@@ -37,6 +43,34 @@
 // $body-font-family: "Open Sans", Arial, sans-serif !default;
 // $body-font-weight: 400 !default;
 // $body-font-style: normal !default;
+
+
+// *****************************************
+// ** Grid variables
+// ** Req. _grids.scss
+// *****************************************
+
+// ** Max lenght per breakpoint row
+// $small-max-width:   auto !default;
+// $medium-max-width: 	auto !default;
+// $large-max-width: 	auto !default;
+// $big-max-width: 	1280px !default;
+
+// ** Number of columns and space between
+// $grid-collumns: 	12 !default;
+// $grid-gutter: 		em(20px) !default;
+
+// ** Grid breakpoints
+// $small-break: 		em(480px) !default;
+// $medium-break: 		em(768px) !default;
+// $large-break: 		em(960px) !default;
+// $big-break: 		em(1280px) !default;
+
+// ** Default float
+// $grid-float: 		left !default;
+
+// ** Offset from left/right
+// $offset-direction: 	left !default;
 
 
 // *****************************************
