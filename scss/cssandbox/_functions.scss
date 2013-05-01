@@ -12,6 +12,10 @@ $pixels: false !default;
 // This project uses em/rem, so please be carefull with your font-sizes in your own css
 $font-size: 16px !default;
 
+// The main color tho the project
+$master-color: #ff2f19 !default;
+$master-base-color: #000000 !default;
+
 // From pixels to em
 @function em($px) {
 	@if $pixels == true { 

@@ -1,3 +1,38 @@
 //
-//  Version 0.0.1
+//  Version 0.0.4
 //  Read the docs for more information howto use
+
+// UL LI List style variables
+$list-font-weight: 		bold !default;
+$list-text-align: 		left !default;
+$list-font-size: 		inherit !default;
+$list-style-type: 		disc !default;
+
+// Link variabels
+$link-color:			$master-base-color !default;
+$link-active-color:		$master-color !default;
+$link-decoration:		underline !default;
+
+
+// Designing UL LI lists
+ul {
+	li {
+		font-weight: $list-font-weight;
+		text-align: $list-text-align;
+		font-size: $list-font-size;
+		list-style-type: $list-style-type;
+	}
+}
+
+// Designing links
+a {
+	color: $link-color;
+	text-decoration: $link-decoration;
+	&:hover,
+	&:focus {
+		color: $link-active-color;
+	}
+	&.active {
+		color: $link-active-color;
+	}
+}

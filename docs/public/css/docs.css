@@ -1,11 +1,55 @@
 html {
-	background: url("../images/bg_leftnav.png") repeat-y;
-	height: 100%; 
-} 
+	height: 100%;
+}
 
 body {
-	color: #175981;
+	color: #282828;
 	font-weight: bold;
-	text-align: center;
-	font-size: 24px; 
+	font-size: 24px;
+	height: 100%;
+}
+
+.sidebar {
+	color: #fff;
+	padding: 0;
+	background: #1d1d1d url("../images/bg_leftnav.png") repeat-y 100% 100%;
+	height: 100%;
+}
+
+	.sidebar h1 {
+		font-size: 28px;
+		border-bottom: 1px solid #292929;
+		padding: 45px 0 35px 25px;
+		margin: 0;
+	}
+		.sidebar h1 a {
+			color: #fff;
+			text-decoration: none;
+		}
+			.sidebar h1 a:hover {
+				color: #ff2f19;
+			}
+
+	.sidebar ul {
+		padding: 0 0 0 25px;
+	}
+		.sidebar ul li {
+			font-weight: 300;
+			font-size: 16px;
+			list-style: none;
+			margin: 0;
+		}
+			.sidebar ul li a {
+				color: #fff;
+				text-decoration: none;
+			}
+				.sidebar ul li a:hover {
+					color: #ff2f19;
+				}
+				.sidebar ul li a.active {
+					color: #ff2f19;
+				}
+.row {
+	height: 100%;
+	margin: 0;
 }

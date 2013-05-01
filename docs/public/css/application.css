@@ -1001,3 +1001,17 @@ body {
 
 .iconic-spin_alt:before {
   content: '\e037'; }
+
+ul li {
+  font-weight: bold;
+  text-align: left;
+  font-size: inherit;
+  list-style-type: disc; }
+
+a {
+  color: black;
+  text-decoration: underline; }
+  a:hover, a:focus {
+    color: #ff2f19; }
+  a.active {
+    color: #ff2f19; }
