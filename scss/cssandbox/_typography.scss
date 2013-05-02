@@ -29,7 +29,8 @@ a {
 	color: $link-color;
 	text-decoration: $link-decoration;
 	&:hover,
-	&:focus {
+	&:focus,
+	&:visited {
 		color: $link-active-color;
 	}
 	&.active {
