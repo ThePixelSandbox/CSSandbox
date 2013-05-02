@@ -19,7 +19,7 @@ input[type="button"] {
 	border: $button-border;
 	background: $button-background;
 	color: $button-color;
-	height: rem(40px);
+	min-height: rem(40px);
 	line-height: rem(40px);
 	padding: 0 rem(10px);
 	width: auto;
