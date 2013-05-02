@@ -1,9 +1,91 @@
 //
-//  Version 0.0.1
+//  Version 0.0.4
 //  Read the docs for more information howto use
 
-.button {
-	&.small {};
-	&.medium {};
-	&.large {};
+// Button variables for standard button
+$button-border-radius: 		5px !default;
+$button-background:			#ff2f19 !default;
+$button-disabled:			#c1c1c1 !default;
+$button-color:				#ffffff !default;
+$button-font-size:			em(16px) !default;
+$button-font-weight:		600 !default;
+$button-border:				none !default;
+
+.button,
+input[type="button"] {
+	-webkit-border-radius: $button-border-radius;
+	-moz-border-radius: $button-border-radius;
+	border-radius: $button-border-radius;
+	border: $button-border;
+	background: $button-background;
+	color: $button-color;
+	height: rem(40px);
+	line-height: rem(40px);
+	padding: 0 rem(10px);
+	width: auto;
+	display: inline-block;
+	font-weight: $button-font-weight;
+	font-size: $button-font-size;
+	&:hover {
+		background: darken($button-background, 9%);
+	}
+	&.small {
+		min-height: rem(30px);
+		line-height: rem(30px);
+		padding: 0 rem(10px);
+		font-size: rem(12px);
+	};
+	&.medium {
+		min-height: rem(40px);
+		line-height: rem(40px);
+		padding: 0 rem(15px);
+		font-size: rem(12px);
+	};
+	&.large {		
+		min-height: rem(50px);
+		line-height: rem(50px);
+		padding: 0 rem(30px);
+		font-size: rem(16px);
+	};
+	&.fluid { 
+		text-align: center;
+		width: 100%; 
+	};
+	&.disable {
+		background: $button-background;
+	}
+	&.warning {
+		background: #ffbf11;
+		color: #8f6f19;
+		&:hover {
+			background: darken(#ffbf11, 9%);
+			color: darken(#8f6f19, 9%);
+		}
+	};
+	&.info {
+		background: #2489c5;
+		&:hover {
+			background: darken(#2489c5, 9%);
+		}
+	}
+	&.success {
+		background: #00cc82;
+		&:hover {
+			background: darken(#00cc82, 9%);
+		}
+	}
+	&.inverse {
+		background: #232323;
+		color: #ebebeb;
+		&:hover {
+			background: darken(#232323, 9%);
+			color: lighten(#ebebeb, 9%);
+		}
+	}
+	&.alert {
+		background: #ff0000;
+		&:hover {
+			background: darken(#ff0000, 9%);
+		}
+	}
 }
