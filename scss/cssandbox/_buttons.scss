@@ -11,6 +11,10 @@ $button-font-size:			em(16px) !default;
 $button-font-weight:		600 !default;
 $button-border:				none !default;
 
+@mixin button($border, $border-radius, $font-size, $font-weight, $background, $text-color) {
+	// Getting right variabels
+}
+
 .button,
 input[type="button"] {
 	-webkit-border-radius: $button-border-radius;
