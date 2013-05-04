@@ -1,4 +1,4 @@
-# [CSSandbox v0.0.4](http://www.thepixelsandbox.com)
+# [CSSandbox v0.0.5](http://www.thepixelsandbox.com)
 Simple yet powerfull responsive mobile first framework
 
 
@@ -8,11 +8,12 @@ Because the market is needing one: Lightweight sass framework, but not too light
 
 
 ## Install
-Dont do that yet.
+Fell free to download if from here.
 
 
 ## How to use it
-Dont use it yet.
+Please note that there is no documentation at the time writing.<br>
+You can always read the code to get started.
 
 
 ## Browser support

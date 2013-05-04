@@ -1,5 +1,5 @@
 //
-// Version 0.0.3
+// Version 0.0.5
 // Read the docs for more information howto use
 
 // Calulations in pixels insted of em/rem
@@ -15,6 +15,7 @@ $font-size: 16px !default;
 // The main color tho the project
 $master-color: #ff2f19 !default;
 $master-base-color: #000000 !default;
+
 
 // From pixels to em
 @function em($px) {
@@ -42,7 +43,7 @@ $master-base-color: #000000 !default;
 // Output begins
 
 /* ==========================================================================
-   CSSandbox version 0.0.3
+   CSSandbox version 0.0.5
    http://www.thepixelsandbox.com
    MIT License
    ========================================================================== */
