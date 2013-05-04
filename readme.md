@@ -8,11 +8,11 @@ Because the market is needing one: Lightweight sass framework, but not too light
 
 
 ## Install
-Fell free to download if from here.
+Fell free to download it from here.
 
 
 ## How to use it
-Please note that there is no documentation at the time writing.<br>
+Please note that there is no documentation at the time writing this.<br>
 You can always read the code to get started.
 
 
