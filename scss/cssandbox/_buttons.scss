@@ -4,35 +4,43 @@
 
 // Button variables for standard button
 $button-border-radius: 		5px !default;
+$button-border:				none !default;
 $button-background:			#ff2f19 !default;
 $button-disabled:			#c1c1c1 !default;
 $button-color:				#ffffff !default;
 $button-font-size:			em(16px) !default;
 $button-font-weight:		600 !default;
-$button-border:				none !default;
 
-@mixin button($border, $border-radius, $font-size, $font-weight, $background, $text-color) {
-	// Getting right variabels
+@mixin button($border: $button-border, $border-radius: $button-border-radius, $font-size: $button-font-size, 
+	$font-weight: $button-font-weight, $background: $button-background, $text-color: $button-color, 
+	$height: 30px, $left-right-padding: 10px) {
+
+	-webkit-border-radius: $border-radius;
+	-moz-border-radius: $border-radius;
+	border-radius: $border-radius;
+	border: $border;
+	background: $background;
+	color: $text-color;
+	min-height: $height;
+	line-height: $height;
+	padding: 0 $left-right-padding;
+	width: auto;
+	display: inline-block;
+	font-weight: $font-weight;
+	font-size: $font-size;
+	&:hover {
+		background: darken($button-background, 9%);
+	}
 }
 
 .button,
 input[type="button"] {
-	-webkit-border-radius: $button-border-radius;
-	-moz-border-radius: $button-border-radius;
-	border-radius: $button-border-radius;
-	border: $button-border;
-	background: $button-background;
-	color: $button-color;
-	min-height: rem(40px);
-	line-height: rem(40px);
-	padding: 0 rem(10px);
-	width: auto;
-	display: inline-block;
-	font-weight: $button-font-weight;
-	font-size: $button-font-size;
-	&:hover {
-		background: darken($button-background, 9%);
-	}
+
+	@include button($border: $button-border, $border-radius: $button-border-radius, 
+		$font-size: $button-font-size, $font-weight: $button-font-weight, $background: $button-background, 
+		$text-color: $button-color, $height: rem(40px), $left-right-padding: rem(10px) );
+
+	// Button sizes
 	&.small {
 		min-height: rem(30px);
 		line-height: rem(30px);
@@ -55,8 +63,11 @@ input[type="button"] {
 		text-align: center;
 		width: 100%; 
 	};
+
+	// Button color classes
 	&.disable {
-		background: $button-background;
+		background: #bdbbb7;
+		opacity: 0.6;
 	}
 	&.warning {
 		background: #ffbf11;
