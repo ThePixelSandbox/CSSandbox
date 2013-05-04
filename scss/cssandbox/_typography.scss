@@ -28,6 +28,8 @@ ul {
 a {
 	color: $link-color;
 	text-decoration: $link-decoration;
+	@include transition(color, 200ms, ease-in);
+
 	&:hover,
 	&:focus,
 	&:visited {
