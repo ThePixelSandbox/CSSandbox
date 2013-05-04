@@ -39,6 +39,15 @@ $master-base-color: #000000 !default;
 	}
 }
 
+// Global mixins
+@mixin transition($property, $time, $type) {
+	-webkit-transition: $property $time $type;
+	-moz-transition: $property $time $type;
+	-ms-transition: $property $time $type;
+	-o-transition: $property $time $type;
+	transition: $property $time $type;	
+}
+
 //
 // Output begins
 

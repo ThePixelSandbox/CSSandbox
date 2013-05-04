@@ -29,6 +29,7 @@ $button-font-weight:		600 !default;
 	&:hover {
 		background: darken($button-background, 9%);
 	}
+	@include transition(background-color, 100ms, linear);
 }
 
 @mixin button-size($height, $font-size: $button-font-size, $left-right-padding: 10px) {
