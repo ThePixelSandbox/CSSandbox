@@ -15,22 +15,27 @@ $button-font-weight:		600 !default;
 	$font-weight: $button-font-weight, $background: $button-background, $text-color: $button-color, 
 	$height: 30px, $left-right-padding: 10px) {
 
+	@include button-size($height, $font-size, $left-right-padding);
+
 	-webkit-border-radius: $border-radius;
 	-moz-border-radius: $border-radius;
 	border-radius: $border-radius;
 	border: $border;
 	background: $background;
 	color: $text-color;
-	min-height: $height;
-	line-height: $height;
-	padding: 0 $left-right-padding;
 	width: auto;
 	display: inline-block;
 	font-weight: $font-weight;
-	font-size: $font-size;
 	&:hover {
 		background: darken($button-background, 9%);
 	}
+}
+
+@mixin button-size($height, $font-size: $button-font-size, $left-right-padding: 10px) {
+	min-height: $height;
+	line-height: $height;
+	padding: 0 $left-right-padding;
+	font-size: $font-size;
 }
 
 .button,
@@ -42,22 +47,13 @@ input[type="button"] {
 
 	// Button sizes
 	&.small {
-		min-height: rem(30px);
-		line-height: rem(30px);
-		padding: 0 rem(10px);
-		font-size: rem(12px);
+		@include button-size($height: rem(30px), $font-size: rem(12px), $left-right-padding: rem(10px));
 	};
 	&.medium {
-		min-height: rem(40px);
-		line-height: rem(40px);
-		padding: 0 rem(15px);
-		font-size: rem(12px);
+		@include button-size($height: rem(40px), $font-size: rem(14px), $left-right-padding: rem(20px));
 	};
 	&.large {		
-		min-height: rem(50px);
-		line-height: rem(50px);
-		padding: 0 rem(30px);
-		font-size: rem(16px);
+		@include button-size($height: rem(50px), $font-size: rem(16px), $left-right-padding: rem(30px));
 	};
 	&.fluid { 
 		text-align: center;
