@@ -1,6 +1,6 @@
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,700,300");
 /* ==========================================================================
-   CSSandbox version 0.0.3
+   CSSandbox version 0.0.5
    http://www.thepixelsandbox.com
    MIT License
    ========================================================================== */
@@ -1010,8 +1010,97 @@ ul li {
 
 a {
   color: black;
-  text-decoration: underline; }
-  a:hover, a:focus {
+  text-decoration: underline;
+  -webkit-transition: color 200ms ease-in;
+  -moz-transition: color 200ms ease-in;
+  -ms-transition: color 200ms ease-in;
+  -o-transition: color 200ms ease-in;
+  transition: color 200ms ease-in; }
+  a:hover, a:focus, a:visited {
     color: #ff2f19; }
   a.active {
     color: #ff2f19; }
+
+.button,
+input[type="button"] {
+  min-height: 2.5rem;
+  line-height: 2.5rem;
+  padding: 0 0.625rem;
+  font-size: 1em;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: none;
+  background: #ff2f19;
+  color: white;
+  width: auto;
+  display: inline-block;
+  font-weight: 600;
+  -webkit-transition: background-color 200ms linear;
+  -moz-transition: background-color 200ms linear;
+  -ms-transition: background-color 200ms linear;
+  -o-transition: background-color 200ms linear;
+  transition: background-color 200ms linear; }
+  .button:hover,
+  input[type="button"]:hover {
+    background: #ea1600; }
+  .button.small,
+  input[type="button"].small {
+    min-height: 1.875rem;
+    line-height: 1.875rem;
+    padding: 0 0.625rem;
+    font-size: 0.75rem; }
+  .button.medium,
+  input[type="button"].medium {
+    min-height: 2.5rem;
+    line-height: 2.5rem;
+    padding: 0 1.25rem;
+    font-size: 0.875rem; }
+  .button.large,
+  input[type="button"].large {
+    min-height: 3.125rem;
+    line-height: 3.125rem;
+    padding: 0 1.875rem;
+    font-size: 1rem; }
+  .button.fluid,
+  input[type="button"].fluid {
+    text-align: center;
+    width: 100%; }
+  .button.disable,
+  input[type="button"].disable {
+    background: #bdbbb7;
+    opacity: 0.6; }
+  .button.warning,
+  input[type="button"].warning {
+    background: #ffbf11;
+    color: #8f6f19; }
+    .button.warning:hover,
+    input[type="button"].warning:hover {
+      background: #e2a500;
+      color: #685112; }
+  .button.info,
+  input[type="button"].info {
+    background: #2489c5; }
+    .button.info:hover,
+    input[type="button"].info:hover {
+      background: #1d6e9e; }
+  .button.success,
+  input[type="button"].success {
+    background: #00cc82; }
+    .button.success:hover,
+    input[type="button"].success:hover {
+      background: #009e65; }
+  .button.inverse,
+  input[type="button"].inverse {
+    background: #232323;
+    color: #ebebeb; }
+    .button.inverse:hover,
+    input[type="button"].inverse:hover {
+      background: #0c0c0c;
+      color: white; }
+  .button.alert,
+  input[type="button"].alert {
+    background: #ff0000; }
+    .button.alert:hover,
+    input[type="button"].alert:hover {
+      background: #d10000; }
