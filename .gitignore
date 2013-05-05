@@ -3,15 +3,16 @@
 ##################
 
 .sass-cache/*
+docs/.sass-cache/*
 sample/
 tmp/
 backup*/
-images/
 stylesheets/
 _site/
 
 *.Cache
 
+docs/config.rb
 Thumbs.db
 Desktop.ini
 .DS_Store

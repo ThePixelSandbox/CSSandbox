@@ -8,15 +8,12 @@
 	</head>
 	<body>
 
-		<div class="row">
-			<div class="col small-4 large-3 sidebar">
-				<!-- Sidebar -->
-				{% include sidebar.html %}
-			</div>
-			<div class="col small-8 large-9 contentbar">
-				<!-- Content -->
-				{{ content }}
-			</div>
+		<div class="sidebar menu fixed">
+			<!-- Sidebar -->
+			{% include sidebar.html %}
+		</div>
+		<div class="sidebar content">
+			{{ content }}
 		</div>
 
 		<!-- Footer -->

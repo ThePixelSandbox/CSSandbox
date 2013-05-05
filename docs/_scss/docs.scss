@@ -1,0 +1,73 @@
+// Use this stylesheet to your custom codes.
+// Remember to import _settings.scss
+@import "../scss/_settings.scss"; 
+
+// Feel free to pull out files you dont need
+// It's not recommended to out comment normalize and global
+@import
+  "../scss/cssandbox/normalize",
+  "../scss/cssandbox/global", 
+  "../scss/cssandbox/grids",
+  "../scss/cssandbox/icon-fonts",
+  "../scss/cssandbox/typography",
+  "../scss/cssandbox/forms",
+  "../scss/cssandbox/top-nav",
+  "../scss/cssandbox/side-nav",
+  "../scss/cssandbox/buttons",
+  "../scss/cssandbox/tabels"; 
+
+// Custom stylesheet
+
+html,
+body {
+	height: 100%;
+}
+
+.sidebar.menu {
+	color: #fff;
+	padding: 0 em(1px) 0 0;
+	background: #1d1d1d url("../images/bg_leftnav.png") repeat-y 100% 100%;
+	height: 100%;
+	width: em(260px);
+
+	&.fixed {
+		position: fixed;
+	}
+	h1 {
+		font-size: em(28px);
+		border-bottom: 1px solid #292929;
+		padding: rem(45px) 0 rem(35px) rem(25px);
+		margin: 0;
+		& > a {
+			color: #fff;
+			text-decoration: none;
+			&:hover {
+				color: #ff2f19;
+			}
+		}
+	}
+
+	ul {
+		padding: 0 0 0 em(25px);
+		& > li {
+			font-weight: 300;
+			font-size: em(16px);
+			list-style: none;
+			margin: 0;
+			& > a {
+				color: #fff;
+				text-decoration: none;
+				&:hover {
+					color: #ff2f19;
+				}
+				&.active {
+					color: #ff2f19;
+				}
+			}
+		}
+	}
+}
+
+.sidebar.content {
+	margin: 0 0 0 em(260px);
+}
