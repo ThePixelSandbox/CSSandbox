@@ -30,9 +30,6 @@ body {
 	height: 100%;
 	width: em(260px);
 
-	&.fixed {
-		position: fixed;
-	}
 	h1 {
 		font-size: em(28px);
 		border-bottom: 1px solid #292929;

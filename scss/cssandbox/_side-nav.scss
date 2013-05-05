@@ -1,3 +1,9 @@
 //
-//  Version 0.0.1
+//  Version 0.0.5
 //  Read the docs for more information howto use
+
+.sidebar {
+	&.fixed {
+		position: fixed;
+	}
+}

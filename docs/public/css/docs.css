@@ -1023,6 +1023,9 @@ a {
   a.active {
     color: #ff2f19; }
 
+.sidebar.fixed {
+  position: fixed; }
+
 .button,
 input[type="button"] {
   min-height: 2.5rem;
@@ -1117,8 +1120,6 @@ body {
   background: #1d1d1d url("../images/bg_leftnav.png") repeat-y 100% 100%;
   height: 100%;
   width: 16.25em; }
-  .sidebar.menu.fixed {
-    position: fixed; }
   .sidebar.menu h1 {
     font-size: 1.75em;
     border-bottom: 1px solid #292929;
