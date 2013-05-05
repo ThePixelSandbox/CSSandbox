@@ -1010,14 +1010,16 @@ ul li {
 
 a {
   color: black;
-  text-decoration: underline;
-  -webkit-transition: color 200ms ease-in;
-  -moz-transition: color 200ms ease-in;
-  -ms-transition: color 200ms ease-in;
-  -o-transition: color 200ms ease-in;
-  transition: color 200ms ease-in; }
-  a:hover, a:focus, a:visited {
-    color: #ff2f19; }
+  text-decoration: underline; }
+  a:hover, a:focus {
+    color: #ff2f19;
+    -webkit-transition: color 200ms ease-in;
+    -moz-transition: color 200ms ease-in;
+    -ms-transition: color 200ms ease-in;
+    -o-transition: color 200ms ease-in;
+    transition: color 200ms ease-in; }
+  a:visited {
+    color: black; }
   a.active {
     color: #ff2f19; }
 
