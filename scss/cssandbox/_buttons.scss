@@ -29,6 +29,10 @@ $button-font-weight:		600 !default;
 	&:hover {
 		background: darken($button-background, 9%);
 	}
+	a {
+		color: $text-color;
+		text-decoration: none !important;
+	}
 	@include transition(background-color, 200ms, linear);
 }
 

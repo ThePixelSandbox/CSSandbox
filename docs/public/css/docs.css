@@ -1,6 +1,6 @@
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,700,300");
 /* ==========================================================================
-   CSSandbox version 0.0.5
+   CSSandbox version 0.0.6
    http://www.thepixelsandbox.com
    MIT License
    ========================================================================== */
@@ -1049,6 +1049,10 @@ input[type="button"] {
   .button:hover,
   input[type="button"]:hover {
     background: #ea1600; }
+  .button a,
+  input[type="button"] a {
+    color: white;
+    text-decoration: none !important; }
   .button.small,
   input[type="button"].small {
     min-height: 1.875rem;
@@ -1124,7 +1128,7 @@ body {
     font-size: 1.75em;
     border-bottom: 1px solid #292929;
     padding: 2.8125rem 0 2.1875rem 1.5625rem;
-    margin: 0; }
+    margin: 0 0 1.875rem 0; }
     .sidebar.menu h1 > a {
       color: #fff;
       text-decoration: none; }
@@ -1136,7 +1140,7 @@ body {
       font-weight: 300;
       font-size: 1em;
       list-style: none;
-      margin: 0; }
+      margin: 0 0 0.375em 0; }
       .sidebar.menu ul > li > a {
         color: #fff;
         text-decoration: none; }
