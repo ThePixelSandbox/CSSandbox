@@ -60,6 +60,7 @@ $portrait: "only screen and (orientation: portrait)";
 	@include break-point($name: "small", $max-width: $small-max-width);
 
 	.col {
+		@include transition($property: width, $time: 200ms, $type: linear);
 		float: #{$grid-float};
 		padding-left: $grid-gutter / 2;
 		padding-right: $grid-gutter / 2;

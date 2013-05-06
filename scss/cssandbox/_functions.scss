@@ -40,7 +40,7 @@ $master-base-color: #000000 !default;
 }
 
 // Global mixins
-@mixin transition($property, $time, $type) {
+@mixin transition($property, $time: 200ms, $type: linear) {
 	-webkit-transition: $property $time $type;
 	-moz-transition: $property $time $type;
 	-ms-transition: $property $time $type;
