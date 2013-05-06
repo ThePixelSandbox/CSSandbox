@@ -65,17 +65,20 @@ body {
 	}
 
 	.download {
-		margin: em(50px) em(25px) 0 em(25px);
+		margin: em(50px) em(35px) 0 em(25px);
 		& > .button {
 			border-radius: 0;
 		}
 		& > .fork-github {
 			text-align: center;
 			font-size: em(12px);
-			padding: rem(10px) 0;
+			padding: rem(7px) 0;
 			& > a {
 				text-decoration: none;
 				color: #4f4f4f;
+				&:hover {
+					color: #fff;
+				}
 			}
 		}
 	}
