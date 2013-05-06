@@ -1,28 +1,28 @@
 //
-// Version 0.0.3
+// Version 0.0.7
 // Read the docs for more information howto use
 // See the docs on how to make your own breakpoints
 
-$small-max-width: 	auto !default;
-$medium-max-width: 	auto !default;
-$large-max-width: 	auto !default;
-$big-max-width: 	1280px !default;
+$small-max-width: 		auto !default;
+$medium-max-width: 		auto !default;
+$large-max-width: 		auto !default;
+$big-max-width: 		1280px !default;
 
 // Number of columns and space between
-$grid-collumns: 	12 !default;
-$grid-gutter: 		em(20px) !default;
+$grid-collumns: 		12 !default;
+$grid-gutter: 			em(20px) !default;
 
 // Grid breakpoints
-$small-break: 		em(480px) !default;
-$medium-break: 		em(768px) !default;
-$large-break: 		em(960px) !default;
-$big-break: 		em(1280px) !default;
+$small-break: 			em(480px) !default;
+$medium-break: 			em(768px) !default;
+$large-break: 			em(960px) !default;
+$big-break: 			em(1280px) !default;
 
 // Default float
-$grid-float: 		left !default;
+$grid-float: 			left !default;
 
 // Offset from left/right
-$offset-direction: 	left !default;
+$offset-direction: 		left !default;
 
 //Find the opposite to default float
 $grid-opposite: "";
@@ -78,8 +78,7 @@ $portrait: "only screen and (orientation: portrait)";
 			clear: both;
 		}
 		.row {
-			margin-left: -($grid-gutter / 2);
-			margin-right: -($grid-gutter / 2);
+			margin: 0 #{-$grid-gutter / 2};
 			max-width: none;
 			width: auto;
 		}
