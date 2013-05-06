@@ -36,3 +36,4 @@ Why not IE8? Our framework should work with IE8, but it's not supported!
 
 ### Thanks to
 * [Normalize.css](https://github.com/necolas/normalize.css/)
+* [Iconic.ttf](http://somerandomdude.com/work/iconic/)
