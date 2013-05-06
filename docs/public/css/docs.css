@@ -1010,18 +1010,23 @@ ul li {
 
 a {
   color: black;
-  text-decoration: underline; }
+  text-decoration: underline;
+  -webkit-transition: color 200ms ease-in;
+  -moz-transition: color 200ms ease-in;
+  -ms-transition: color 200ms ease-in;
+  -o-transition: color 200ms ease-in;
+  transition: color 200ms ease-in; }
   a:hover, a:focus {
-    color: #ff2f19;
-    -webkit-transition: color 200ms ease-in;
-    -moz-transition: color 200ms ease-in;
-    -ms-transition: color 200ms ease-in;
-    -o-transition: color 200ms ease-in;
-    transition: color 200ms ease-in; }
+    color: #ff2f19; }
   a:visited {
     color: black; }
   a.active {
     color: #ff2f19; }
+  a.noTransition {
+    -moz-transition: none;
+    -webkit-transition: none;
+    -o-transition: all 0 none;
+    transition: none; }
 
 .sidebar.fixed {
   position: fixed; }
@@ -1053,6 +1058,12 @@ input[type="button"] {
   input[type="button"] a {
     color: white;
     text-decoration: none !important; }
+  .button.noTransition,
+  input[type="button"].noTransition {
+    -moz-transition: none;
+    -webkit-transition: none;
+    -o-transition: all 0 none;
+    transition: none; }
   .button.small,
   input[type="button"].small {
     min-height: 1.875rem;
@@ -1148,6 +1159,17 @@ body {
           color: #ff2f19; }
         .sidebar.menu ul > li > a.active {
           color: #ff2f19; }
+  .sidebar.menu .download {
+    margin: 3.125em 1.5625em 0 1.5625em; }
+    .sidebar.menu .download > .button {
+      border-radius: 0; }
+    .sidebar.menu .download > .fork-github {
+      text-align: center;
+      font-size: 0.75em;
+      padding: 0.625rem 0; }
+      .sidebar.menu .download > .fork-github > a {
+        text-decoration: none;
+        color: #4f4f4f; }
 
 .sidebar.content {
   margin: 0 0 0 16.25em; }
