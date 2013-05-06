@@ -32,7 +32,7 @@ $button-font-weight:		600 !default;
 	a {
 		text-decoration: none !important;
 		display: block;
-		width: 100%;
+		width: auto;
 		height: 100%;
 	}
 	@include transition(background-color, 200ms, linear);
@@ -45,6 +45,10 @@ $button-font-weight:		600 !default;
 	line-height: $height;
 	padding: 0 $left-right-padding;
 	font-size: $font-size;
+	a {
+		margin: 0 #{-$left-right-padding};
+		padding: 0 $left-right-padding;
+	}
 }
 
 // Generate button color
