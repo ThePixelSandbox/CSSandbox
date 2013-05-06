@@ -27,7 +27,6 @@ $button-font-weight:		600 !default;
 	font-weight: $font-weight;
 	text-align: center;
 	a {
-		color: $text-color;
 		text-decoration: none !important;
 		display: block;
 		width: 100%;
@@ -47,6 +46,14 @@ $button-font-weight:		600 !default;
 @mixin button-color($background: $button-background, $color: $button-color, $darken-text: true) {
 	background: $background;
 	color: $color;
+	a {
+		color: $color;
+		&:hover {
+			@if $darken-text == true { 
+				color: darken($color, 9%);
+			}
+		}
+	}
 	&:hover {
 		background: darken($background, 9%);
 		@if $darken-text == true { 
