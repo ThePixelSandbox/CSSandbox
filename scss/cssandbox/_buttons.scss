@@ -1,5 +1,5 @@
 //
-//  Version 0.0.4
+//  Version 0.0.7
 //  Read the docs for more information howto use
 
 // Button variables for standard button
@@ -16,19 +16,16 @@ $button-font-weight:		600 !default;
 	$height: 30px, $left-right-padding: 10px, $width: auto) {
 
 	@include button-size($height, $font-size, $left-right-padding, $width);
+	@include button-color($background: $button-background, $color: $button-color, $darken-text: false);
 
 	-webkit-border-radius: $border-radius;
 	-moz-border-radius: $border-radius;
 	border-radius: $border-radius;
 	border: $border;
 	background: $background;
-	color: $text-color;
 	display: inline-block;
 	font-weight: $font-weight;
 	text-align: center;
-	&:hover {
-		background: darken($button-background, 9%);
-	}
 	a {
 		color: $text-color;
 		text-decoration: none !important;
@@ -45,6 +42,17 @@ $button-font-weight:		600 !default;
 	line-height: $height;
 	padding: 0 $left-right-padding;
 	font-size: $font-size;
+}
+
+@mixin button-color($background: $button-background, $color: $button-color, $darken-text: true) {
+	background: $background;
+	color: $color;
+	&:hover {
+		background: darken($background, 9%);
+		@if $darken-text == true { 
+			color: darken($color, 9%);
+		}
+	}
 }
 
 .button,
@@ -74,37 +82,18 @@ input[type="button"] {
 		opacity: 0.6;
 	}
 	&.warning {
-		background: #ffbf11;
-		color: #8f6f19;
-		&:hover {
-			background: darken(#ffbf11, 9%);
-			color: darken(#8f6f19, 9%);
-		}
+		@include button-color($background: #ffbf11, $color: #8f6f19, $darken-text: true);
 	};
 	&.info {
-		background: #2489c5;
-		&:hover {
-			background: darken(#2489c5, 9%);
-		}
+		@include button-color($background: #2489c5, $darken-text: false);
 	}
 	&.success {
-		background: #00cc82;
-		&:hover {
-			background: darken(#00cc82, 9%);
-		}
+		@include button-color($background: #00cc82, $darken-text: false);
 	}
 	&.inverse {
-		background: #232323;
-		color: #ebebeb;
-		&:hover {
-			background: darken(#232323, 9%);
-			color: lighten(#ebebeb, 9%);
-		}
+		@include button-color($background: #232323, $color: #ebebeb, $darken-text: true);
 	}
 	&.alert {
-		background: #ff0000;
-		&:hover {
-			background: darken(#ff0000, 9%);
-		}
+		@include button-color($background: #ff0000, $darken-text: false);
 	}
 }
