@@ -45,7 +45,13 @@ $master-base-color: #000000 !default;
 	-moz-transition: $property $time $type;
 	-ms-transition: $property $time $type;
 	-o-transition: $property $time $type;
-	transition: $property $time $type;	
+	transition: $property $time $type;
+	&.noTransition {
+		-moz-transition: none;
+		-webkit-transition: none;
+		-o-transition: all 0 none;
+		transition: none;
+	}
 }
 
 //
