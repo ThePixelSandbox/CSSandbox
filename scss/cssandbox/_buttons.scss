@@ -16,7 +16,7 @@ $button-font-weight:		600 !default;
 	$height: 30px, $left-right-padding: 10px, $width: auto) {
 
 	@include button-size($height, $font-size, $left-right-padding, $width);
-	@include button-color($background: $button-background, $color: $button-color, $darken-text: false);
+	@include button-color($background: $background, $color: $text-color, $darken-text: false);
 
 	-webkit-border-radius: $border-radius;
 	-moz-border-radius: $border-radius;
