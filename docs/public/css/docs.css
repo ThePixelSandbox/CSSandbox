@@ -282,8 +282,9 @@ body {
     padding-left: 0.625em;
     padding-right: 0.625em; }
     .col.noTransition {
-      -moz-transition: none;
       -webkit-transition: none;
+      -moz-transition: none;
+      -ms-transition: none;
       -o-transition: all 0 none;
       transition: none; }
     .col.last {
@@ -1033,8 +1034,9 @@ a {
   a.active {
     color: #ff2f19; }
   a.noTransition {
-    -moz-transition: none;
     -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
     -o-transition: all 0 none;
     transition: none; }
 
@@ -1087,8 +1089,9 @@ input[type="button"] {
     height: 100%; }
   .button.noTransition,
   input[type="button"].noTransition {
-    -moz-transition: none;
     -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
     -o-transition: all 0 none;
     transition: none; }
   .button.small,
@@ -1239,7 +1242,7 @@ body {
     .sidebar.menu .download > .fork-github {
       text-align: center;
       font-size: 0.75em;
-      padding: 0.4375rem 0; }
+      padding: 0.9375rem 0 0 0; }
       .sidebar.menu .download > .fork-github > a {
         text-decoration: none;
         color: #4f4f4f; }
