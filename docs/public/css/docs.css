@@ -1,6 +1,6 @@
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,700,300");
 /* ==========================================================================
-   CSSandbox version 0.0.6
+   CSSandbox version 0.0.7
    http://www.thepixelsandbox.com
    MIT License
    ========================================================================== */
@@ -549,6 +549,7 @@ body {
   display: inline;
   width: auto;
   height: auto;
+  color: #555555;
   font-size: 1.5em;
   line-height: 1em; }
 
@@ -1018,7 +1019,7 @@ ul li {
   list-style-type: disc; }
 
 a {
-  color: black;
+  color: #555555;
   text-decoration: underline;
   -webkit-transition: color 200ms ease-in;
   -moz-transition: color 200ms ease-in;
@@ -1028,7 +1029,7 @@ a {
   a:hover, a:focus {
     color: #ff2f19; }
   a:visited {
-    color: black; }
+    color: #555555; }
   a.active {
     color: #ff2f19; }
   a.noTransition {

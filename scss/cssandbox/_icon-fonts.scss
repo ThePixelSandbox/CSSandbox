@@ -1,5 +1,5 @@
 //
-// Version 0.0.3
+// Version 0.0.7
 // Read the docs for more information howto use
 
 /* ==========================================================================
@@ -7,7 +7,8 @@
    ========================================================================== */
 
 // Chose your icons size
-$icon-size: em(24px) !default;
+$icon-size:         em(24px) !default;
+$icon-color:        $master-base-color !default;
 
 // Import the fonts
 @font-face  {
@@ -23,6 +24,7 @@ $icon-size: em(24px) !default;
     display: inline;
     width: auto;
     height: auto;
+    color: $icon-color;
     font-size: $icon-size;
     line-height: 1em;
 }
