@@ -1,5 +1,5 @@
-# SASS Compile recommended command
-Stand in the docs root folder and fire:<br>
-sass -I scss --watch docs/_scss:docs/public/css
+## SASS Compile recommended command
+Stand in the root folder and fire:<br>
+<b>sass -I scss --watch docs/_scss:docs/public/css</b>
 
-#### [Docs are made in Jekyll](http://jekyllrb.com/)
+#### [Docs are made with Jekyll](http://jekyllrb.com/)

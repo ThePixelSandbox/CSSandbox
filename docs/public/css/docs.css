@@ -273,9 +273,19 @@ body {
     margin-left: 100%; }
 
   .col {
+    -webkit-transition: width 200ms linear;
+    -moz-transition: width 200ms linear;
+    -ms-transition: width 200ms linear;
+    -o-transition: width 200ms linear;
+    transition: width 200ms linear;
     float: left;
     padding-left: 0.625em;
     padding-right: 0.625em; }
+    .col.noTransition {
+      -moz-transition: none;
+      -webkit-transition: none;
+      -o-transition: all 0 none;
+      transition: none; }
     .col.last {
       float: right; }
 
@@ -288,8 +298,7 @@ body {
     .row:after {
       clear: both; }
     .row .row {
-      margin-left: -0.625em;
-      margin-right: -0.625em;
+      margin: 0 -0.625em;
       max-width: none;
       width: auto; } }
 /* ==========================================================================
@@ -1031,6 +1040,9 @@ a {
 .sidebar.fixed {
   position: fixed; }
 
+/* ==========================================================================
+   Button styles
+   ========================================================================== */
 .button,
 input[type="button"] {
   width: auto;
@@ -1038,12 +1050,13 @@ input[type="button"] {
   line-height: 2.5rem;
   padding: 0 0.625rem;
   font-size: 1em;
+  background: #ff2f19;
+  color: white;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
   border: none;
   background: #ff2f19;
-  color: white;
   display: inline-block;
   font-weight: 600;
   text-align: center;
@@ -1051,16 +1064,25 @@ input[type="button"] {
   -moz-transition: background-color 200ms linear;
   -ms-transition: background-color 200ms linear;
   -o-transition: background-color 200ms linear;
-  transition: background-color 200ms linear; }
+  transition: background-color 200ms linear;
+  /* ==========================================================================
+     Button color classes
+     ========================================================================== */ }
+  .button a,
+  input[type="button"] a {
+    margin: 0 -0.625rem;
+    padding: 0 0.625rem; }
+  .button a,
+  input[type="button"] a {
+    color: white; }
   .button:hover,
   input[type="button"]:hover {
     background: #ea1600; }
   .button a,
   input[type="button"] a {
-    color: white;
     text-decoration: none !important;
     display: block;
-    width: 100%;
+    width: auto;
     height: 100%; }
   .button.noTransition,
   input[type="button"].noTransition {
@@ -1075,6 +1097,10 @@ input[type="button"] {
     line-height: 1.875rem;
     padding: 0 0.625rem;
     font-size: 0.75rem; }
+    .button.small a,
+    input[type="button"].small a {
+      margin: 0 -0.625rem;
+      padding: 0 0.625rem; }
   .button.medium,
   input[type="button"].medium {
     width: auto;
@@ -1082,6 +1108,10 @@ input[type="button"] {
     line-height: 2.5rem;
     padding: 0 1.25rem;
     font-size: 0.875rem; }
+    .button.medium a,
+    input[type="button"].medium a {
+      margin: 0 -1.25rem;
+      padding: 0 1.25rem; }
   .button.large,
   input[type="button"].large {
     width: auto;
@@ -1089,6 +1119,10 @@ input[type="button"] {
     line-height: 3.125rem;
     padding: 0 1.875rem;
     font-size: 1rem; }
+    .button.large a,
+    input[type="button"].large a {
+      margin: 0 -1.875rem;
+      padding: 0 1.875rem; }
   .button.fluid,
   input[type="button"].fluid {
     width: 100%;
@@ -1096,6 +1130,10 @@ input[type="button"] {
     line-height: 2.8125rem;
     padding: 0 1.875rem;
     font-size: 1.125rem; }
+    .button.fluid a,
+    input[type="button"].fluid a {
+      margin: 0 -1.875rem;
+      padding: 0 1.875rem; }
   .button.disable,
   input[type="button"].disable {
     background: #bdbbb7;
@@ -1104,19 +1142,33 @@ input[type="button"] {
   input[type="button"].warning {
     background: #ffbf11;
     color: #8f6f19; }
+    .button.warning a,
+    input[type="button"].warning a {
+      color: #8f6f19; }
+      .button.warning a:hover,
+      input[type="button"].warning a:hover {
+        color: #685112; }
     .button.warning:hover,
     input[type="button"].warning:hover {
       background: #e2a500;
       color: #685112; }
   .button.info,
   input[type="button"].info {
-    background: #2489c5; }
+    background: #2489c5;
+    color: white; }
+    .button.info a,
+    input[type="button"].info a {
+      color: white; }
     .button.info:hover,
     input[type="button"].info:hover {
       background: #1d6e9e; }
   .button.success,
   input[type="button"].success {
-    background: #00cc82; }
+    background: #00cc82;
+    color: white; }
+    .button.success a,
+    input[type="button"].success a {
+      color: white; }
     .button.success:hover,
     input[type="button"].success:hover {
       background: #009e65; }
@@ -1124,13 +1176,23 @@ input[type="button"] {
   input[type="button"].inverse {
     background: #232323;
     color: #ebebeb; }
+    .button.inverse a,
+    input[type="button"].inverse a {
+      color: #ebebeb; }
+      .button.inverse a:hover,
+      input[type="button"].inverse a:hover {
+        color: #d4d4d4; }
     .button.inverse:hover,
     input[type="button"].inverse:hover {
       background: #0c0c0c;
-      color: white; }
+      color: #d4d4d4; }
   .button.alert,
   input[type="button"].alert {
-    background: #ff0000; }
+    background: red;
+    color: white; }
+    .button.alert a,
+    input[type="button"].alert a {
+      color: white; }
     .button.alert:hover,
     input[type="button"].alert:hover {
       background: #d10000; }
