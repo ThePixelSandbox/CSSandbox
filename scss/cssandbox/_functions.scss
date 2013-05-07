@@ -6,17 +6,17 @@
 // Options: True, False, Both
 // If you chose to use em/rem as intended, please note that rem doesn't work in IE8
 // This can be fixed by using the variable both (will make rem calulations in pixels insted)
-$pixels: 				false !default;
+$pixels:				false !default;
 
 // Change the font-size of the project
 // This project uses em/rem, so please be carefull with your font-sizes in your own css
-$font-size: 			16px !default;
+$font-size:				16px !default;
 
 // The main color used in this project
 // Will be used as link color and other stuff as default
 // Settings other color variables (For the "section") will overwrite this color
-$master-color: 			#ff2f19 !default;
-$master-base-color: 	#555555 !default;
+$master-color:			#ff2f19 !default;
+$master-base-color:		#555555 !default;
 
 
 // From pixels to em
@@ -49,8 +49,9 @@ $master-base-color: 	#555555 !default;
 	-o-transition: $property $time $type;
 	transition: $property $time $type;
 	&.noTransition {
-		-moz-transition: none;
 		-webkit-transition: none;
+		-moz-transition: none;
+		-ms-transition: none;
 		-o-transition: all 0 none;
 		transition: none;
 	}
