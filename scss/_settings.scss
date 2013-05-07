@@ -1,5 +1,5 @@
 //
-// Version 0.0.6
+// Version 0.0.7
 // Please make sure you always have the correct config file for your version
 // New variables are added all the time
 // You can always copy/paste new variables in where you want them
@@ -20,6 +20,12 @@
 // ** If you chose to use em/rem as intended, please note that rem doesn't work in IE8
 // ** This can be fixed by using the variable both (will make rem calulations in pixels insted)
 // $pixels: false;
+
+// ** The main color used in this project
+// ** Will be used as link color and other stuff as default
+// ** Settings other color variables (For the "section") will overwrite this color
+// $master-color: #ff2f19 !default;
+// $master-base-color: #555555 !default;
 
 // ** Importing functions
 // ** Out commenting this will result in a compile error
@@ -71,6 +77,42 @@
 
 // ** Offset from left/right
 // $offset-direction: left;
+
+
+// *****************************************
+// ** Button variables
+// ** Req. _buttons.scss
+// *****************************************
+
+// ** Border styles
+// $button-border-radius: 5px;
+// $button-border: none;
+
+// ** Coloring
+// $button-background: #ff2f19;
+// $button-color: #ffffff;
+// $button-disabled: #c1c1c1;
+
+// ** Typography
+// $button-font-size: em(16px);
+// $button-font-weight: 600;
+
+
+// *****************************************
+// ** Typography variables
+// ** Req. _buttons.scss
+// *****************************************
+
+// ** List style variables
+// $list-font-weight: bold;
+// $list-text-align: left;
+// $list-font-size: inherit;
+// $list-style-type: disc;
+
+// ** Link variabels
+// $link-color: $master-base-color;
+// $link-active-color: $master-color;
+// $link-decoration: underline;
 
 
 // *****************************************

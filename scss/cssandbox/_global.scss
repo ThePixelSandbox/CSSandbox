@@ -1,5 +1,5 @@
 //
-// Version 0.0.6
+// Version 0.0.7
 // Read the docs for more information howto use
 
 // Global Line-height
@@ -14,7 +14,7 @@ $webfont: "http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,
 
 // Global style variables
 $body-background: #ffffff !default;
-$body-font-color: #555555 !default;
+$body-font-color: $master-base-color !default;
 $body-font-family: "Open Sans", Arial, sans-serif !default;
 $body-font-weight: 400 !default;
 $body-font-style: normal !default;

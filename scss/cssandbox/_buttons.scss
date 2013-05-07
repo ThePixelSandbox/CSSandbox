@@ -2,12 +2,16 @@
 //  Version 0.0.7
 //  Read the docs for more information howto use
 
-// Button variables for standard button
+// Border styles
 $button-border-radius: 		5px !default;
 $button-border:				none !default;
+
+// ** Coloring
 $button-background:			#ff2f19 !default;
-$button-disabled:			#c1c1c1 !default;
 $button-color:				#ffffff !default;
+$button-disabled:			#c1c1c1 !default;
+
+// ** Typography
 $button-font-size:			em(16px) !default;
 $button-font-weight:		600 !default;
 

@@ -1,8 +1,8 @@
 //
-//  Version 0.0.4
+//  Version 0.0.7
 //  Read the docs for more information howto use
 
-// UL LI List style variables
+// List style variables
 $list-font-weight: 		bold !default;
 $list-text-align: 		left !default;
 $list-font-size: 		inherit !default;
@@ -14,7 +14,7 @@ $link-active-color:		$master-color !default;
 $link-decoration:		underline !default;
 
 
-// Designing UL LI lists
+// Designing lists
 ul {
 	li {
 		font-weight: $list-font-weight;
