@@ -1,5 +1,5 @@
 # [CSSandbox v0.0.7](http://www.thepixelsandbox.com)
-Simple yet powerfull responsive mobile first framework<br><br>
+Simple yet powerfull responsive mobile first framework
 
 
 ## History
@@ -24,9 +24,9 @@ You can always read the code to get started.
 * Opera 12+
 
 Why not IE8? Our framework will show, but some major features like media queries isn't supported<br>
-Please note that jQuery 2.0 (Used as javascript framework by CSSandbox) does not support IE8 either.
+Please note that jQuery 2.0 (Used as javascript framework) does not support IE8 either.
 
-For more information about IE8 market share (Currently ~5%)<br>
+For more information about IE8 market share (Currently ~5%) see w3schools
 [Browser Statistics](http://www.w3schools.com/browsers/browsers_explorer.asp)
 
 
