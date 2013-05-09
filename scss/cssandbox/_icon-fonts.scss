@@ -36,7 +36,22 @@ $icon-color:        $master-base-color !default;
     text-decoration: inherit;
 }
 
-// Icons
+/* ==========================================================================
+   Icon color presets
+   ========================================================================== */
+
+   .iconic-white {
+        color: #fff;
+   }
+
+   .iconic-black {
+        color: #000;
+   }
+
+/* ==========================================================================
+   Icons
+   ========================================================================== */
+
 .iconic-lightbulb:before               { content: '\e063'; }
 .iconic-equalizer:before               { content: '\e052'; }
 .iconic-map_pin_stroke:before          { content: '\e068'; }

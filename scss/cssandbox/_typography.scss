@@ -1,5 +1,5 @@
 //
-//  Version 0.0.7
+//  Version 0.0.8
 //  Read the docs for more information howto use
 
 // List style variables
@@ -13,6 +13,10 @@ $link-color:			$master-base-color !default;
 $link-active-color:		$master-color !default;
 $link-decoration:		underline !default;
 
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
 
 // Designing lists
 ul {
@@ -29,14 +33,14 @@ a {
 	color: $link-color;
 	text-decoration: $link-decoration;
 	
-	&:hover,
-	&:focus {
-		color: $link-active-color;
-	}
 	&:visited {
 		color: $link-color;
 	}
 	&.active {
+		color: $link-active-color;
+	}
+	&:hover,
+	&:focus {
 		color: $link-active-color;
 	}
 

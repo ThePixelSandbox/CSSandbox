@@ -60,13 +60,10 @@ $button-font-weight:		600 !default;
 @mixin button-color($background: $button-background, $color: $button-color, $darken-text: true) {
 	background: $background;
 	color: $color;
-	a,
-	a:visited,
-	a:active,
-	&,
-	&:visited,
-	&:active {
+	&, a {
 		color: $color;
+	}
+	a {
 		&:hover {
 			@if $darken-text == true { 
 				color: darken($color, 9%);
@@ -106,6 +103,11 @@ input[type="button"] {
 		@include button-size($height: rem(45px), $font-size: rem(18px), $left-right-padding: rem(30px), $width: 100%);
 	}
 
+	// Making buttons with icons
+	& > [class*="iconic-"] {
+		line-height: inherit !important;
+	}
+
 	/* ==========================================================================
 	   Button color classes
 	   ========================================================================== */
@@ -114,7 +116,8 @@ input[type="button"] {
 		&,
 		& > a {
 			background: #bdbbb7;
-			pointer-events: none;
+			pointer-events: none; /* Does not Work in IE, to disable links in IE 
+									 or older browsers use Javascript */
 			opacity: 0.6;
 			cursor: default;
 		}
