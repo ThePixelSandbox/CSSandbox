@@ -131,7 +131,7 @@ input[type="button"] {
 	&.success {
 		@include button-color($background: #00cc82, $darken-text: false);
 	}
-	&.inverse {
+	&.unknown {
 		@include button-color($background: #232323, $color: #ebebeb, $darken-text: true);
 	}
 	&.alert {
