@@ -1,5 +1,5 @@
 //
-//  Version 0.0.7
+//  Version 0.0.8
 //  Read the docs for more information howto use
 
 // Border styles
@@ -33,11 +33,9 @@ $button-font-weight:		600 !default;
 	display: inline-block;
 	font-weight: $font-weight;
 	text-align: center;
+	&,
 	a {
 		text-decoration: none !important;
-		display: block;
-		width: auto;
-		height: 100%;
 	}
 	@include transition(background-color, 200ms, linear);
 }
@@ -52,6 +50,9 @@ $button-font-weight:		600 !default;
 	a {
 		margin: 0 #{-$left-right-padding};
 		padding: 0 $left-right-padding;
+		display: block;
+		width: auto;
+		height: 100%;
 	}
 }
 
@@ -59,7 +60,12 @@ $button-font-weight:		600 !default;
 @mixin button-color($background: $button-background, $color: $button-color, $darken-text: true) {
 	background: $background;
 	color: $color;
-	a {
+	a,
+	a:visited,
+	a:active,
+	&,
+	&:visited,
+	&:active {
 		color: $color;
 		&:hover {
 			@if $darken-text == true { 
@@ -105,8 +111,13 @@ input[type="button"] {
 	   ========================================================================== */
 
 	&.disable {
-		background: #bdbbb7;
-		opacity: 0.6;
+		&,
+		& > a {
+			background: #bdbbb7;
+			pointer-events: none;
+			opacity: 0.6;
+			cursor: default;
+		}
 	}
 	&.warning {
 		@include button-color($background: #ffbf11, $color: #8f6f19, $darken-text: true);
