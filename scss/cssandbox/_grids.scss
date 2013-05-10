@@ -1,5 +1,5 @@
 //
-// Version 0.0.7
+// Version 0.0.8
 // Read the docs for more information howto use
 // See the docs on how to make your own breakpoints
 
@@ -57,8 +57,6 @@ $portrait: "only screen and (orientation: portrait)";
 
 @media #{$screen} {
 
-	@include break-point($name: "small", $max-width: $small-max-width);
-
 	.col {
 		@include transition($property: width, $time: 200ms, $type: linear);
 		float: #{$grid-float};
@@ -84,6 +82,13 @@ $portrait: "only screen and (orientation: portrait)";
 			width: auto;
 		}
 	}
+
+	/* ==========================================================================
+	   Small breakpoint
+	   ========================================================================== */
+
+	@include break-point($name: "small", $max-width: $small-max-width);
+
 }
 
 /* ==========================================================================
