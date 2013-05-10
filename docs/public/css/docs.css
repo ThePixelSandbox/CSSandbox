@@ -173,6 +173,11 @@ table {
   border-spacing: 0; }
 
 /* ==========================================================================
+   Normalize code ended
+   ========================================================================== */
+/* ==========================================================================
+   CSSandbox styles from now on
+
    Global styles
    ========================================================================== */
 body {
@@ -197,6 +202,40 @@ body {
    Grid styles
    ========================================================================== */
 @media only screen {
+  .col {
+    -webkit-transition: width 200ms linear;
+    -moz-transition: width 200ms linear;
+    -ms-transition: width 200ms linear;
+    -o-transition: width 200ms linear;
+    transition: width 200ms linear;
+    float: left;
+    padding-left: 0.625em;
+    padding-right: 0.625em; }
+    .col.noTransition {
+      -webkit-transition: none;
+      -moz-transition: none;
+      -ms-transition: none;
+      -o-transition: all 0 none;
+      transition: none; }
+    .col.last {
+      float: right; }
+
+  .row {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    width: 100%;
+    clear: both; }
+    .row:after {
+      clear: both; }
+    .row .row {
+      margin: 0 -0.625em;
+      max-width: none;
+      width: auto; }
+
+  /* ==========================================================================
+     Small breakpoint
+     ========================================================================== */
   .row {
     max-width: auto; }
 
@@ -270,38 +309,7 @@ body {
     width: 100%; }
 
   .small-offset-12 {
-    margin-left: 100%; }
-
-  .col {
-    -webkit-transition: width 200ms linear;
-    -moz-transition: width 200ms linear;
-    -ms-transition: width 200ms linear;
-    -o-transition: width 200ms linear;
-    transition: width 200ms linear;
-    float: left;
-    padding-left: 0.625em;
-    padding-right: 0.625em; }
-    .col.noTransition {
-      -webkit-transition: none;
-      -moz-transition: none;
-      -ms-transition: none;
-      -o-transition: all 0 none;
-      transition: none; }
-    .col.last {
-      float: right; }
-
-  .row {
-    position: relative;
-    max-width: 100%;
-    margin: 0 auto;
-    width: 100%;
-    clear: both; }
-    .row:after {
-      clear: both; }
-    .row .row {
-      margin: 0 -0.625em;
-      max-width: none;
-      width: auto; } }
+    margin-left: 100%; } }
 /* ==========================================================================
    Medium breakpoint
    ========================================================================== */
@@ -560,6 +568,18 @@ body {
   font-style: normal;
   text-decoration: inherit; }
 
+/* ==========================================================================
+   Icon color presets
+   ========================================================================== */
+.iconic-white {
+  color: #fff; }
+
+.iconic-black {
+  color: #000; }
+
+/* ==========================================================================
+   Icons
+   ========================================================================== */
 .iconic-lightbulb:before {
   content: '\e063'; }
 
@@ -1013,6 +1033,9 @@ body {
 .iconic-spin_alt:before {
   content: '\e037'; }
 
+/* ==========================================================================
+   Typography
+   ========================================================================== */
 ul li {
   font-weight: bold;
   text-align: left;
@@ -1027,11 +1050,11 @@ a {
   -ms-transition: color 200ms ease-in;
   -o-transition: color 200ms ease-in;
   transition: color 200ms ease-in; }
-  a:hover, a:focus {
-    color: #ff2f19; }
   a:visited {
     color: #555555; }
   a.active {
+    color: #ff2f19; }
+  a:hover, a:focus {
     color: #ff2f19; }
   a.noTransition {
     -webkit-transition: none;
@@ -1074,19 +1097,22 @@ input[type="button"] {
   .button a,
   input[type="button"] a {
     margin: 0 -0.625rem;
-    padding: 0 0.625rem; }
-  .button a,
+    padding: 0 0.625rem;
+    display: block;
+    width: auto;
+    height: 100%; }
+  .button, .button a,
+  input[type="button"],
   input[type="button"] a {
     color: white; }
   .button:hover,
   input[type="button"]:hover {
     background: #ea1600; }
+  .button,
   .button a,
+  input[type="button"],
   input[type="button"] a {
-    text-decoration: none !important;
-    display: block;
-    width: auto;
-    height: 100%; }
+    text-decoration: none !important; }
   .button.noTransition,
   input[type="button"].noTransition {
     -webkit-transition: none;
@@ -1104,7 +1130,10 @@ input[type="button"] {
     .button.small a,
     input[type="button"].small a {
       margin: 0 -0.625rem;
-      padding: 0 0.625rem; }
+      padding: 0 0.625rem;
+      display: block;
+      width: auto;
+      height: 100%; }
   .button.medium,
   input[type="button"].medium {
     width: auto;
@@ -1115,7 +1144,10 @@ input[type="button"] {
     .button.medium a,
     input[type="button"].medium a {
       margin: 0 -1.25rem;
-      padding: 0 1.25rem; }
+      padding: 0 1.25rem;
+      display: block;
+      width: auto;
+      height: 100%; }
   .button.large,
   input[type="button"].large {
     width: auto;
@@ -1126,7 +1158,10 @@ input[type="button"] {
     .button.large a,
     input[type="button"].large a {
       margin: 0 -1.875rem;
-      padding: 0 1.875rem; }
+      padding: 0 1.875rem;
+      display: block;
+      width: auto;
+      height: 100%; }
   .button.fluid,
   input[type="button"].fluid {
     width: 100%;
@@ -1137,21 +1172,33 @@ input[type="button"] {
     .button.fluid a,
     input[type="button"].fluid a {
       margin: 0 -1.875rem;
-      padding: 0 1.875rem; }
-  .button.disable,
-  input[type="button"].disable {
+      padding: 0 1.875rem;
+      display: block;
+      width: auto;
+      height: 100%; }
+  .button > [class*="iconic-"],
+  input[type="button"] > [class*="iconic-"] {
+    line-height: inherit !important; }
+  .button.disable, .button.disable > a,
+  input[type="button"].disable,
+  input[type="button"].disable > a {
     background: #bdbbb7;
-    opacity: 0.6; }
+    pointer-events: none;
+                      /* Does not Work in IE, to disable links in IE 
+						 or older browsers use Javascript */
+    opacity: 0.6;
+    cursor: default; }
   .button.warning,
   input[type="button"].warning {
     background: #ffbf11;
     color: #8f6f19; }
-    .button.warning a,
+    .button.warning, .button.warning a,
+    input[type="button"].warning,
     input[type="button"].warning a {
       color: #8f6f19; }
-      .button.warning a:hover,
-      input[type="button"].warning a:hover {
-        color: #685112; }
+    .button.warning a:hover,
+    input[type="button"].warning a:hover {
+      color: #685112; }
     .button.warning:hover,
     input[type="button"].warning:hover {
       background: #e2a500;
@@ -1160,7 +1207,8 @@ input[type="button"] {
   input[type="button"].info {
     background: #2489c5;
     color: white; }
-    .button.info a,
+    .button.info, .button.info a,
+    input[type="button"].info,
     input[type="button"].info a {
       color: white; }
     .button.info:hover,
@@ -1170,31 +1218,34 @@ input[type="button"] {
   input[type="button"].success {
     background: #00cc82;
     color: white; }
-    .button.success a,
+    .button.success, .button.success a,
+    input[type="button"].success,
     input[type="button"].success a {
       color: white; }
     .button.success:hover,
     input[type="button"].success:hover {
       background: #009e65; }
-  .button.inverse,
-  input[type="button"].inverse {
+  .button.unknown,
+  input[type="button"].unknown {
     background: #232323;
     color: #ebebeb; }
-    .button.inverse a,
-    input[type="button"].inverse a {
+    .button.unknown, .button.unknown a,
+    input[type="button"].unknown,
+    input[type="button"].unknown a {
       color: #ebebeb; }
-      .button.inverse a:hover,
-      input[type="button"].inverse a:hover {
-        color: #d4d4d4; }
-    .button.inverse:hover,
-    input[type="button"].inverse:hover {
+    .button.unknown a:hover,
+    input[type="button"].unknown a:hover {
+      color: #d4d4d4; }
+    .button.unknown:hover,
+    input[type="button"].unknown:hover {
       background: #0c0c0c;
       color: #d4d4d4; }
   .button.alert,
   input[type="button"].alert {
     background: red;
     color: white; }
-    .button.alert a,
+    .button.alert, .button.alert a,
+    input[type="button"].alert,
     input[type="button"].alert a {
       color: white; }
     .button.alert:hover,
@@ -1207,7 +1258,6 @@ body {
 
 .sidebar.menu {
   color: #fff;
-  padding: 0 0.0625em 0 0;
   background: #1d1d1d url("../images/bg_leftnav.png") repeat-y 100% 100%;
   height: 100%;
   width: 16.25em; }
@@ -1229,12 +1279,26 @@ body {
       list-style: none;
       margin: 0 0 0.375em 0; }
       .sidebar.menu ul > li > a {
+        -webkit-transition: all 200ms ease-out;
+        -moz-transition: all 200ms ease-out;
+        -ms-transition: all 200ms ease-out;
+        -o-transition: all 200ms ease-out;
+        transition: all 200ms ease-out;
         color: #fff;
-        text-decoration: none; }
+        text-decoration: none;
+        display: block; }
+        .sidebar.menu ul > li > a.noTransition {
+          -webkit-transition: none;
+          -moz-transition: none;
+          -ms-transition: none;
+          -o-transition: all 0 none;
+          transition: none; }
         .sidebar.menu ul > li > a:hover {
-          color: #ff2f19; }
+          color: #ff2f19;
+          background: #1d1d1d url("../images/bg_leftnav_li.png") repeat-y 100% 100%; }
         .sidebar.menu ul > li > a.active {
-          color: #ff2f19; }
+          color: #ff2f19;
+          background: #1d1d1d url("../images/bg_leftnav_li.png") repeat-y 100% 100%; }
   .sidebar.menu .download {
     margin: 3.125em 2.1875em 0 1.5625em; }
     .sidebar.menu .download > .button {
