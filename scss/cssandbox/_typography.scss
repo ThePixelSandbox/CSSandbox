@@ -13,6 +13,16 @@ $link-color:			$master-base-color !default;
 $link-active-color:		$master-color !default;
 $link-decoration:		underline !default;
 
+// Headline variabels
+$headings-color: #282828 !default;
+$headings-font-weight: 600 !default;
+$h1-font-size: 2.5em !default;
+$h2-font-size: 2.0em !default;
+$h3-font-size: 1.75em !default;
+$h4-font-size: 1.25em !default;
+$h5-font-size: 1em !default;
+$h6-font-size: 0.85em !default;
+
 
 /* ==========================================================================
    Typography
@@ -46,4 +56,37 @@ a {
 
 	@include transition(color, 200ms, ease-in);
 
+}
+
+// Headlines
+
+#{headings()} {
+	color: $headings-color;
+	margin: 0.20em 0 0.95em 0;
+	line-height: 1.1em;
+	font-weight: $headings-font-weight;
+}
+
+h1 {
+	font-size: $h1-font-size;
+}
+
+h2 {
+	font-size: $h2-font-size;
+}
+
+h3 {
+	font-size: $h3-font-size;
+}
+
+h4 {
+	font-size: $h4-font-size;
+}
+
+h5 {
+	font-size: $h5-font-size;
+}
+
+h6 {
+	font-size: $h6-font-size;
 }
