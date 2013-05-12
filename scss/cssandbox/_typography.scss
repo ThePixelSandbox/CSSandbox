@@ -1,5 +1,5 @@
 //
-//  Version 0.0.8
+//  Version 0.0.9
 //  Read the docs for more information howto use
 
 // List style variables
@@ -76,7 +76,7 @@ p {
 }
 
 // Headlines
-#{headings()} {
+h1, h2, h3, h4, h5, h6 {
 	color: $headings-color;
 	margin: $headings-margin;
 	line-height: 1.1em;

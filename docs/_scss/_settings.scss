@@ -1,5 +1,5 @@
 //
-// Version 0.0.5
+// Version 0.0.9
 // Please make sure you always have the correct config file for your version
 // New variables are added all the time
 // You can always copy/paste new variables in where you want them
@@ -21,9 +21,16 @@
 // ** This can be fixed by using the variable both (will make rem calulations in pixels insted)
 // $pixels: false;
 
+// ** The main color used in this project
+// ** Will be used as link color and other stuff as default
+// ** Settings other color variables (For the "section") will overwrite this color
+// $master-color: #ff2f19 !default;
+// $master-base-color: #555555 !default;
+
 // ** Importing functions
 // ** Out commenting this will result in a compile error
-@import "cssandbox/functions";
+@import "../scss/cssandbox/functions";
+
 
 // *****************************************
 // ** Global variables
@@ -74,9 +81,65 @@
 
 
 // *****************************************
+// ** Button variables
+// ** Req. _buttons.scss
+// *****************************************
+
+// ** Border styles
+// $button-border-radius: 5px;
+// $button-border: none;
+
+// ** Coloring
+// $button-background: #ff2f19;
+// $button-color: #ffffff;
+// $button-disabled: #c1c1c1;
+
+// ** Typography
+// $button-font-size: em(16px);
+// $button-font-weight: 600;
+
+
+// *****************************************
+// ** Typography variables
+// ** Req. _typography.scss
+// *****************************************
+
+// ** List style variables
+// $list-font-weight: bold;
+// $list-text-align: left;
+// $list-font-size: inherit;
+// $list-style-type: disc;
+
+// ** Link variabels
+// $link-color: $master-base-color;
+// $link-active-color: $master-color;
+// $link-decoration: underline;
+
+// ** Headline variabels
+// $headings-color: #282828;
+// $headings-font-weight: 600;
+// $headings-margin: 0.20em 0 0.85em 0;
+
+// ** Headline font-sizes
+// $h1-font-size: 2.5em;
+// $h2-font-size: 2.0em;
+// $h3-font-size: 1.75em;
+// $h4-font-size: 1.25em;
+// $h5-font-size: 1em;
+// $h6-font-size: 0.85em;
+
+// ** Paragraphs
+// $paragraph-font-size: 1em;
+// $paragraph-font-weight: 400;
+// $paragraph-color: inherit;
+// $paragraph-margin: 0.10em 0 1.3em 0;
+
+
+// *****************************************
 // ** Icon fonts variables **
 // ** Req. _icon-fonts.scss
 // *****************************************
 
 // ** Chose your icons size
 // $icon-size: em(24px);
+// $icon-color: #555555;
