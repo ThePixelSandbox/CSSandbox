@@ -1314,7 +1314,8 @@ body {
       .sidebar.menu h1 > a:hover {
         color: #ff2f19; }
   .sidebar.menu ul {
-    padding: 0 0 0 1.5625em; }
+    padding: 0 0 0 1.5625em;
+    margin: 0; }
     .sidebar.menu ul > li {
       font-weight: 300;
       font-size: 1em;
