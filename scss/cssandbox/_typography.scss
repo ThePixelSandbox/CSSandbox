@@ -2,8 +2,13 @@
 //  Version 0.0.9
 //  Read the docs for more information howto use
 
+// Link variabels
+$link-color:				$master-base-color !default;
+$link-active-color:			$master-color !default;
+$link-decoration:			underline !default;
+
 // List style variables
-$list-font-weight: 			bold !default;
+$list-font-weight: 			600 !default;
 $list-text-align: 			left !default;
 $list-font-size: 			inherit !default;
 $list-style-type: 			disc !default;
@@ -13,12 +18,9 @@ $list-margin:				0.5em 0 0.95em 1.45em !default;
 $inline-list-margin: 		0 0 1em 0 !default;
 $inline-list-item-margin: 	0 em(10px) 0 0 !default;
 $inline-list-color:			inherit !default;
+$inline-list-link-color:	$link-color !default;
 $inline-list-font-size:		1em !default;
-
-// Link variabels
-$link-color:				$master-base-color !default;
-$link-active-color:			$master-color !default;
-$link-decoration:			underline !default;
+$inline-list-font-weight:	600 !default;
 
 // Headline variabels
 $headings-color: 			#282828 !default;
@@ -45,9 +47,30 @@ $paragraph-margin: 			0.10em 0 1.3em 0 !default;
    ========================================================================== */
 
 // Designing lists
+@mixin inline-list($margin: $inline-list-margin, $item-margin: $inline-list-item-margin, $color: $inline-list-color, 
+				   $font-size: $inline-list-font-size, $link-color: $inline-list-link-color, $font-weight: $inline-list-font-weight) {
+	margin: $margin;
+	li {
+		list-style-type: none;
+		margin: $item-margin;
+		display: inline-block;
+		font-size: $font-size;
+		font-weight: $font-weight;
+		color: $color;
+		a {
+			color: $link-color;
+			text-decoration: none;
+			&:hover {
+				color: lighten($link-color, 20%);
+			}
+		}
+	}
+}
+
 ul {
 	margin: $list-margin;
 	padding: 0;
+
 	li {
 		font-weight: $list-font-weight;
 		text-align: $list-text-align;
@@ -55,16 +78,7 @@ ul {
 		list-style-type: $list-style-type;
 	}
 	&.inline {
-		margin: $inline-list-margin;
-		li {
-			list-style-type: none;
-			margin: $inline-list-item-margin;
-			display: inline-block;
-			color: $inline-list-color;
-			&, a {
-				font-size: $inline-list-font-size;
-			}
-		}
+		@include inline-list($inline-list-margin, $inline-list-item-margin, $inline-list-color, $inline-list-font-size, $inline-list-link-color, $inline-list-font-weight);
 	}
 }
 

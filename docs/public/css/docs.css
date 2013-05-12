@@ -218,7 +218,7 @@ body {
       -o-transition: all 0 none;
       transition: none; }
     .col.last {
-      float: right; }
+      float: opposite-position(left); }
 
   .row {
     position: relative;
@@ -1040,7 +1040,7 @@ ul {
   margin: 0.5em 0 0.95em 1.45em;
   padding: 0; }
   ul li {
-    font-weight: bold;
+    font-weight: 600;
     text-align: left;
     font-size: inherit;
     list-style-type: disc; }
@@ -1050,9 +1050,14 @@ ul {
       list-style-type: none;
       margin: 0 0.625em 0 0;
       display: inline-block;
+      font-size: 1em;
+      font-weight: 600;
       color: inherit; }
-      ul.inline li, ul.inline li a {
-        font-size: 1em; }
+      ul.inline li a {
+        color: #555555;
+        text-decoration: none; }
+        ul.inline li a:hover {
+          color: #888888; }
 
 a {
   color: #555555;
@@ -1360,4 +1365,37 @@ body {
   margin: 0 0 0 16.25em; }
 
 .footer {
-  background: #1d1d1d; }
+  background: #1d1d1d;
+  color: #4e4e4e;
+  padding: 4.375em 0 5em 3.125em; }
+  .footer .followus ul {
+    margin: 0 0 1em 0; }
+    .footer .followus ul li {
+      list-style-type: none;
+      margin: 0.125em;
+      display: inline-block;
+      font-size: 1em;
+      font-weight: 600;
+      color: white; }
+      .footer .followus ul li a {
+        color: #ff2f19;
+        text-decoration: none; }
+        .footer .followus ul li a:hover {
+          color: #ff8b7f; }
+  .footer .copyright {
+    font-size: 0.875em;
+    padding: 3.125em 0 2.1875em 0; }
+  .footer .linkbuilding ul {
+    margin: 0 0 1em 0; }
+    .footer .linkbuilding ul li {
+      list-style-type: none;
+      margin: 0.125em;
+      display: inline-block;
+      font-size: 0.875em;
+      font-weight: 300;
+      color: white; }
+      .footer .linkbuilding ul li a {
+        color: #ff2f19;
+        text-decoration: none; }
+        .footer .linkbuilding ul li a:hover {
+          color: #ff8b7f; }

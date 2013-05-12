@@ -94,4 +94,20 @@ body {
 
 .footer {
 	background: #1d1d1d;
+	color: #4e4e4e;
+	padding: em(70px) 0 em(80px) em(50px);
+	.followus {
+		ul {
+			@include inline-list($item-margin: em(2px), $color: #fff, $font-size: em(16px), $link-color: $master-color, $font-weight: 600);
+		}
+	}
+	.copyright {
+		font-size: em(14px);
+		padding: em(50px) 0 em(35px) 0; 
+	}
+	.linkbuilding {
+		ul {
+			@include inline-list($item-margin: em(2px), $color: #fff, $font-size: em(14px), $link-color: $master-color, $font-weight: 300);
+		}
+	}
 }

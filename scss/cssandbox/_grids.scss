@@ -1,5 +1,5 @@
 //
-// Version 0.0.8
+// Version 0.0.9
 // Read the docs for more information howto use
 // See the docs on how to make your own breakpoints
 
@@ -25,8 +25,7 @@ $grid-float: 			left !default;
 $offset-direction: 		left !default;
 
 //Find the opposite to default float
-$grid-opposite: "";
-@if ($grid-float != left) { $grid-opposite: left; } @else { $grid-opposite: right; }
+$grid-opposite: opposite-position(#{$offset-direction});
 
 // Querys
 $screen: "only screen";
