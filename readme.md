@@ -1,4 +1,4 @@
-# [CSSandbox v0.0.7](http://www.thepixelsandbox.com)
+# [CSSandbox v0.0.8](http://www.thepixelsandbox.com)
 Simple yet powerfull responsive mobile first framework
 
 
@@ -19,7 +19,7 @@ You can always read the code to get started.
 ## Browser support
 * Google Chrome
 * Apple Safari
-* Mozilla Firefox 20+
+* Mozilla Firefox 18+
 * Internet Explorer 9+
 * Opera 12+
 
