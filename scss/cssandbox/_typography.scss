@@ -3,34 +3,41 @@
 //  Read the docs for more information howto use
 
 // List style variables
-$list-font-weight: 		bold !default;
-$list-text-align: 		left !default;
-$list-font-size: 		inherit !default;
-$list-style-type: 		disc !default;
+$list-font-weight: 			bold !default;
+$list-text-align: 			left !default;
+$list-font-size: 			inherit !default;
+$list-style-type: 			disc !default;
+$list-margin:				0.5em 0 0.95em 1.45em !default;
+
+// Inline list style variabels
+$inline-list-margin: 		0 0 1em 0 !default;
+$inline-list-item-margin: 	0 em(10px) 0 0 !default;
+$inline-list-color:			inherit !default;
+$inline-list-font-size:		1em !default;
 
 // Link variabels
-$link-color:			$master-base-color !default;
-$link-active-color:		$master-color !default;
-$link-decoration:		underline !default;
+$link-color:				$master-base-color !default;
+$link-active-color:			$master-color !default;
+$link-decoration:			underline !default;
 
 // Headline variabels
-$headings-color: #282828 !default;
-$headings-font-weight: 600 !default;
-$headings-margin: 0.20em 0 0.85em 0 !default;
+$headings-color: 			#282828 !default;
+$headings-font-weight: 		600 !default;
+$headings-margin: 			0.20em 0 0.85em 0 !default;
 
 // ** Headline font-sizes
-$h1-font-size: 2.5em !default;
-$h2-font-size: 2.0em !default;
-$h3-font-size: 1.75em !default;
-$h4-font-size: 1.25em !default;
-$h5-font-size: 1em !default;
-$h6-font-size: 0.85em !default;
+$h1-font-size: 				2.5em !default;
+$h2-font-size: 				2.0em !default;
+$h3-font-size: 				1.75em !default;
+$h4-font-size: 				1.25em !default;
+$h5-font-size: 				1em !default;
+$h6-font-size: 				0.85em !default;
 
 // Paragraphs
-$paragraph-font-size: 1em !default;
-$paragraph-font-weight: 400 !default;
-$paragraph-color: inherit !default;
-$paragraph-margin: 0.10em 0 1.3em 0 !default;
+$paragraph-font-size: 		1em !default;
+$paragraph-font-weight: 	400 !default;
+$paragraph-color: 			inherit !default;
+$paragraph-margin: 			0.10em 0 1.3em 0 !default;
 
 
 /* ==========================================================================
@@ -39,11 +46,25 @@ $paragraph-margin: 0.10em 0 1.3em 0 !default;
 
 // Designing lists
 ul {
+	margin: $list-margin;
+	padding: 0;
 	li {
 		font-weight: $list-font-weight;
 		text-align: $list-text-align;
 		font-size: $list-font-size;
 		list-style-type: $list-style-type;
+	}
+	&.inline {
+		margin: $inline-list-margin;
+		li {
+			list-style-type: none;
+			margin: $inline-list-item-margin;
+			display: inline-block;
+			color: $inline-list-color;
+			&, a {
+				font-size: $inline-list-font-size;
+			}
+		}
 	}
 }
 

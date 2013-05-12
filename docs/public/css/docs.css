@@ -1036,11 +1036,23 @@ body {
 /* ==========================================================================
    Typography
    ========================================================================== */
-ul li {
-  font-weight: bold;
-  text-align: left;
-  font-size: inherit;
-  list-style-type: disc; }
+ul {
+  margin: 0.5em 0 0.95em 1.45em;
+  padding: 0; }
+  ul li {
+    font-weight: bold;
+    text-align: left;
+    font-size: inherit;
+    list-style-type: disc; }
+  ul.inline {
+    margin: 0 0 1em 0; }
+    ul.inline li {
+      list-style-type: none;
+      margin: 0 0.625em 0 0;
+      display: inline-block;
+      color: inherit; }
+      ul.inline li, ul.inline li a {
+        font-size: 1em; }
 
 a {
   color: #555555;
