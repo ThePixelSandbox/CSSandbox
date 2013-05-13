@@ -38,7 +38,7 @@
 // *****************************************
 
 // ** Global Line-height
-// $line-height: 140%;
+// $line-height: 150%;
 
 // ** Use google webfonts - Default Open Sans
 // ** If you want to disable webfonts, use the value false
@@ -104,16 +104,25 @@
 // ** Req. _typography.scss
 // *****************************************
 
+// ** Link variabels
+// $link-color: $master-base-color;
+// $link-active-color: $master-color;
+// $link-decoration: underline;
+
 // ** List style variables
 // $list-font-weight: bold;
 // $list-text-align: left;
 // $list-font-size: inherit;
 // $list-style-type: disc;
+// $list-margin: 0.5em 0 0.95em 1.45em;
 
-// ** Link variabels
-// $link-color: $master-base-color;
-// $link-active-color: $master-color;
-// $link-decoration: underline;
+// ** Inline list style variabels
+// $inline-list-margin: 0 0 1em 0;
+// $inline-list-item-margin: 0 em(10px) 0 0;
+// $inline-list-color: inherit;
+// $inline-list-link-color: $link-color;
+// $inline-list-font-size: 1em;
+// $inline-list-font-weight: 600;
 
 // ** Headline variabels
 // $headings-color: #282828;

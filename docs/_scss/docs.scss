@@ -92,6 +92,27 @@ body {
 	margin: 0 0 0 em(260px);
 }
 
+.the-end {
+	background: #d52f19 url("../images/bg_the-end.jpg");
+	color: #fff;
+	padding: em(60px) 0 em(60px) em(50px);
+	h4 {
+		color: #fff;
+		font-size: em(42px);
+		margin: 0 0 rem(20px) 0;
+	}
+	.subheader {
+		color: #f4f4f4;
+		padding: 0 0 em(20px) 0;
+	}
+	.btn {
+		&.submit-ideas {
+			@include button($border: 1px solid #fff, $border-radius: 0,$font-size: em(16px), $background: none, $text-color: #fff, 
+							$height: em(45px), $width: em(290px), $darken-text: true);
+		}
+	}
+}
+
 .footer {
 	background: #1d1d1d;
 	color: #4e4e4e;

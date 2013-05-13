@@ -19,11 +19,11 @@ $button-font-weight:		600 !default;
 // Button mixins
 // Generate button
 @mixin button($border: $button-border, $border-radius: $button-border-radius, $font-size: $button-font-size, 
-	$font-weight: $button-font-weight, $background: $button-background, $text-color: $button-color, 
+	$font-weight: $button-font-weight, $background: $button-background, $text-color: $button-color, $darken-text: false, 
 	$height: 30px, $left-right-padding: 10px, $width: auto) {
 
 	@include button-size($height, $font-size, $left-right-padding, $width);
-	@include button-color($background: $background, $color: $text-color, $darken-text: false);
+	@include button-color($background: $background, $color: $text-color, $darken-text: $darken-text);
 
 	-webkit-border-radius: $border-radius;
 	-moz-border-radius: $border-radius;
@@ -66,14 +66,16 @@ $button-font-weight:		600 !default;
 	a {
 		&:hover {
 			@if $darken-text == true { 
-				color: darken($color, 9%);
+				color: darken($color, 20%);
 			}
 		}
 	}
 	&:hover {
-		background: darken($background, 9%);
+		@if $background != none {
+			background: darken($background, 9%);
+		}
 		@if $darken-text == true { 
-			color: darken($color, 9%);
+			color: darken($color, 20%);
 		}
 	}
 }
@@ -87,7 +89,7 @@ input[type="button"] {
 
 	@include button($border: $button-border, $border-radius: $button-border-radius, 
 		$font-size: $button-font-size, $font-weight: $button-font-weight, $background: $button-background, 
-		$text-color: $button-color, $height: rem(40px), $left-right-padding: rem(10px) );
+		$text-color: $button-color, $darken-text: false, $height: rem(40px), $left-right-padding: rem(10px) );
 
 	// Button sizes
 	&.small {

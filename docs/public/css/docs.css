@@ -187,7 +187,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
-  line-height: 140%; }
+  line-height: 150%; }
 
 *,
 *:before,
@@ -1245,11 +1245,11 @@ input[type="button"] {
       color: #8f6f19; }
     .button.warning a:hover,
     input[type="button"].warning a:hover {
-      color: #685112; }
+      color: #382c0a; }
     .button.warning:hover,
     input[type="button"].warning:hover {
       background: #e2a500;
-      color: #685112; }
+      color: #382c0a; }
   .button.info,
   input[type="button"].info {
     background: #2489c5;
@@ -1282,11 +1282,11 @@ input[type="button"] {
       color: #ebebeb; }
     .button.unknown a:hover,
     input[type="button"].unknown a:hover {
-      color: #d4d4d4; }
+      color: #b8b8b8; }
     .button.unknown:hover,
     input[type="button"].unknown:hover {
       background: #0c0c0c;
-      color: #d4d4d4; }
+      color: #b8b8b8; }
   .button.alert,
   input[type="button"].alert {
     background: red;
@@ -1363,6 +1363,60 @@ body {
 
 .sidebar.content {
   margin: 0 0 0 16.25em; }
+
+.the-end {
+  background: #d52f19 url("../images/bg_the-end.jpg");
+  color: #fff;
+  padding: 3.75em 0 3.75em 3.125em; }
+  .the-end h4 {
+    color: #fff;
+    font-size: 2.625em;
+    margin: 0 0 1.25rem 0; }
+  .the-end .subheader {
+    color: #f4f4f4;
+    padding: 0 0 1.25em 0; }
+  .the-end .btn.submit-ideas {
+    width: 18.125em;
+    min-height: 2.8125em;
+    line-height: 2.8125em;
+    padding: 0 10px;
+    font-size: 1em;
+    background: none;
+    color: white;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border: 1px solid white;
+    background: none;
+    display: inline-block;
+    font-weight: 600;
+    text-align: center;
+    -webkit-transition: background-color 200ms linear;
+    -moz-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    -o-transition: background-color 200ms linear;
+    transition: background-color 200ms linear; }
+    .the-end .btn.submit-ideas a {
+      margin: 0 -10px;
+      padding: 0 10px;
+      display: block;
+      width: auto;
+      height: 100%; }
+    .the-end .btn.submit-ideas, .the-end .btn.submit-ideas a {
+      color: white; }
+    .the-end .btn.submit-ideas a:hover {
+      color: #cccccc; }
+    .the-end .btn.submit-ideas:hover {
+      color: #cccccc; }
+    .the-end .btn.submit-ideas,
+    .the-end .btn.submit-ideas a {
+      text-decoration: none !important; }
+    .the-end .btn.submit-ideas.noTransition {
+      -webkit-transition: none;
+      -moz-transition: none;
+      -ms-transition: none;
+      -o-transition: all 0 none;
+      transition: none; }
 
 .footer {
   background: #1d1d1d;
