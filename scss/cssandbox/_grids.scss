@@ -25,7 +25,7 @@ $grid-float: 			left !default;
 $offset-direction: 		left !default;
 
 //Find the opposite to default float
-$grid-opposite: opposite-position(#{$offset-direction});
+$grid-opposite: opposite-position($offset-direction);
 
 // Querys
 $screen: "only screen";
