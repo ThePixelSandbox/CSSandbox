@@ -8,9 +8,10 @@ $medium-max-width: 		auto !default;
 $large-max-width: 		auto !default;
 $big-max-width: 		1280px !default;
 
-// Number of columns and space between
+// Number of columns, space between and position
 $grid-collumns: 		12 !default;
 $grid-gutter: 			em(20px) !default;
+$grid-float:			center !default;
 
 // Grid breakpoints
 $small-break: 			em(480px) !default;
@@ -19,7 +20,7 @@ $large-break: 			em(960px) !default;
 $big-break: 			em(1280px) !default;
 
 // Default float
-$grid-float: 			left !default;
+$grid-col-float: 		left !default;
 
 // Offset from left/right
 $offset-direction: 		left !default;
@@ -58,7 +59,7 @@ $portrait: "only screen and (orientation: portrait)";
 
 	.col {
 		@include transition($property: width, $time: 200ms, $type: linear);
-		float: #{$grid-float};
+		float: #{$grid-col-float};
 		padding-left: $grid-gutter / 2;
 		padding-right: $grid-gutter / 2;
 		&.last {
@@ -67,13 +68,21 @@ $portrait: "only screen and (orientation: portrait)";
 	}
 
 	.row {
+		@if $grid-float == center { 
+			margin: 0 auto;
+		} @else if $pixels == right {
+			float: right;
+		}
+
 		position: relative;
 		max-width: 100%;
-		margin: 0 auto;
 		width: 100%;
-		clear: both;
 		&:after {
 			clear: both;
+		}
+		&:after, &:before {
+			content: " ";
+			display: table;
 		}
 		.row {
 			margin: 0 #{-$grid-gutter / 2};

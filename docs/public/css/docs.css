@@ -221,13 +221,15 @@ body {
       float: opposite-position(left); }
 
   .row {
+    margin: 0 auto;
     position: relative;
     max-width: 100%;
-    margin: 0 auto;
-    width: 100%;
-    clear: both; }
+    width: 100%; }
     .row:after {
       clear: both; }
+    .row:after, .row:before {
+      content: " ";
+      display: table; }
     .row .row {
       margin: 0 -0.625em;
       max-width: none;
