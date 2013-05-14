@@ -29,7 +29,7 @@
 
 // ** Importing functions
 // ** Out commenting this will result in a compile error
-@import "cssandbox/functions";
+@import "../scss/cssandbox/functions";
 
 
 // *****************************************
@@ -38,7 +38,7 @@
 // *****************************************
 
 // ** Global Line-height
-// $line-height: 140%;
+// $line-height: 150%;
 
 // ** Use google webfonts - Default Open Sans
 // ** If you want to disable webfonts, use the value false
