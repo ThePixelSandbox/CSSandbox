@@ -73,7 +73,6 @@ $portrait: "only screen and (orientation: portrait)";
 		} @else if $pixels == right {
 			float: right;
 		}
-
 		position: relative;
 		max-width: 100%;
 		width: 100%;

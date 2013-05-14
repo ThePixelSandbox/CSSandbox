@@ -95,20 +95,25 @@ body {
 .the-end {
 	background: #d52f19 url("../images/bg_the-end.jpg");
 	color: #fff;
-	padding: em(60px) 0 em(60px) em(50px);
-	h4 {
-		color: #fff;
-		font-size: em(42px);
-		margin: 0 0 rem(20px) 0;
-	}
-	.subheader {
-		color: #f4f4f4;
-		padding: 0 0 em(20px) 0;
-	}
-	.btn {
-		&.submit-ideas {
-			@include button($border: 1px solid #fff, $border-radius: 0,$font-size: em(16px), $background: none, $text-color: #fff, 
-							$height: em(45px), $width: em(290px), $darken-text: true);
+	.row {
+		padding: em(60px) 0 em(60px) em(50px);
+		.col {
+			padding: 0;
+			h4 {
+				color: #fff;
+				font-size: em(42px);
+				margin: 0 0 rem(20px) 0;
+			}
+			.subheader {
+				color: #f4f4f4;
+				padding: 0 0 em(20px) 0;
+			}
+			.btn {
+				&.submit-ideas {
+					@include button($border: 1px solid #fff, $border-radius: 0,$font-size: em(16px), $background: none, $text-color: #fff, 
+									$height: em(45px), $width: em(290px), $darken-text: true);
+				}
+			}
 		}
 	}
 }
@@ -117,14 +122,33 @@ body {
 	background: #1d1d1d;
 	color: #4e4e4e;
 	padding: em(70px) 0 em(80px) em(50px);
+	h5 {
+		font-weight: 400;
+		font-size: em(14px);
+		color: #4e4e4e;
+		margin: 0;
+		padding: 0;
+	}
+	.lastcommit {
+		.feed {
+			color: $master-color;
+			font-weight: bold;
+			padding: 0 0 em(30px) 0;
+			margin: 0 0 em(30px) 0;
+			background: url("../images/bg_footer_bar.png") no-repeat 0 100%;
+		}
+	}
 	.followus {
 		ul {
 			@include inline-list($item-margin: em(2px), $color: #fff, $font-size: em(16px), $link-color: $master-color, $font-weight: 600);
+			margin: 0;
 		}
+		padding: 0 0 rem(30px) 0;
+		background: url("../images/bg_footer_bar.png") no-repeat 0 100%;
 	}
 	.copyright {
 		font-size: em(14px);
-		padding: em(50px) 0 em(35px) 0; 
+		padding: em(40px) 0 em(35px) 0; 
 	}
 	.linkbuilding {
 		ul {
