@@ -29,7 +29,7 @@
 
 // ** Importing functions
 // ** Out commenting this will result in a compile error
-@import "../scss/cssandbox/functions";
+@import "cssandbox/functions";
 
 
 // *****************************************
@@ -38,7 +38,7 @@
 // *****************************************
 
 // ** Global Line-height
-// $line-height: 150%;
+// $line-height: 140%;
 
 // ** Use google webfonts - Default Open Sans
 // ** If you want to disable webfonts, use the value false
@@ -61,11 +61,12 @@
 // $small-max-width: auto;
 // $medium-max-width: auto;
 // $large-max-width: auto;
-// $big-max-width: 1280px;
+$big-max-width: 1000px;
 
-// ** Number of columns and space between
+// ** Number of columns, space between and position
 // $grid-collumns: 12;
 // $grid-gutter: em(20px);
+$grid-float: left;
 
 // ** Grid breakpoints
 // $small-break: em(480px);
@@ -74,7 +75,7 @@
 // $big-break: em(1280px);
 
 // ** Default float
-// $grid-float: left;
+// $grid-col-float: left;
 
 // ** Offset from left/right
 // $offset-direction: left;
@@ -104,11 +105,6 @@
 // ** Req. _typography.scss
 // *****************************************
 
-// ** Link variabels
-// $link-color: $master-base-color;
-// $link-active-color: $master-color;
-// $link-decoration: underline;
-
 // ** List style variables
 // $list-font-weight: bold;
 // $list-text-align: left;
@@ -120,9 +116,12 @@
 // $inline-list-margin: 0 0 1em 0;
 // $inline-list-item-margin: 0 em(10px) 0 0;
 // $inline-list-color: inherit;
-// $inline-list-link-color: $link-color;
 // $inline-list-font-size: 1em;
-// $inline-list-font-weight: 600;
+
+// ** Link variabels
+// $link-color: $master-base-color;
+// $link-active-color: $master-color;
+// $link-decoration: underline;
 
 // ** Headline variabels
 // $headings-color: #282828;
