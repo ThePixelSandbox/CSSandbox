@@ -92,7 +92,22 @@ body {
 	margin: 0 0 0 em(260px);
 }
 
-.the-end {
+.doc-box {
+	& > .row {
+
+		padding: em(60px) 0 em(60px) em(50px);
+		& > .col {
+			padding: 0;
+		}
+	}
+}
+
+#iconic-docs {
+	.teaser {
+	}
+}
+
+#the-end {
 	background: #d52f19 url("../images/bg_the-end.jpg");
 	color: #fff;
 	.row {

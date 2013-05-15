@@ -1,5 +1,5 @@
 //
-// Version 0.0.8
+// Version 0.0.9
 // Read the docs for more information howto use
 
 // Global Line-height
@@ -45,4 +45,18 @@ body {
 	    -ms-box-sizing: border-box;
 	     -o-box-sizing: border-box;
 	        box-sizing: border-box;
+}
+
+// NoTranstions class to overwrite transition
+.noTransition {
+	-webkit-transition: none !important;
+	-moz-transition: none !important;
+	-ms-transition: none !important;
+	-o-transition: all 0 none !important;
+	transition: none !important;
+}
+
+// Preload class for body-load to fix transitions
+body.preload * {
+	@extend .noTransition;
 }

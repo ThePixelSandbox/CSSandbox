@@ -1,7 +1,7 @@
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,700,300");
 /* ==========================================================================
-   CSSandbox version 0.0.7
-   http://www.thepixelsandbox.com
+   CSSandbox version 0.0.9
+   http://www.thepixelsandbox.com | https://github.com/ThePixelSandbox/CSSandbox
    MIT License
    ========================================================================== */
 /* ==========================================================================
@@ -198,6 +198,13 @@ body {
   -o-box-sizing: border-box;
   box-sizing: border-box; }
 
+.noTransition, body.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: all 0 none !important;
+  transition: none !important; }
+
 /* ==========================================================================
    Grid styles
    ========================================================================== */
@@ -211,12 +218,6 @@ body {
     float: left;
     padding-left: 0.625em;
     padding-right: 0.625em; }
-    .col.noTransition {
-      -webkit-transition: none;
-      -moz-transition: none;
-      -ms-transition: none;
-      -o-transition: all 0 none;
-      transition: none; }
     .col.last {
       float: opposite-position(left); }
 
@@ -1074,12 +1075,6 @@ a {
     color: #ff2f19; }
   a:hover, a:focus {
     color: #ff2f19; }
-  a.noTransition {
-    -webkit-transition: none;
-    -moz-transition: none;
-    -ms-transition: none;
-    -o-transition: all 0 none;
-    transition: none; }
 
 p {
   margin: 0.1em 0 1.3em 0;
@@ -1161,13 +1156,6 @@ input[type="button"] {
   input[type="button"],
   input[type="button"] a {
     text-decoration: none !important; }
-  .button.noTransition,
-  input[type="button"].noTransition {
-    -webkit-transition: none;
-    -moz-transition: none;
-    -ms-transition: none;
-    -o-transition: all 0 none;
-    transition: none; }
   .button.small,
   input[type="button"].small {
     width: auto;
@@ -1336,12 +1324,6 @@ body {
         color: #fff;
         text-decoration: none;
         display: block; }
-        .sidebar.menu ul > li > a.noTransition {
-          -webkit-transition: none;
-          -moz-transition: none;
-          -ms-transition: none;
-          -o-transition: all 0 none;
-          transition: none; }
         .sidebar.menu ul > li > a:hover {
           color: #ff2f19;
           background: #1d1d1d url("../images/bg_leftnav_li.png") repeat-y 100% 100%; }
@@ -1365,21 +1347,26 @@ body {
 .sidebar.content {
   margin: 0 0 0 16.25em; }
 
-.the-end {
+.doc-box > .row {
+  padding: 3.75em 0 3.75em 3.125em; }
+  .doc-box > .row > .col {
+    padding: 0; }
+
+#the-end {
   background: #d52f19 url("../images/bg_the-end.jpg");
   color: #fff; }
-  .the-end .row {
+  #the-end .row {
     padding: 3.75em 0 3.75em 3.125em; }
-    .the-end .row .col {
+    #the-end .row .col {
       padding: 0; }
-      .the-end .row .col h4 {
+      #the-end .row .col h4 {
         color: #fff;
         font-size: 2.625em;
         margin: 0 0 1.25rem 0; }
-      .the-end .row .col .subheader {
+      #the-end .row .col .subheader {
         color: #f4f4f4;
         padding: 0 0 1.25em 0; }
-      .the-end .row .col .btn.submit-ideas {
+      #the-end .row .col .btn.submit-ideas {
         width: 18.125em;
         min-height: 2.8125em;
         line-height: 2.8125em;
@@ -1400,27 +1387,21 @@ body {
         -ms-transition: background-color 200ms linear;
         -o-transition: background-color 200ms linear;
         transition: background-color 200ms linear; }
-        .the-end .row .col .btn.submit-ideas a {
+        #the-end .row .col .btn.submit-ideas a {
           margin: 0 -10px;
           padding: 0 10px;
           display: block;
           width: auto;
           height: 100%; }
-        .the-end .row .col .btn.submit-ideas, .the-end .row .col .btn.submit-ideas a {
+        #the-end .row .col .btn.submit-ideas, #the-end .row .col .btn.submit-ideas a {
           color: white; }
-        .the-end .row .col .btn.submit-ideas a:hover {
+        #the-end .row .col .btn.submit-ideas a:hover {
           color: #cccccc; }
-        .the-end .row .col .btn.submit-ideas:hover {
+        #the-end .row .col .btn.submit-ideas:hover {
           color: #cccccc; }
-        .the-end .row .col .btn.submit-ideas,
-        .the-end .row .col .btn.submit-ideas a {
+        #the-end .row .col .btn.submit-ideas,
+        #the-end .row .col .btn.submit-ideas a {
           text-decoration: none !important; }
-        .the-end .row .col .btn.submit-ideas.noTransition {
-          -webkit-transition: none;
-          -moz-transition: none;
-          -ms-transition: none;
-          -o-transition: all 0 none;
-          transition: none; }
 
 .footer {
   background: #1d1d1d;

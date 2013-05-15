@@ -1,5 +1,5 @@
 //
-// Version 0.0.8
+// Version 0.0.9
 // Read the docs for more information howto use
 
 // Calulations in pixels insted of em/rem
@@ -48,20 +48,13 @@ $master-base-color:		#555555 !default;
 	-ms-transition: $property $time $type;
 	-o-transition: $property $time $type;
 	transition: $property $time $type;
-	&.noTransition {
-		-webkit-transition: none;
-		-moz-transition: none;
-		-ms-transition: none;
-		-o-transition: all 0 none;
-		transition: none;
-	}
 }
 
 //
 // Output begins
 
 /* ==========================================================================
-   CSSandbox version 0.0.7
-   http://www.thepixelsandbox.com
+   CSSandbox version 0.0.9
+   http://www.thepixelsandbox.com | https://github.com/ThePixelSandbox/CSSandbox
    MIT License
    ========================================================================== */
