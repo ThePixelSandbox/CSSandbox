@@ -23,151 +23,186 @@ body {
 	height: 100%;
 }
 
-.sidebar.menu {
-	color: #fff;
-	background: #1d1d1d url("../images/bg_leftnav.png") repeat-y 100% 100%;
-	height: 100%;
-	width: em(260px);
+@media #{$screen} {
 
-	h1 {
-		font-size: em(28px);
-		border-bottom: 1px solid #292929;
-		padding: rem(45px) 0 rem(35px) rem(25px);
-		margin: 0 0 rem(30px) 0;
-		& > a {
+	.sidebar {
+		&.menu {
+			height: 100%;
+			width: em(50px);
 			color: #fff;
-			text-decoration: none;
-			&:hover {
-				color: #ff2f19;
-			}
-		}
-	}
+			background: #1d1d1d url("../images/bg_leftnav.png") repeat-y 100% 100%;
+			& > .inlinemenu-wrapper {
+				display: none;
 
-	ul {
-		padding: 0 0 0 em(25px);
-		margin: 0;
-		& > li {
-			font-weight: 300;
-			font-size: em(16px);
-			list-style: none;
-			margin: 0 0 em(6px) 0;
-			& > a {
-				@include transition($property: all, $time: 200ms, $type: ease-out);
-				color: #fff;
-				text-decoration: none;
+				h1 {
+					font-size: em(28px);
+					border-bottom: 1px solid #292929;
+					padding: rem(45px) 0 rem(35px) rem(25px);
+					margin: 0 0 rem(30px) 0;
+					& > a {
+						color: #fff;
+						text-decoration: none;
+						&:hover {
+							color: #ff2f19;
+						}
+					}
+				}
+
+				ul {
+					padding: 0 0 0 em(25px);
+					margin: 0;
+					& > li {
+						font-weight: 300;
+						font-size: em(16px);
+						list-style: none;
+						margin: 0 0 em(6px) 0;
+						& > a {
+							@include transition($property: all, $time: 200ms, $type: ease-out);
+							color: #fff;
+							text-decoration: none;
+							display: block;
+							&:hover {
+								color: #ff2f19;
+								background: #1d1d1d url("../images/bg_leftnav_li.png") repeat-y 100% 100%;
+							}
+							&.active {
+								color: #ff2f19;
+								background: #1d1d1d url("../images/bg_leftnav_li.png") repeat-y 100% 100%;
+							}
+						}
+					}
+				}
+
+				.download {
+					margin: em(50px) em(35px) 0 em(25px);
+					& > .button {
+						border-radius: 0;
+					}
+					& > .fork-github {
+						text-align: center;
+						font-size: em(12px);
+						padding: rem(15px) 0 0 0;
+						& > a {
+							text-decoration: none;
+							color: #4f4f4f;
+							&:hover {
+								color: #fff;
+							}
+						}
+					}
+				}
+			}
+			& > .inlinemenu-view {
 				display: block;
-				&:hover {
-					color: #ff2f19;
-					background: #1d1d1d url("../images/bg_leftnav_li.png") repeat-y 100% 100%;
-				}
-				&.active {
-					color: #ff2f19;
-					background: #1d1d1d url("../images/bg_leftnav_li.png") repeat-y 100% 100%;
-				}
+			}
+		}
+		&.content {
+			margin: 0 0 0 em(50px);
+		}
+	}
+
+	.doc-box {
+		& > .row {
+			padding: em(60px) 0 em(60px) em(50px);
+			& > .col {
+				padding: 0;
 			}
 		}
 	}
 
-	.download {
-		margin: em(50px) em(35px) 0 em(25px);
-		& > .button {
-			border-radius: 0;
+	#iconic-docs {
+		.teaser {
 		}
-		& > .fork-github {
-			text-align: center;
-			font-size: em(12px);
-			padding: rem(15px) 0 0 0;
-			& > a {
-				text-decoration: none;
-				color: #4f4f4f;
-				&:hover {
+	}
+
+	#the-end {
+		background: #d52f19 url("../images/bg_the-end.jpg");
+		color: #fff;
+		.row {
+			padding: em(60px) 0 em(60px) em(50px);
+			.col {
+				padding: 0;
+				h4 {
 					color: #fff;
+					font-size: em(42px);
+					margin: 0 0 rem(20px) 0;
+				}
+				.subheader {
+					color: #f4f4f4;
+					padding: 0 0 em(20px) 0;
+				}
+				.btn {
+					&.submit-ideas {
+						@include button($border: 1px solid #fff, $border-radius: 0,$font-size: em(16px), $background: none, $text-color: #fff, 
+										$height: em(45px), $width: em(290px), $darken-text: true);
+					}
 				}
 			}
 		}
 	}
-}
 
-.sidebar.content {
-	margin: 0 0 0 em(260px);
-}
-
-.doc-box {
-	& > .row {
-
-		padding: em(60px) 0 em(60px) em(50px);
-		& > .col {
-			padding: 0;
-		}
-	}
-}
-
-#iconic-docs {
-	.teaser {
-	}
-}
-
-#the-end {
-	background: #d52f19 url("../images/bg_the-end.jpg");
-	color: #fff;
-	.row {
-		padding: em(60px) 0 em(60px) em(50px);
-		.col {
-			padding: 0;
-			h4 {
-				color: #fff;
-				font-size: em(42px);
-				margin: 0 0 rem(20px) 0;
-			}
-			.subheader {
-				color: #f4f4f4;
-				padding: 0 0 em(20px) 0;
-			}
-			.btn {
-				&.submit-ideas {
-					@include button($border: 1px solid #fff, $border-radius: 0,$font-size: em(16px), $background: none, $text-color: #fff, 
-									$height: em(45px), $width: em(290px), $darken-text: true);
-				}
-			}
-		}
-	}
-}
-
-.footer {
-	background: #1d1d1d;
-	color: #4e4e4e;
-	padding: em(70px) 0 em(80px) em(50px);
-	h5 {
-		font-weight: 400;
-		font-size: em(14px);
+	.footer {
+		background: #1d1d1d;
 		color: #4e4e4e;
-		margin: 0;
-		padding: 0;
-	}
-	.lastcommit {
-		.feed {
-			color: $master-color;
-			font-weight: bold;
-			padding: 0 0 em(30px) 0;
-			margin: 0 0 em(30px) 0;
+		padding: em(70px) 0 em(80px) em(50px);
+		h5 {
+			font-weight: 400;
+			font-size: em(14px);
+			color: #4e4e4e;
+			margin: 0;
+			padding: 0;
+		}
+		.lastcommit {
+			.feed {
+				color: $master-color;
+				font-weight: bold;
+				padding: 0 0 em(30px) 0;
+				margin: 0 0 em(30px) 0;
+				background: url("../images/bg_footer_bar.png") no-repeat 0 100%;
+			}
+		}
+		.followus {
+			ul {
+				@include inline-list($item-margin: em(2px), $color: #fff, $font-size: em(16px), $link-color: $master-color, $font-weight: 600);
+				margin: 0;
+			}
+			padding: 0 0 rem(30px) 0;
 			background: url("../images/bg_footer_bar.png") no-repeat 0 100%;
 		}
-	}
-	.followus {
-		ul {
-			@include inline-list($item-margin: em(2px), $color: #fff, $font-size: em(16px), $link-color: $master-color, $font-weight: 600);
-			margin: 0;
+		.copyright {
+			font-size: em(14px);
+			padding: em(40px) 0 em(35px) 0; 
 		}
-		padding: 0 0 rem(30px) 0;
-		background: url("../images/bg_footer_bar.png") no-repeat 0 100%;
+		.linkbuilding {
+			ul {
+				@include inline-list($item-margin: em(2px), $color: #fff, $font-size: em(14px), $link-color: $master-color, $font-weight: 300);
+			}
+		}
 	}
-	.copyright {
-		font-size: em(14px);
-		padding: em(40px) 0 em(35px) 0; 
+
+}
+
+@media #{$large} {
+	.sidebar {
+		&.menu {
+			width: em(260px);
+			& > .inlinemenu-wrapper {
+				display: block;
+			}
+			& > .inlinemenu-view {
+				display: none;
+			}
+		}
+		&.content {
+			margin: 0 0 0 em(260px);
+		}
 	}
-	.linkbuilding {
-		ul {
-			@include inline-list($item-margin: em(2px), $color: #fff, $font-size: em(14px), $link-color: $master-color, $font-weight: 300);
+}
+
+@media #{$medium} {
+	.teaser {
+		.medium-8 {
+			padding: 0 0 0 em(50px) !important;
 		}
 	}
 }
