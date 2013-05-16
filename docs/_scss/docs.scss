@@ -109,8 +109,8 @@ body {
 	}
 
 	.doc-box {
+		padding: em(40px) em(20px) em(40px) em(20px);
 		& > .row {
-			padding: em(40px) em(20px) em(40px) em(20px);
 			& > .col {
 				padding: 0;
 			}
@@ -216,17 +216,13 @@ body {
 
 @media #{$small} {
 	.doc-box {
-		& > .row {
-			padding: em(50px) em(30px) em(50px) em(30px);
-		}
+		padding: em(50px) em(30px) em(50px) em(30px);
 	}
 }
 
 @media #{$medium} {
 	.doc-box {
-		& > .row {
-			padding: em(60px) em(50px) em(60px) em(50px);
-		}
+		padding: em(60px) em(50px) em(60px) em(50px);
 	}
 	.teaser {
 		.medium-8 {
