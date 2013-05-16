@@ -40,11 +40,11 @@ $icon-color:        $master-base-color !default;
    Icon color presets
    ========================================================================== */
 
-   .iconic-white {
+   [class*="iconic-"].white {
         color: #fff;
    }
 
-   .iconic-black {
+   [class*="iconic-"].black {
         color: #000;
    }
 

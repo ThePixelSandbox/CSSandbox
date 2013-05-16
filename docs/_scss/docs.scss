@@ -31,8 +31,10 @@ body {
 			width: em(50px);
 			color: #fff;
 			background: #1d1d1d url("../images/bg_leftnav.png") repeat-y 100% 100%;
+			overflow: auto;
 			& > .inlinemenu-wrapper {
 				display: none;
+
 
 				h1 {
 					font-size: em(28px);
@@ -93,7 +95,12 @@ body {
 				}
 			}
 			& > .inlinemenu-view {
+				padding: em(13px);
 				display: block;
+				cursor: pointer;
+				i {
+					font-size: 28px;
+				}
 			}
 		}
 		&.content {
@@ -103,25 +110,50 @@ body {
 
 	.doc-box {
 		& > .row {
-			padding: em(60px) 0 em(60px) em(50px);
+			padding: em(40px) em(20px) em(40px) em(20px);
 			& > .col {
 				padding: 0;
 			}
 		}
 	}
 
-	#iconic-docs {
-		.teaser {
+	#iconic-header {
+		background: #19a5b9;
+		color: #fff;
+		h1 {
+			color: #fff;
+			margin: 0 0 em(5px) 0;
+		}
+		h3 {
+			color: #b5f4fd;
+			font-weight: 400;
+			font-size: em(22px);
+			margin: 0 0 em(30px) 0;
+		}
+		p {
+			font-weight: 300;
+		}
+		.btn {
+			margin: em(20px) 0 0 0;
+			@include button($border: 1px solid #fff, $border-radius: 0,$font-size: em(14px), $font-weight: 600, $background: #fff, $text-color: #1d1d1d, 
+				$height: rem(40px), $width: rem(210px), $darken-text: true);	
 		}
 	}
+
+	#iconic-docs {
+		h2 {
+			margin: 0 0 rem(20px) 0;
+			padding: 0 0 rem(20px) 0;
+			border-bottom: 3px solid #19a5b9;
+		}
+	}
+
 
 	#the-end {
 		background: #d52f19 url("../images/bg_the-end.jpg");
 		color: #fff;
 		.row {
-			padding: em(60px) 0 em(60px) em(50px);
 			.col {
-				padding: 0;
 				h4 {
 					color: #fff;
 					font-size: em(42px);
@@ -133,8 +165,8 @@ body {
 				}
 				.btn {
 					&.submit-ideas {
-						@include button($border: 1px solid #fff, $border-radius: 0,$font-size: em(16px), $background: none, $text-color: #fff, 
-										$height: em(45px), $width: em(290px), $darken-text: true);
+					@include button($border: 1px solid #fff, $border-radius: 0,$font-size: em(16px), $background: none, $text-color: #fff, 
+										$height: rem(45px), $width: rem(290px), $darken-text: true);	
 					}
 				}
 			}
@@ -182,6 +214,27 @@ body {
 
 }
 
+@media #{$small} {
+	.doc-box {
+		& > .row {
+			padding: em(50px) em(30px) em(50px) em(30px);
+		}
+	}
+}
+
+@media #{$medium} {
+	.doc-box {
+		& > .row {
+			padding: em(60px) em(50px) em(60px) em(50px);
+		}
+	}
+	.teaser {
+		.medium-8 {
+			padding: 0 0 0 em(50px) !important;
+		}
+	}
+}
+
 @media #{$large} {
 	.sidebar {
 		&.menu {
@@ -195,14 +248,6 @@ body {
 		}
 		&.content {
 			margin: 0 0 0 em(260px);
-		}
-	}
-}
-
-@media #{$medium} {
-	.teaser {
-		.medium-8 {
-			padding: 0 0 0 em(50px) !important;
 		}
 	}
 }
