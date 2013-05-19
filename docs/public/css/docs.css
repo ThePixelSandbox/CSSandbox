@@ -1,6 +1,6 @@
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,700,300");
 /* ==========================================================================
-   CSSandbox version 0.0.9
+   CSSandbox version 0.0.10
    http://www.thepixelsandbox.com | https://github.com/ThePixelSandbox/CSSandbox
    MIT License
    ========================================================================== */
@@ -1371,21 +1371,24 @@ body {
       .doc-box h3.gray {
         border-bottom: 1px solid #e5e5e5; }
 
-  #iconic-header {
+  #welcome #welcome-header h1 {
+    margin: 0; }
+
+  #iconic #iconic-header {
     background: #19a5b9;
     color: #fff; }
-    #iconic-header h1 {
+    #iconic #iconic-header h1 {
       color: #fff;
       margin: 0 0 0.3125rem 0; }
-    #iconic-header h3 {
+    #iconic #iconic-header h3 {
       color: #b5f4fd;
       font-weight: 400;
       font-size: 1.375rem;
       margin: 0 0 1.875rem 0;
       padding: 0; }
-    #iconic-header p {
+    #iconic #iconic-header p {
       font-weight: 300; }
-    #iconic-header .btn {
+    #iconic #iconic-header .btn {
       margin: 1.25em 0 0 0;
       width: 13.125rem;
       min-height: 2.5rem;
@@ -1407,37 +1410,36 @@ body {
       -ms-transition: background-color 200ms linear;
       -o-transition: background-color 200ms linear;
       transition: background-color 200ms linear; }
-      #iconic-header .btn a {
+      #iconic #iconic-header .btn a {
         margin: 0 -10px;
         padding: 0 10px;
         display: block;
         width: auto;
         height: 100%; }
-      #iconic-header .btn, #iconic-header .btn a {
+      #iconic #iconic-header .btn, #iconic #iconic-header .btn a {
         color: #1d1d1d; }
-      #iconic-header .btn a:hover {
+      #iconic #iconic-header .btn a:hover {
         color: black; }
-      #iconic-header .btn:hover {
+      #iconic #iconic-header .btn:hover {
         background: #e8e8e8;
         color: black; }
-      #iconic-header .btn,
-      #iconic-header .btn a {
+      #iconic #iconic-header .btn,
+      #iconic #iconic-header .btn a {
         text-decoration: none !important; }
-    #iconic-header .icons {
+    #iconic #iconic-header .icons {
       margin: 0 0 0 3.125rem; }
-      #iconic-header .icons i {
+      #iconic #iconic-header .icons i {
         font-size: 3.875rem;
         display: inline-block;
         width: 5.25rem;
         height: 5.25rem;
         text-align: center;
         margin: 0 0 0.3125rem 0; }
-
-  #iconic-docs .preview .highlights {
+  #iconic #iconic-docs .preview .highlights {
     color: #19a5b9; }
-  #iconic-docs .preview .icons {
+  #iconic #iconic-docs .preview .icons {
     margin: 1.875em 0 1.5625em -0.625em; }
-    #iconic-docs .preview .icons i {
+    #iconic #iconic-docs .preview .icons i {
       color: #303030;
       width: 1.9375rem;
       height: 1.9375rem;
