@@ -18,6 +18,8 @@
 
 // Custom stylesheet
 
+$orange: #ff2f19;
+
 html,
 body {
 	height: 100%;
@@ -45,7 +47,7 @@ body {
 						color: #fff;
 						text-decoration: none;
 						&:hover {
-							color: #ff2f19;
+							color: $orange;
 						}
 					}
 				}
@@ -64,11 +66,11 @@ body {
 							text-decoration: none;
 							display: block;
 							&:hover {
-								color: #ff2f19;
+								color: $orange;
 								background: #1d1d1d url("../images/bg_leftnav_li.png") repeat-y 100% 100%;
 							}
 							&.active {
-								color: #ff2f19;
+								color: $orange;
 								background: #1d1d1d url("../images/bg_leftnav_li.png") repeat-y 100% 100%;
 							}
 						}
@@ -121,6 +123,9 @@ body {
 			&.blue {
 				border-bottom: 3px solid #19a5b9;
 			}
+			&.orange {
+				border-bottom: 3px solid $orange;
+			}
 		}
 		h3 {
 			margin: rem(10px) 0 rem(15px) 0;
@@ -133,8 +138,37 @@ body {
 
 	#welcome {
 		#welcome-header {
+			background: url("../images/bg_welcome.jpg") no-repeat 100% 0%;
 			h1 {
-				margin: 0;
+				margin: 0 0 rem(20px) 0;
+				font-size: rem(48px);
+				font-weight: 600;
+			}
+			h2 {
+				&.subheader {
+					font-size: rem(22px);
+					font-weight: 400;
+					color: #575757;
+					.highlights {
+						font-weight: 500;
+						color: $orange;
+					}
+				}
+				margin: 0 0 rem(20px) 0;
+			}
+			p {
+				margin: 0 0 em(40px);
+				color: #1d1d1d;
+			}
+			.btn {
+				&.visit-github {
+					margin: 0 0 rem(50px) 0;
+					@include button($border: 1px solid #fff, $border-radius: 0,$font-size: em(16px), $background: none, $text-color: #fff, 
+									$height: rem(45px), $width: rem(290px), $darken-text: true);	
+					&:hover a {
+						color: black !important;
+					}
+				}
 			}
 		}
 	}

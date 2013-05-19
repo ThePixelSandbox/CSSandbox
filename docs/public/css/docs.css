@@ -1365,14 +1365,71 @@ body {
       padding: 0 0 1.25rem 0; }
       .doc-box h2.blue {
         border-bottom: 3px solid #19a5b9; }
+      .doc-box h2.orange {
+        border-bottom: 3px solid #ff2f19; }
     .doc-box h3 {
       margin: 0.625rem 0 0.9375rem 0;
       padding: 0 0 0.9375rem 0; }
       .doc-box h3.gray {
         border-bottom: 1px solid #e5e5e5; }
 
-  #welcome #welcome-header h1 {
-    margin: 0; }
+  #welcome #welcome-header {
+    background: url("../images/bg_welcome.jpg") no-repeat 100% 0%; }
+    #welcome #welcome-header h1 {
+      margin: 0 0 1.25rem 0;
+      font-size: 3rem;
+      font-weight: 600; }
+    #welcome #welcome-header h2 {
+      margin: 0 0 1.25rem 0; }
+      #welcome #welcome-header h2.subheader {
+        font-size: 1.375rem;
+        font-weight: 400;
+        color: #575757; }
+        #welcome #welcome-header h2.subheader .highlights {
+          font-weight: 500;
+          color: #ff2f19; }
+    #welcome #welcome-header p {
+      margin: 0 0 2.5em;
+      color: #1d1d1d; }
+    #welcome #welcome-header .btn.visit-github {
+      margin: 0 0 3.125rem 0;
+      width: 18.125rem;
+      min-height: 2.8125rem;
+      line-height: 2.8125rem;
+      padding: 0 10px;
+      font-size: 1em;
+      background: none;
+      color: white;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      border-radius: 0;
+      border: 1px solid white;
+      background: none;
+      display: inline-block;
+      font-weight: 600;
+      text-align: center;
+      -webkit-transition: background-color 200ms linear;
+      -moz-transition: background-color 200ms linear;
+      -ms-transition: background-color 200ms linear;
+      -o-transition: background-color 200ms linear;
+      transition: background-color 200ms linear; }
+      #welcome #welcome-header .btn.visit-github a {
+        margin: 0 -10px;
+        padding: 0 10px;
+        display: block;
+        width: auto;
+        height: 100%; }
+      #welcome #welcome-header .btn.visit-github, #welcome #welcome-header .btn.visit-github a {
+        color: white; }
+      #welcome #welcome-header .btn.visit-github a:hover {
+        color: #cccccc; }
+      #welcome #welcome-header .btn.visit-github:hover {
+        color: #cccccc; }
+      #welcome #welcome-header .btn.visit-github,
+      #welcome #welcome-header .btn.visit-github a {
+        text-decoration: none !important; }
+      #welcome #welcome-header .btn.visit-github:hover a {
+        color: black !important; }
 
   #iconic #iconic-header {
     background: #19a5b9;
