@@ -1361,6 +1361,7 @@ body {
     .doc-box > .row > .col {
       padding: 0; }
     .doc-box h2 {
+      font-size: 1.625rem;
       margin: 0 0 1.25rem 0;
       padding: 0 0 1.25rem 0; }
       .doc-box h2.blue {
@@ -1368,6 +1369,7 @@ body {
       .doc-box h2.orange {
         border-bottom: 3px solid #ff2f19; }
     .doc-box h3 {
+      font-size: 1.375rem;
       margin: 0.625rem 0 0.9375rem 0;
       padding: 0 0 0.9375rem 0; }
       .doc-box h3.gray {
@@ -1440,7 +1442,6 @@ body {
     #iconic #iconic-header h3 {
       color: #b5f4fd;
       font-weight: 400;
-      font-size: 1.375rem;
       margin: 0 0 1.875rem 0;
       padding: 0; }
     #iconic #iconic-header p {
