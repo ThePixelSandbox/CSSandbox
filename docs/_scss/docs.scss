@@ -177,7 +177,25 @@ body {
 
 	#getting-started {
 		#getting-started-docs {
-
+			.poi-teaser {
+				padding: 0 0 em(20px) 0;
+			}
+			.poi {
+				margin: 0 em(-15px);
+				h3 {
+					margin: 0;
+					a {
+						color: $master-color;
+						text-decoration: none;
+						&:hover {
+							text-decoration: underline;
+						}
+					}
+				}
+				.col {
+					padding: em(10px) em(15px) em(35px) em(15px);
+				}
+			}
 		}
 	}
 

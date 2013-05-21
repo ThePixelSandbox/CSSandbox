@@ -1433,6 +1433,20 @@ body {
       #welcome #welcome-header .btn.visit-github:hover a {
         color: black !important; }
 
+  #getting-started #getting-started-docs .poi-teaser {
+    padding: 0 0 1.25em 0; }
+  #getting-started #getting-started-docs .poi {
+    margin: 0 -0.9375em; }
+    #getting-started #getting-started-docs .poi h3 {
+      margin: 0; }
+      #getting-started #getting-started-docs .poi h3 a {
+        color: #ff2f19;
+        text-decoration: none; }
+        #getting-started #getting-started-docs .poi h3 a:hover {
+          text-decoration: underline; }
+    #getting-started #getting-started-docs .poi .col {
+      padding: 0.625em 0.9375em 2.1875em 0.9375em; }
+
   #iconic #iconic-header {
     background: #19a5b9;
     color: #fff; }
