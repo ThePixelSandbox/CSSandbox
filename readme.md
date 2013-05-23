@@ -2,17 +2,12 @@
 Simple yet powerfull responsive mobile first framework
 
 
-## History
-Why make yet another responsive framework?<br>
-Because the market is needing one: Lightweight sass framework, but not too light!
-
-
 ## Install
 Fell free to download it from here.
 
 
 ## How to use it
-Please note that there is no documentation at the time writing this.<br>
+Please note that the documentation is - work of progress, and is not available for public, yet<br>
 You can always read the code to get started.
 
 
