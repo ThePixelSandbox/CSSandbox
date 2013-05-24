@@ -7,7 +7,7 @@ Fell free to download it from here.
 
 
 ## How to use it
-Please note that the documentation is - work of progress, and is not available for public, yet<br>
+Please note that the documentation is - work in progress, and is not available for public, yet<br>
 You can always read the code to get started.
 
 
