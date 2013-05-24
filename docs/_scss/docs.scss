@@ -179,6 +179,16 @@ body {
 		#getting-started-docs {
 			.poi-teaser {
 				padding: 0 0 em(20px) 0;
+				h1 {
+					font-size: rem(34px);
+				}
+				.subheader {
+					font-size: em(18px);
+					line-height: 150%;
+				}
+				h2 {
+					margin: rem(50px) 0 1.25rem 0;
+				}
 			}
 			.poi {
 				margin: 0 em(-15px);
