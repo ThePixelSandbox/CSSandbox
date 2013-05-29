@@ -1293,68 +1293,74 @@ body {
   height: 100%; }
 
 @media only screen {
-  .sidebar.menu {
-    height: 100%;
-    width: 3.125em;
-    color: #fff;
-    background: #1d1d1d url("../images/bg_leftnav.png") repeat-y 100% 100%;
-    overflow: auto; }
-    .sidebar.menu > .inlinemenu-wrapper {
-      display: none; }
-      .sidebar.menu > .inlinemenu-wrapper h1 {
-        font-size: 1.75em;
-        border-bottom: 1px solid #292929;
-        padding: 2.8125rem 0 2.1875rem 1.5625rem;
-        margin: 0 0 1.875rem 0; }
-        .sidebar.menu > .inlinemenu-wrapper h1 > a {
-          color: #fff;
-          text-decoration: none; }
-          .sidebar.menu > .inlinemenu-wrapper h1 > a:hover {
-            color: #ff2f19; }
-      .sidebar.menu > .inlinemenu-wrapper ul {
-        padding: 0 0 0 1.5625em;
-        margin: 0; }
-        .sidebar.menu > .inlinemenu-wrapper ul > li {
-          font-weight: 300;
-          font-size: 1em;
-          list-style: none;
-          margin: 0 0 0.375em 0; }
-          .sidebar.menu > .inlinemenu-wrapper ul > li > a {
-            -webkit-transition: all 200ms ease-out;
-            -moz-transition: all 200ms ease-out;
-            -ms-transition: all 200ms ease-out;
-            -o-transition: all 200ms ease-out;
-            transition: all 200ms ease-out;
+  .sidebar {
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    transition: all 300ms ease-out; }
+    .sidebar.menu {
+      height: 100%;
+      width: 3.125em;
+      color: #fff;
+      background: #1d1d1d url("../images/bg_leftnav.png") repeat-y 100% 100%;
+      overflow: auto; }
+      .sidebar.menu > .inlinemenu-wrapper {
+        display: none; }
+        .sidebar.menu > .inlinemenu-wrapper h1 {
+          font-size: 1.75em;
+          border-bottom: 1px solid #292929;
+          padding: 2.8125rem 0 2.1875rem 1.5625rem;
+          margin: 0 0 1.875rem 0; }
+          .sidebar.menu > .inlinemenu-wrapper h1 > a {
             color: #fff;
-            text-decoration: none;
-            display: block; }
-            .sidebar.menu > .inlinemenu-wrapper ul > li > a:hover {
-              color: #ff2f19;
-              background: #1d1d1d url("../images/bg_leftnav_li.png") repeat-y 100% 100%; }
-            .sidebar.menu > .inlinemenu-wrapper ul > li > a.active {
-              color: #ff2f19;
-              background: #1d1d1d url("../images/bg_leftnav_li.png") repeat-y 100% 100%; }
-      .sidebar.menu > .inlinemenu-wrapper .download {
-        margin: 3.125em 2.1875em 0 1.5625em; }
-        .sidebar.menu > .inlinemenu-wrapper .download > .button {
-          border-radius: 0; }
-        .sidebar.menu > .inlinemenu-wrapper .download > .fork-github {
-          text-align: center;
-          font-size: 0.75em;
-          padding: 0.9375rem 0 0 0; }
-          .sidebar.menu > .inlinemenu-wrapper .download > .fork-github > a {
-            text-decoration: none;
-            color: #4f4f4f; }
-            .sidebar.menu > .inlinemenu-wrapper .download > .fork-github > a:hover {
-              color: #fff; }
-    .sidebar.menu > .inlinemenu-view {
-      padding: 0.8125em;
-      display: block;
-      cursor: pointer; }
-      .sidebar.menu > .inlinemenu-view i {
-        font-size: 28px; }
-  .sidebar.content {
-    margin: 0 0 0 3.125em; }
+            text-decoration: none; }
+            .sidebar.menu > .inlinemenu-wrapper h1 > a:hover {
+              color: #ff2f19; }
+        .sidebar.menu > .inlinemenu-wrapper ul {
+          padding: 0 0 0 1.5625em;
+          margin: 0; }
+          .sidebar.menu > .inlinemenu-wrapper ul > li {
+            font-weight: 300;
+            font-size: 1em;
+            list-style: none;
+            margin: 0 0 0.375em 0; }
+            .sidebar.menu > .inlinemenu-wrapper ul > li > a {
+              -webkit-transition: all 200ms ease-out;
+              -moz-transition: all 200ms ease-out;
+              -ms-transition: all 200ms ease-out;
+              -o-transition: all 200ms ease-out;
+              transition: all 200ms ease-out;
+              color: #fff;
+              text-decoration: none;
+              display: block; }
+              .sidebar.menu > .inlinemenu-wrapper ul > li > a:hover {
+                color: #ff2f19;
+                background: #1d1d1d url("../images/bg_leftnav_li.png") repeat-y 100% 100%; }
+              .sidebar.menu > .inlinemenu-wrapper ul > li > a.active {
+                color: #ff2f19;
+                background: #1d1d1d url("../images/bg_leftnav_li.png") repeat-y 100% 100%; }
+        .sidebar.menu > .inlinemenu-wrapper .download {
+          margin: 3.125em 2.1875em 0 1.5625em; }
+          .sidebar.menu > .inlinemenu-wrapper .download > .button {
+            border-radius: 0; }
+          .sidebar.menu > .inlinemenu-wrapper .download > .fork-github {
+            text-align: center;
+            font-size: 0.75em;
+            padding: 0.9375rem 0 0 0; }
+            .sidebar.menu > .inlinemenu-wrapper .download > .fork-github > a {
+              text-decoration: none;
+              color: #4f4f4f; }
+              .sidebar.menu > .inlinemenu-wrapper .download > .fork-github > a:hover {
+                color: #fff; }
+      .sidebar.menu > .inlinemenu-view {
+        padding: 0.8125em;
+        display: block;
+        cursor: pointer; }
+        .sidebar.menu > .inlinemenu-view i {
+          font-size: 28px; }
+    .sidebar.content {
+      margin: 0 0 0 3.125em; }
 
   .doc-box {
     padding: 2.5em 1.25em 2.5em 1.25em; }
