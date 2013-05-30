@@ -1304,7 +1304,7 @@ body {
       width: 3.125em;
       color: #fff;
       background: #1d1d1d url("../images/bg_leftnav.png") repeat-y 100% 100%;
-      overflow: auto; }
+      overflow-y: auto; }
       .sidebar.menu > .inlinemenu-wrapper {
         display: none; }
         .sidebar.menu > .inlinemenu-wrapper h1 {
@@ -1341,7 +1341,7 @@ body {
                 color: #ff2f19;
                 background: #1d1d1d url("../images/bg_leftnav_li.png") repeat-y 100% 100%; }
         .sidebar.menu > .inlinemenu-wrapper .download {
-          margin: 3.125em 2.1875em 0 1.5625em; }
+          margin: 3.125em 2.1875em 1.875em 1.5625em; }
           .sidebar.menu > .inlinemenu-wrapper .download > .button {
             border-radius: 0; }
           .sidebar.menu > .inlinemenu-wrapper .download > .fork-github {
@@ -1359,6 +1359,16 @@ body {
         cursor: pointer; }
         .sidebar.menu > .inlinemenu-view i {
           font-size: 28px; }
+      .sidebar.menu:hover {
+        z-index: 100; }
+        .sidebar.menu:hover.menu {
+          width: 16.25em; }
+          .sidebar.menu:hover.menu > .inlinemenu-wrapper {
+            display: block; }
+          .sidebar.menu:hover.menu > .inlinemenu-view {
+            display: none; }
+        .sidebar.menu:hover.content {
+          margin: 0 0 0 16.25em; }
     .sidebar.content {
       margin: 0 0 0 3.125em; }
 

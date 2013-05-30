@@ -34,10 +34,9 @@ body {
 			width: em(50px);
 			color: #fff;
 			background: #1d1d1d url("../images/bg_leftnav.png") repeat-y 100% 100%;
-			overflow: auto;
+			overflow-y: auto;
 			& > .inlinemenu-wrapper {
 				display: none;
-
 
 				h1 {
 					font-size: em(28px);
@@ -79,7 +78,7 @@ body {
 				}
 
 				.download {
-					margin: em(50px) em(35px) 0 em(25px);
+					margin: em(50px) em(35px) em(30px) em(25px);
 					& > .button {
 						border-radius: 0;
 					}
@@ -103,6 +102,21 @@ body {
 				cursor: pointer;
 				i {
 					font-size: 28px;
+				}
+			}
+			&:hover {
+				z-index: 100;
+				&.menu {
+					width: em(260px);
+					& > .inlinemenu-wrapper {
+						display: block;
+					}
+					& > .inlinemenu-view {
+						display: none;
+					}
+				}
+				&.content {
+					margin: 0 0 0 em(260px);
 				}
 			}
 		}
