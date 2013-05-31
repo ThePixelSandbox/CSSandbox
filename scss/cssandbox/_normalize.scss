@@ -1,6 +1,5 @@
-
 /* ==========================================================================
-   Normalize.css v2.1.1 | git.io/normalize | MIT License 
+   Normalize.css v2.1.2 | git.io/normalize | MIT License 
    ========================================================================== */
 
 // Correct `block` display not defined in IE 8/9. 
@@ -30,17 +29,13 @@ audio:not([controls]) {
    Base
    ========================================================================== */
 
-// 1. Prevent system color scheme's background color being used in Firefox, IE and Opera.
-// 2. Prevent system color scheme's text color being used in Firefox, IE, and Opera.
-// 3. Set default font family to sans-serif.
-// 4. Prevent iOS text size adjust after orientation change, without disabling user zoom.
+// 1. Set default font family to sans-serif.
+// 2. Prevent iOS text size adjust after orientation change, without disabling
 
 html {
-    background: #fff; // 1
-    color: #000; // 2
-    font-family: sans-serif; // 3
-    -ms-text-size-adjust: 100%; // 4
-    -webkit-text-size-adjust: 100%; // 4
+    font-family: sans-serif; // 1
+    -ms-text-size-adjust: 100%; // 2
+    -webkit-text-size-adjust: 100%; // 2
 }
 
 // Remove default margin.
