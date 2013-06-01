@@ -31,3 +31,23 @@
 .hide-large-down {
 	display: none;
 }
+
+// Small visibility breakpoint
+@media #{$medium} {
+	
+}
+
+// Medium visibility breakpoint
+@media #{$medium} {
+	
+}
+
+// Large visibility breakpoint
+@media #{$large} {
+	
+}
+
+// Big visibility breakpoint
+@media #{$big} {
+	
+}
