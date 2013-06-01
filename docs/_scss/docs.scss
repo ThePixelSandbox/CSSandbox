@@ -3,21 +3,24 @@
 @import "_settings.scss"; 
 
 // Feel free to pull out files you dont need
-// It's not recommended to out comment normalize and global
+// It's not recommended to out comment normalize, grids and global
+// The framework is made upon these files
 @import
-  "../scss/cssandbox/normalize",
-  "../scss/cssandbox/global", 
-  "../scss/cssandbox/grids",
-  "../scss/cssandbox/icon-fonts",
-  "../scss/cssandbox/typography",
-  "../scss/cssandbox/forms",
-  "../scss/cssandbox/top-nav",
-  "../scss/cssandbox/side-nav",
-  "../scss/cssandbox/buttons",
-  "../scss/cssandbox/tabels"; 
+  "cssandbox/normalize",
+  "cssandbox/global", 
+  "cssandbox/grids",
+  "cssandbox/visibility",
+  "cssandbox/typography",
+  "cssandbox/forms",
+  "cssandbox/top-nav",
+  "cssandbox/side-nav",
+  "cssandbox/inline-nav",
+  "cssandbox/buttons",
+  "cssandbox/tabels",
+  "cssandbox/icon-fonts"; 
+
 
 // Custom stylesheet
-
 $orange: #ff2f19;
 
 html,

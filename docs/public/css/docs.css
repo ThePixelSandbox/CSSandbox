@@ -5,7 +5,7 @@
    MIT License
    ========================================================================== */
 /* ==========================================================================
-   Normalize.css v2.1.1 | git.io/normalize | MIT License 
+   Normalize.css v2.1.2 | git.io/normalize | MIT License 
    ========================================================================== */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
   display: block; }
@@ -24,8 +24,6 @@ audio:not([controls]) {
    Base
    ========================================================================== */
 html {
-  background: #fff;
-  color: #000;
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%; }
@@ -547,6 +545,283 @@ body {
   .big-offset-12 {
     margin-left: 100%; } }
 /* ==========================================================================
+   Visibility
+   ========================================================================== */
+.show-small,
+.show-medium,
+.show-large,
+.show-big {
+  display: none; }
+
+.hide-small,
+.hide-medium,
+.hide-large,
+.hide-big {
+  display: none; }
+
+.show-small-up,
+.show-medium-up,
+.show-large-up {
+  display: none; }
+
+.hide-medium-down,
+.hide-large-down {
+  display: none; }
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+ul {
+  margin: 0.5em 0 0.95em 1.45em;
+  padding: 0; }
+  ul li {
+    font-weight: 600;
+    text-align: left;
+    font-size: inherit;
+    list-style-type: disc; }
+  ul.inline {
+    margin: 0 0 1em 0; }
+    ul.inline li {
+      list-style-type: none;
+      margin: 0 0.625em 0 0;
+      display: inline-block;
+      font-size: 1em;
+      font-weight: 600;
+      color: inherit; }
+      ul.inline li a {
+        color: #555555;
+        text-decoration: none; }
+        ul.inline li a:hover {
+          color: #888888; }
+
+a {
+  color: #555555;
+  text-decoration: underline;
+  -webkit-transition: color 200ms ease-in;
+  -moz-transition: color 200ms ease-in;
+  -ms-transition: color 200ms ease-in;
+  -o-transition: color 200ms ease-in;
+  transition: color 200ms ease-in; }
+  a:visited {
+    color: #555555; }
+  a.active {
+    color: #ff2f19; }
+  a:hover, a:focus {
+    color: #ff2f19; }
+
+p {
+  margin: 0.1em 0 1.3em 0;
+  font-size: 1em;
+  font-weight: 300;
+  color: inherit; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #282828;
+  margin: 0.2em 0 0.85em 0;
+  line-height: 1.1em;
+  font-weight: 600; }
+
+h1 {
+  font-size: 2.5em; }
+
+h2 {
+  font-size: 2em; }
+
+h3 {
+  font-size: 1.75em; }
+
+h4 {
+  font-size: 1.25em; }
+
+h5 {
+  font-size: 1em; }
+
+h6 {
+  font-size: 0.85em; }
+
+.sidebar.fixed {
+  position: fixed; }
+
+/* ==========================================================================
+   Button styles
+   ========================================================================== */
+.button,
+input[type="button"] {
+  width: auto;
+  min-height: 2.5rem;
+  line-height: 2.5rem;
+  padding: 0 0.625rem;
+  font-size: 1em;
+  background: #ff2f19;
+  color: white;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: none;
+  background: #ff2f19;
+  display: inline-block;
+  font-weight: 600;
+  text-align: center;
+  -webkit-transition: background-color 200ms linear;
+  -moz-transition: background-color 200ms linear;
+  -ms-transition: background-color 200ms linear;
+  -o-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+  /* ==========================================================================
+     Button color classes
+     ========================================================================== */ }
+  .button a,
+  input[type="button"] a {
+    margin: 0 -0.625rem;
+    padding: 0 0.625rem;
+    display: block;
+    width: auto;
+    height: 100%; }
+  .button, .button a,
+  input[type="button"],
+  input[type="button"] a {
+    color: white; }
+  .button:hover,
+  input[type="button"]:hover {
+    background: #ea1600; }
+  .button,
+  .button a,
+  input[type="button"],
+  input[type="button"] a {
+    text-decoration: none !important; }
+  .button.small,
+  input[type="button"].small {
+    width: auto;
+    min-height: 1.875rem;
+    line-height: 1.875rem;
+    padding: 0 0.625rem;
+    font-size: 0.75rem; }
+    .button.small a,
+    input[type="button"].small a {
+      margin: 0 -0.625rem;
+      padding: 0 0.625rem;
+      display: block;
+      width: auto;
+      height: 100%; }
+  .button.medium,
+  input[type="button"].medium {
+    width: auto;
+    min-height: 2.5rem;
+    line-height: 2.5rem;
+    padding: 0 1.25rem;
+    font-size: 0.875rem; }
+    .button.medium a,
+    input[type="button"].medium a {
+      margin: 0 -1.25rem;
+      padding: 0 1.25rem;
+      display: block;
+      width: auto;
+      height: 100%; }
+  .button.large,
+  input[type="button"].large {
+    width: auto;
+    min-height: 3.125rem;
+    line-height: 3.125rem;
+    padding: 0 1.875rem;
+    font-size: 1rem; }
+    .button.large a,
+    input[type="button"].large a {
+      margin: 0 -1.875rem;
+      padding: 0 1.875rem;
+      display: block;
+      width: auto;
+      height: 100%; }
+  .button.fluid,
+  input[type="button"].fluid {
+    width: 100%;
+    min-height: 2.8125rem;
+    line-height: 2.8125rem;
+    padding: 0 1.875rem;
+    font-size: 1.125rem; }
+    .button.fluid a,
+    input[type="button"].fluid a {
+      margin: 0 -1.875rem;
+      padding: 0 1.875rem;
+      display: block;
+      width: auto;
+      height: 100%; }
+  .button > [class*="iconic-"],
+  input[type="button"] > [class*="iconic-"] {
+    line-height: inherit !important; }
+  .button.disable, .button.disable > a,
+  input[type="button"].disable,
+  input[type="button"].disable > a {
+    background: #bdbbb7;
+    pointer-events: none;
+                      /* Does not Work in IE, to disable links in IE 
+						 or older browsers use Javascript */
+    opacity: 0.6;
+    cursor: default; }
+  .button.warning,
+  input[type="button"].warning {
+    background: #ffbf11;
+    color: #8f6f19; }
+    .button.warning, .button.warning a,
+    input[type="button"].warning,
+    input[type="button"].warning a {
+      color: #8f6f19; }
+    .button.warning a:hover,
+    input[type="button"].warning a:hover {
+      color: #382c0a; }
+    .button.warning:hover,
+    input[type="button"].warning:hover {
+      background: #e2a500;
+      color: #382c0a; }
+  .button.info,
+  input[type="button"].info {
+    background: #2489c5;
+    color: white; }
+    .button.info, .button.info a,
+    input[type="button"].info,
+    input[type="button"].info a {
+      color: white; }
+    .button.info:hover,
+    input[type="button"].info:hover {
+      background: #1d6e9e; }
+  .button.success,
+  input[type="button"].success {
+    background: #00cc82;
+    color: white; }
+    .button.success, .button.success a,
+    input[type="button"].success,
+    input[type="button"].success a {
+      color: white; }
+    .button.success:hover,
+    input[type="button"].success:hover {
+      background: #009e65; }
+  .button.unknown,
+  input[type="button"].unknown {
+    background: #232323;
+    color: #ebebeb; }
+    .button.unknown, .button.unknown a,
+    input[type="button"].unknown,
+    input[type="button"].unknown a {
+      color: #ebebeb; }
+    .button.unknown a:hover,
+    input[type="button"].unknown a:hover {
+      color: #b8b8b8; }
+    .button.unknown:hover,
+    input[type="button"].unknown:hover {
+      background: #0c0c0c;
+      color: #b8b8b8; }
+  .button.alert,
+  input[type="button"].alert {
+    background: red;
+    color: white; }
+    .button.alert, .button.alert a,
+    input[type="button"].alert,
+    input[type="button"].alert a {
+      color: white; }
+    .button.alert:hover,
+    input[type="button"].alert:hover {
+      background: #d10000; }
+
+/* ==========================================================================
    Icon classes
    ========================================================================== */
 @font-face {
@@ -1034,259 +1309,6 @@ body {
 
 .iconic-spin_alt:before {
   content: '\e037'; }
-
-/* ==========================================================================
-   Typography
-   ========================================================================== */
-ul {
-  margin: 0.5em 0 0.95em 1.45em;
-  padding: 0; }
-  ul li {
-    font-weight: 600;
-    text-align: left;
-    font-size: inherit;
-    list-style-type: disc; }
-  ul.inline {
-    margin: 0 0 1em 0; }
-    ul.inline li {
-      list-style-type: none;
-      margin: 0 0.625em 0 0;
-      display: inline-block;
-      font-size: 1em;
-      font-weight: 600;
-      color: inherit; }
-      ul.inline li a {
-        color: #555555;
-        text-decoration: none; }
-        ul.inline li a:hover {
-          color: #888888; }
-
-a {
-  color: #555555;
-  text-decoration: underline;
-  -webkit-transition: color 200ms ease-in;
-  -moz-transition: color 200ms ease-in;
-  -ms-transition: color 200ms ease-in;
-  -o-transition: color 200ms ease-in;
-  transition: color 200ms ease-in; }
-  a:visited {
-    color: #555555; }
-  a.active {
-    color: #ff2f19; }
-  a:hover, a:focus {
-    color: #ff2f19; }
-
-p {
-  margin: 0.1em 0 1.3em 0;
-  font-size: 1em;
-  font-weight: 300;
-  color: inherit; }
-
-h1, h2, h3, h4, h5, h6 {
-  color: #282828;
-  margin: 0.2em 0 0.85em 0;
-  line-height: 1.1em;
-  font-weight: 600; }
-
-h1 {
-  font-size: 2.5em; }
-
-h2 {
-  font-size: 2em; }
-
-h3 {
-  font-size: 1.75em; }
-
-h4 {
-  font-size: 1.25em; }
-
-h5 {
-  font-size: 1em; }
-
-h6 {
-  font-size: 0.85em; }
-
-.sidebar.fixed {
-  position: fixed; }
-
-/* ==========================================================================
-   Button styles
-   ========================================================================== */
-.button,
-input[type="button"] {
-  width: auto;
-  min-height: 2.5rem;
-  line-height: 2.5rem;
-  padding: 0 0.625rem;
-  font-size: 1em;
-  background: #ff2f19;
-  color: white;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  border: none;
-  background: #ff2f19;
-  display: inline-block;
-  font-weight: 600;
-  text-align: center;
-  -webkit-transition: background-color 200ms linear;
-  -moz-transition: background-color 200ms linear;
-  -ms-transition: background-color 200ms linear;
-  -o-transition: background-color 200ms linear;
-  transition: background-color 200ms linear;
-  /* ==========================================================================
-     Button color classes
-     ========================================================================== */ }
-  .button a,
-  input[type="button"] a {
-    margin: 0 -0.625rem;
-    padding: 0 0.625rem;
-    display: block;
-    width: auto;
-    height: 100%; }
-  .button, .button a,
-  input[type="button"],
-  input[type="button"] a {
-    color: white; }
-  .button:hover,
-  input[type="button"]:hover {
-    background: #ea1600; }
-  .button,
-  .button a,
-  input[type="button"],
-  input[type="button"] a {
-    text-decoration: none !important; }
-  .button.small,
-  input[type="button"].small {
-    width: auto;
-    min-height: 1.875rem;
-    line-height: 1.875rem;
-    padding: 0 0.625rem;
-    font-size: 0.75rem; }
-    .button.small a,
-    input[type="button"].small a {
-      margin: 0 -0.625rem;
-      padding: 0 0.625rem;
-      display: block;
-      width: auto;
-      height: 100%; }
-  .button.medium,
-  input[type="button"].medium {
-    width: auto;
-    min-height: 2.5rem;
-    line-height: 2.5rem;
-    padding: 0 1.25rem;
-    font-size: 0.875rem; }
-    .button.medium a,
-    input[type="button"].medium a {
-      margin: 0 -1.25rem;
-      padding: 0 1.25rem;
-      display: block;
-      width: auto;
-      height: 100%; }
-  .button.large,
-  input[type="button"].large {
-    width: auto;
-    min-height: 3.125rem;
-    line-height: 3.125rem;
-    padding: 0 1.875rem;
-    font-size: 1rem; }
-    .button.large a,
-    input[type="button"].large a {
-      margin: 0 -1.875rem;
-      padding: 0 1.875rem;
-      display: block;
-      width: auto;
-      height: 100%; }
-  .button.fluid,
-  input[type="button"].fluid {
-    width: 100%;
-    min-height: 2.8125rem;
-    line-height: 2.8125rem;
-    padding: 0 1.875rem;
-    font-size: 1.125rem; }
-    .button.fluid a,
-    input[type="button"].fluid a {
-      margin: 0 -1.875rem;
-      padding: 0 1.875rem;
-      display: block;
-      width: auto;
-      height: 100%; }
-  .button > [class*="iconic-"],
-  input[type="button"] > [class*="iconic-"] {
-    line-height: inherit !important; }
-  .button.disable, .button.disable > a,
-  input[type="button"].disable,
-  input[type="button"].disable > a {
-    background: #bdbbb7;
-    pointer-events: none;
-                      /* Does not Work in IE, to disable links in IE 
-						 or older browsers use Javascript */
-    opacity: 0.6;
-    cursor: default; }
-  .button.warning,
-  input[type="button"].warning {
-    background: #ffbf11;
-    color: #8f6f19; }
-    .button.warning, .button.warning a,
-    input[type="button"].warning,
-    input[type="button"].warning a {
-      color: #8f6f19; }
-    .button.warning a:hover,
-    input[type="button"].warning a:hover {
-      color: #382c0a; }
-    .button.warning:hover,
-    input[type="button"].warning:hover {
-      background: #e2a500;
-      color: #382c0a; }
-  .button.info,
-  input[type="button"].info {
-    background: #2489c5;
-    color: white; }
-    .button.info, .button.info a,
-    input[type="button"].info,
-    input[type="button"].info a {
-      color: white; }
-    .button.info:hover,
-    input[type="button"].info:hover {
-      background: #1d6e9e; }
-  .button.success,
-  input[type="button"].success {
-    background: #00cc82;
-    color: white; }
-    .button.success, .button.success a,
-    input[type="button"].success,
-    input[type="button"].success a {
-      color: white; }
-    .button.success:hover,
-    input[type="button"].success:hover {
-      background: #009e65; }
-  .button.unknown,
-  input[type="button"].unknown {
-    background: #232323;
-    color: #ebebeb; }
-    .button.unknown, .button.unknown a,
-    input[type="button"].unknown,
-    input[type="button"].unknown a {
-      color: #ebebeb; }
-    .button.unknown a:hover,
-    input[type="button"].unknown a:hover {
-      color: #b8b8b8; }
-    .button.unknown:hover,
-    input[type="button"].unknown:hover {
-      background: #0c0c0c;
-      color: #b8b8b8; }
-  .button.alert,
-  input[type="button"].alert {
-    background: red;
-    color: white; }
-    .button.alert, .button.alert a,
-    input[type="button"].alert,
-    input[type="button"].alert a {
-      color: white; }
-    .button.alert:hover,
-    input[type="button"].alert:hover {
-      background: #d10000; }
 
 html,
 body {
