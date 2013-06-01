@@ -1,3 +1,28 @@
 //
 //  Version 0.0.12
 //  Read the docs for more information howto use
+
+.show-small,
+.show-medium,
+.show-large,
+.show-big {
+	display: none;
+}
+
+.hide-small,
+.hide-medium,
+.hide-large,
+.hide-big {
+	display: none;
+}
+
+.show-small-up,
+.show-medium-up,
+.show-large-up {
+	display: none;
+}
+
+.hide-medium-down,
+.hide-large-down {
+	display: none;
+}
