@@ -7,24 +7,25 @@
    Visibility
    ========================================================================== */
 
+// Overwrite the users none important styles
 .show-small,
 .show-medium,
 .show-large,
 .show-big {
-	display: none;
+	display: none !important;
 }
 
 .hide-small,
 .hide-medium,
 .hide-large,
 .hide-big {
-	display: none;
+	display: none !important;
 }
 
 .show-small-up,
 .show-medium-up,
 .show-large-up {
-	display: none;
+	display: none !important;
 }
 
 .hide-medium-down,
