@@ -30,11 +30,11 @@
 
 .hide-medium-down,
 .hide-large-down {
-	display: none;
+	display: none !important;
 }
 
 // Small visibility breakpoint
-@media #{$medium} {
+@media #{$small} {
 	
 }
 

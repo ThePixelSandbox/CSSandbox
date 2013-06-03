@@ -551,22 +551,22 @@ body {
 .show-medium,
 .show-large,
 .show-big {
-  display: none; }
+  display: none !important; }
 
 .hide-small,
 .hide-medium,
 .hide-large,
 .hide-big {
-  display: none; }
+  display: none !important; }
 
 .show-small-up,
 .show-medium-up,
 .show-large-up {
-  display: none; }
+  display: none !important; }
 
 .hide-medium-down,
 .hide-large-down {
-  display: none; }
+  display: none !important; }
 
 /* ==========================================================================
    Typography
