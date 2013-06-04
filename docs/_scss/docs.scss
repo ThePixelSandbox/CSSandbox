@@ -63,16 +63,18 @@ body {
 						font-size: em(16px);
 						list-style: none;
 						margin: 0 0 em(6px) 0;
+						&.active {
+							a {
+								color: $orange;
+								background: #1d1d1d url("../images/bg_leftnav_li.png") repeat-y 100% 100%;
+							}
+						}
 						& > a {
 							@include transition(all, 200ms, ease-out);
 							color: #fff;
 							text-decoration: none;
 							display: block;
 							&:hover {
-								color: $orange;
-								background: #1d1d1d url("../images/bg_leftnav_li.png") repeat-y 100% 100%;
-							}
-							&.active {
 								color: $orange;
 								background: #1d1d1d url("../images/bg_leftnav_li.png") repeat-y 100% 100%;
 							}

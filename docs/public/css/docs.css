@@ -1347,6 +1347,9 @@ body {
             font-size: 1em;
             list-style: none;
             margin: 0 0 0.375em 0; }
+            .sidebar.menu > .inlinemenu-wrapper ul > li.active a {
+              color: #ff2f19;
+              background: #1d1d1d url("../images/bg_leftnav_li.png") repeat-y 100% 100%; }
             .sidebar.menu > .inlinemenu-wrapper ul > li > a {
               -webkit-transition: all 200ms ease-out;
               -moz-transition: all 200ms ease-out;
@@ -1357,9 +1360,6 @@ body {
               text-decoration: none;
               display: block; }
               .sidebar.menu > .inlinemenu-wrapper ul > li > a:hover {
-                color: #ff2f19;
-                background: #1d1d1d url("../images/bg_leftnav_li.png") repeat-y 100% 100%; }
-              .sidebar.menu > .inlinemenu-wrapper ul > li > a.active {
                 color: #ff2f19;
                 background: #1d1d1d url("../images/bg_leftnav_li.png") repeat-y 100% 100%; }
         .sidebar.menu > .inlinemenu-wrapper .download {
