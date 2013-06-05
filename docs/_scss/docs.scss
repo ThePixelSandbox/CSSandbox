@@ -249,7 +249,7 @@ body {
 			.btn {
 				margin: em(20px) 0 0 0;
 				@include button($border: 1px solid #fff, $border-radius: 0,$font-size: em(14px), $font-weight: 600, $background: #fff, $text-color: #1d1d1d, 
-					$height: rem(40px), $width: rem(210px), $darken-text: true);	
+								$height: rem(40px), $width: rem(210px), $darken-text: true);	
 			}
 			.icons {
 				margin: 0 0 0 rem(50px);
