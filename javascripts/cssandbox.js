@@ -1,5 +1,5 @@
 //
-// Version 0.0.11
+// Version 0.0.13
 // CSSandbox.js is required to get the framework working correctly
 
 // Fixes transitions problem in some browser to run on page-load.
