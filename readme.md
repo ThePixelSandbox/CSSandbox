@@ -26,7 +26,7 @@ For more information about IE8 market share (Currently ~5%) see w3schools
 
 
 ## Developer Tools
-* [Sublime Text 2](http://www.sublimetext.com/) with [Phoenix theme](https://github.com/netatoo/phoenix-theme)
+* [Sublime Text 2(3)](http://www.sublimetext.com/) with [Phoenix theme](https://github.com/netatoo/phoenix-theme)
 * GitHub
 * Ruby with compass
 * Jekyll for the docs
