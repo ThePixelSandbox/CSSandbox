@@ -19,7 +19,7 @@
 .hide-medium,
 .hide-large,
 .hide-big {
-	display: none !important;
+	display: inherit !important;
 }
 
 .show-small-up,
@@ -35,20 +35,40 @@
 
 // Small visibility breakpoint
 @media #{$small} {
-	
+	.hide-small { 
+		display: none !important; 
+	}
+	.show-small { 
+		display: block !important; 
+	}
 }
 
 // Medium visibility breakpoint
 @media #{$medium} {
-	
+	.hide-medium { 
+		display: none !important;
+	}
+	.show-medium { 
+		display: block !important; 
+	}
 }
 
 // Large visibility breakpoint
 @media #{$large} {
-	
+	.hide-large { 
+		display: none !important;
+	}
+	.show-large { 
+		display: block !important; 
+	}
 }
 
 // Big visibility breakpoint
 @media #{$big} {
-	
+	.hide-big { 
+		display: none !important;
+	}
+	.show-big { 
+		display: block !important; 
+	}
 }
