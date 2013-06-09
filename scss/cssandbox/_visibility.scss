@@ -38,7 +38,8 @@
 	.hide-small { 
 		display: none !important; 
 	}
-	.show-small { 
+	.show-small,
+	.show-small-up { 
 		display: block !important; 
 	}
 }
@@ -48,7 +49,9 @@
 	.hide-medium { 
 		display: none !important;
 	}
-	.show-medium { 
+	.show-medium,
+	.show-small-up,
+	.show-medium-up { 
 		display: block !important; 
 	}
 }
@@ -58,7 +61,10 @@
 	.hide-large { 
 		display: none !important;
 	}
-	.show-large { 
+	.show-large,
+	.show-small-up,
+	.show-medium-up,
+	.show-large-up { 
 		display: block !important; 
 	}
 }
@@ -68,7 +74,10 @@
 	.hide-big { 
 		display: none !important;
 	}
-	.show-big { 
+	.show-big,
+	.show-small-up,
+	.show-medium-up,
+	.show-large-up { 
 		display: block !important; 
 	}
 }
