@@ -1476,6 +1476,16 @@ body {
       padding: 0 0 0.9375rem 0; }
       .doc-box h3.gray {
         border-bottom: 1px solid #e5e5e5; }
+    .doc-box.header h1 {
+      color: #fff;
+      margin: 0 0 0.3125rem 0; }
+    .doc-box.header h3 {
+      color: #fff;
+      font-weight: 400;
+      margin: 0 0 1.875rem 0;
+      padding: 0; }
+    .doc-box.header p {
+      font-weight: 300; }
 
   #welcome #welcome-header {
     background: url("../images/bg_welcome.jpg") no-repeat 100% 0%; }
@@ -1569,19 +1579,77 @@ body {
     #getting-started #getting-started-docs .structure .col {
       padding: 0.625em 0.9375em 2.1875em 0.9375em; }
 
+  #grids #grids-header {
+    background: #ff3500 url("../images/bg_grids.jpg") no-repeat 0% 0%;
+    color: #fff;
+    padding-bottom: 6.875em; }
+    #grids #grids-header h1 {
+      color: #fff; }
+    #grids #grids-header h3 {
+      color: #ff7263; }
+    #grids #grids-header .btn {
+      margin: 1.25em 0 0 0;
+      width: 13.125rem;
+      min-height: 2.5rem;
+      line-height: 2.5rem;
+      padding: 0 10px;
+      font-size: 0.875em;
+      background: white;
+      color: #1d1d1d;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      border-radius: 0;
+      border: 1px solid white;
+      background: white;
+      display: inline-block;
+      font-weight: 600;
+      text-align: center;
+      -webkit-transition: background-color 200ms linear;
+      -moz-transition: background-color 200ms linear;
+      -ms-transition: background-color 200ms linear;
+      -o-transition: background-color 200ms linear;
+      transition: background-color 200ms linear; }
+      #grids #grids-header .btn a {
+        margin: 0 -10px;
+        padding: 0 10px;
+        display: block;
+        width: auto;
+        height: 100%; }
+      #grids #grids-header .btn, #grids #grids-header .btn a {
+        color: #1d1d1d; }
+      #grids #grids-header .btn a:hover {
+        color: black; }
+      #grids #grids-header .btn:hover {
+        background: #e8e8e8;
+        color: black; }
+      #grids #grids-header .btn,
+      #grids #grids-header .btn a {
+        text-decoration: none !important; }
+  #grids #grids-docs .preview-grids {
+    padding: 0 0.625em; }
+    #grids #grids-docs .preview-grids .row {
+      margin-bottom: 0.5em; }
+      #grids #grids-docs .preview-grids .row .col {
+        -webkit-transition: all 300ms ease-out;
+        -moz-transition: all 300ms ease-out;
+        -ms-transition: all 300ms ease-out;
+        -o-transition: all 300ms ease-out;
+        transition: all 300ms ease-out;
+        background: #f8f8f8;
+        border: 1px solid #e4e4e4;
+        font-size: 0.75em;
+        line-height: 1.875rem;
+        height: 1.875rem; }
+        #grids #grids-docs .preview-grids .row .col:hover {
+          background: #ebebeb; }
+
   #iconic #iconic-header {
     background: #19a5b9 url("../images/bg_iconic.jpg") repeat;
     color: #fff; }
     #iconic #iconic-header h1 {
-      color: #fff;
-      margin: 0 0 0.3125rem 0; }
+      color: #fff; }
     #iconic #iconic-header h3 {
-      color: #b5f4fd;
-      font-weight: 400;
-      margin: 0 0 1.875rem 0;
-      padding: 0; }
-    #iconic #iconic-header p {
-      font-weight: 300; }
+      color: #b5f4fd; }
     #iconic #iconic-header .btn {
       margin: 1.25em 0 0 0;
       width: 13.125rem;
