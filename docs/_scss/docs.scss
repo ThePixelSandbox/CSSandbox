@@ -226,6 +226,25 @@ body {
 					padding: em(10px) em(15px) em(35px) em(15px);
 				}
 			}
+			.structure-header {
+				margin: em(30px) 0 em(30px) 0;
+			}
+			.structure {
+				margin: 0 em(-15px);
+				h3 {
+					margin: 0;
+					a {
+						color: $master-color;
+						text-decoration: none;
+						&:hover {
+							text-decoration: underline;
+						}
+					}
+				}
+				.col {
+					padding: em(10px) em(15px) em(35px) em(15px);
+				}
+			}
 		}
 	}
 
