@@ -1,5 +1,5 @@
 //
-//  Version 0.0.13
+//  Version 0.0.14
 //  Read the docs for more information howto use
 
 
@@ -37,7 +37,15 @@
 @media #{$small} {
 	.show-small,
 	.show-small-up { 
-		display: block !important; 
+		display: inherit !important;
+		&.inline {
+			display: inline !important;
+		}
+	}
+	.hide-medium,
+	.hide-large,
+	.hide-big {
+		display: inherit !important;
 	}
 	.hide-small { 
 		display: none !important; 
@@ -49,7 +57,13 @@
 	.show-medium,
 	.show-small-up,
 	.show-medium-up { 
-		display: block !important; 
+		display: inherit !important; 
+		&.inline {
+			display: inline !important;
+		}
+	}
+	.hide-small {
+		display: inherit !important;
 	}
 	.hide-medium { 
 		display: none !important;
@@ -62,7 +76,13 @@
 	.show-small-up,
 	.show-medium-up,
 	.show-large-up { 
-		display: block !important; 
+		display: inherit !important; 
+		&.inline {
+			display: inline !important;
+		}
+	}
+	.hide-medium {
+		display: inherit !important;
 	}
 	.hide-large { 
 		display: none !important;
@@ -73,9 +93,15 @@
 @media #{$big} {
 	.show-big,
 	.show-small-up,
-	.show-medium-up,
+	.show-medium-up, 
 	.show-large-up { 
-		display: block !important; 
+		display: inherit !important; 
+		&.inline {
+			display: inline !important;
+		}
+	}
+	.hide-large {
+		display: inherit !important;
 	}
 	.hide-big { 
 		display: none !important;
