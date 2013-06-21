@@ -9,6 +9,7 @@ tmp/
 backup*/
 stylesheets/
 _site/
+branches/
 
 *.Cache
 
