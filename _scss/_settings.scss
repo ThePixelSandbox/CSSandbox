@@ -1,0 +1,153 @@
+//
+// Version 0.0.9
+// Please make sure you always have the correct config file for your version
+// New variables are added all the time
+// You can always copy/paste new variables in where you want them
+
+// Setting CSS charset
+@charset "UTF-8";
+
+// *****************************************
+// ** Global variables
+// *****************************************
+
+// ** Change the font-size of the project.
+// ** This project uses em/rem, so please be carefull with your font-sizes in your own css.
+// $font-size: 16px;
+
+// ** Calulations in pixels insted of em/rem
+// ** Options: True, False, Both
+// ** If you chose to use em/rem as intended, please note that rem doesn't work in IE8
+// ** This can be fixed by using the variable both (will make rem calulations in pixels insted)
+// $pixels: false;
+
+// ** The main color used in this project
+// ** Will be used as link color and other stuff as default
+// ** Settings other color variables (For the "section") will overwrite this color
+// $master-color: #ff2f19 !default;
+// $master-base-color: #555555 !default;
+
+// ** Importing functions
+// ** Out commenting this will result in a compile error
+@import "../scss/cssandbox/functions";
+
+
+// *****************************************
+// ** Global variables
+// ** Req. _global.scss
+// *****************************************
+
+// ** Global Line-height
+// $line-height: 150%;
+
+// ** Use google webfonts - Default Open Sans
+// ** If you want to disable webfonts, use the value false
+// $webfont: "http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,700,300";
+
+// ** Global style variables
+// $body-background: #ffffff;
+// $body-font-color: #555555;
+// $body-font-family: "Open Sans", Arial, sans-serif;
+// $body-font-weight: 400;
+// $body-font-style: normal;
+
+
+// *****************************************
+// ** Grid variables
+// ** Req. _grids.scss
+// *****************************************
+
+// ** Max lenght per breakpoint row
+// $small-max-width: auto;
+// $medium-max-width: auto;
+// $large-max-width: auto;
+$big-max-width: 1000px;
+
+// ** Number of columns, space between and position
+// $grid-collumns: 12;
+// $grid-gutter: em(20px);
+$grid-float: left;
+
+// ** Grid breakpoints
+// $small-break: em(480px);
+// $medium-break: em(768px);
+// $large-break: em(960px);
+// $big-break: em(1280px);
+
+// ** Default float
+// $grid-col-float: left;
+
+// ** Offset from left/right
+// $offset-direction: left;
+
+
+// *****************************************
+// ** Button variables
+// ** Req. _buttons.scss
+// *****************************************
+
+// ** Border styles
+// $button-border-radius: 5px;
+// $button-border: none;
+
+// ** Coloring
+// $button-background: #ff2f19;
+// $button-color: #ffffff;
+// $button-disabled: #c1c1c1;
+
+// ** Typography
+// $button-font-size: em(16px);
+// $button-font-weight: 600;
+
+
+// *****************************************
+// ** Typography variables
+// ** Req. _typography.scss
+// *****************************************
+
+// ** List style variables
+// $list-font-weight: bold;
+// $list-text-align: left;
+// $list-font-size: inherit;
+// $list-style-type: disc;
+// $list-margin: 0.5em 0 0.95em 1.45em;
+
+// ** Inline list style variabels
+// $inline-list-margin: 0 0 1em 0;
+// $inline-list-item-margin: 0 em(10px) 0 0;
+// $inline-list-color: inherit;
+// $inline-list-font-size: 1em;
+
+// ** Link variabels
+// $link-color: $master-base-color;
+// $link-active-color: $master-color;
+// $link-decoration: underline;
+
+// ** Headline variabels
+// $headings-color: #282828;
+// $headings-font-weight: 600;
+// $headings-margin: 0.20em 0 0.85em 0;
+
+// ** Headline font-sizes
+// $h1-font-size: 2.5em;
+// $h2-font-size: 2.0em;
+// $h3-font-size: 1.75em;
+// $h4-font-size: 1.25em;
+// $h5-font-size: 1em;
+// $h6-font-size: 0.85em;
+
+// ** Paragraphs
+// $paragraph-font-size: 1em;
+$paragraph-font-weight: 300;
+// $paragraph-color: inherit;
+// $paragraph-margin: 0.10em 0 1.3em 0;
+
+
+// *****************************************
+// ** Icon fonts variables **
+// ** Req. _icon-fonts.scss
+// *****************************************
+
+// ** Chose your icons size
+// $icon-size: em(24px);
+// $icon-color: #555555;

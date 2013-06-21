@@ -1,0 +1,453 @@
+// Use this stylesheet to your custom codes.
+// Remember to import _settings.scss
+@import "_settings.scss"; 
+
+// Feel free to pull out files you dont need
+// It's not recommended to out comment normalize, grids and global
+// The framework is made upon these files
+@import
+  "cssandbox/normalize",
+  "cssandbox/global", 
+  "cssandbox/grids",
+  "cssandbox/visibility",
+  "cssandbox/typography",
+  "cssandbox/forms",
+  "cssandbox/top-nav",
+  "cssandbox/side-nav",
+  "cssandbox/inline-nav",
+  "cssandbox/buttons",
+  "cssandbox/tabels",
+  "cssandbox/icon-fonts"; 
+
+
+// Custom stylesheet
+$orange: #ff2f19;
+
+html,
+body {
+	height: 100%;
+}
+
+@media #{$screen} {
+
+	.sidebar {
+		@include transition(all, 300ms, ease-out);
+		&.menu {
+			height: 100%;
+			width: em(50px);
+			color: #fff;
+			background: #1d1d1d url("../images/bg_leftnav.png") repeat-y 100% 100%;
+			overflow-y: auto;
+			& > .inlinemenu-wrapper {
+				display: none;
+
+				h1 {
+					font-size: em(28px);
+					border-bottom: 1px solid #292929;
+					padding: rem(45px) 0 rem(35px) rem(25px);
+					margin: 0 0 rem(30px) 0;
+					& > a {
+						color: #fff;
+						text-decoration: none;
+						&:hover {
+							color: $orange;
+						}
+					}
+				}
+
+				ul {
+					padding: 0 0 0 em(25px);
+					margin: 0;
+					& > li {
+						font-weight: 300;
+						font-size: em(16px);
+						list-style: none;
+						margin: 0 0 em(6px) 0;
+						&.active {
+							a {
+								color: $orange;
+								background: #1d1d1d url("../images/bg_leftnav_li.png") repeat-y 100% 100%;
+							}
+						}
+						& > a {
+							@include transition(all, 200ms, ease-out);
+							color: #fff;
+							text-decoration: none;
+							display: block;
+							&:hover {
+								color: $orange;
+								background: #1d1d1d url("../images/bg_leftnav_li.png") repeat-y 100% 100%;
+							}
+						}
+					}
+				}
+
+				.download {
+					margin: em(50px) em(35px) em(30px) em(25px);
+					& > .button {
+						border-radius: 0;
+					}
+					& > .fork-github {
+						text-align: center;
+						font-size: em(12px);
+						padding: rem(15px) 0 0 0;
+						& > a {
+							text-decoration: none;
+							color: #4f4f4f;
+							&:hover {
+								color: #fff;
+							}
+						}
+					}
+				}
+			}
+			& > .inlinemenu-view {
+				padding: em(13px);
+				display: block;
+				cursor: pointer;
+				i {
+					font-size: 28px;
+				}
+			}
+			&:hover {
+				z-index: 100;
+				&.menu {
+					width: em(260px);
+					& > .inlinemenu-wrapper {
+						display: block;
+					}
+					& > .inlinemenu-view {
+						display: none;
+					}
+				}
+				&.content {
+					margin: 0 0 0 em(260px);
+				}
+			}
+		}
+		&.content {
+			margin: 0 0 0 em(50px);
+		}
+	}
+
+	.doc-box {
+		padding: em(40px) em(20px) em(40px) em(20px);
+		& > .row {
+			& > .col {
+				padding: 0;
+			}
+		}
+		h2 {
+			font-size: rem(26px);
+			margin: 0 0 rem(20px) 0;
+			padding: 0 0 rem(20px) 0;
+			&.blue {
+				border-bottom: 3px solid #19a5b9;
+			}
+			&.orange {
+				border-bottom: 3px solid $orange;
+			}
+		}
+		h3 {
+			font-size: rem(22px);
+			margin: rem(10px) 0 rem(15px) 0;
+			padding: 0 0 rem(15px) 0;
+			&.gray {
+				border-bottom: 1px solid #e5e5e5;
+			}
+		}
+		&.header {
+			h1 {
+				color: #fff;
+				margin: 0 0 rem(5px) 0;
+			}
+			h3 {
+				color: #fff;
+				font-weight: 400;
+				margin: 0 0 rem(30px) 0;
+				padding: 0;
+			}
+			p {
+				font-weight: 300;
+			}
+		}
+	}
+
+	#welcome {
+		#welcome-header {
+			background: url("../images/bg_welcome.jpg") no-repeat 100% 0%;
+			h1 {
+				margin: 0 0 rem(20px) 0;
+				font-size: rem(48px);
+				font-weight: 600;
+			}
+			h2 {
+				&.subheader {
+					font-size: rem(22px);
+					font-weight: 400;
+					color: #575757;
+					.highlights {
+						font-weight: 500;
+						color: $orange;
+					}
+				}
+				margin: 0 0 rem(20px) 0;
+			}
+			p {
+				margin: 0 0 em(40px);
+				color: #1d1d1d;
+			}
+			.btn {
+				&.visit-github {
+					margin: 0 0 rem(50px) 0;
+					@include button($border: 1px solid #fff, $border-radius: 0,$font-size: em(16px), $background: none, $text-color: #fff, 
+									$height: rem(45px), $width: rem(290px), $darken-text: true);	
+					&:hover a {
+						color: black !important;
+					}
+				}
+			}
+		}
+	}
+
+	#getting-started {
+		#getting-started-docs {
+			.poi-teaser {
+				padding: 0 0 em(20px) 0;
+				h1 {
+					font-size: rem(34px);
+				}
+				.subheader {
+					font-size: em(18px);
+					line-height: 150%;
+				}
+				h2 {
+					margin: rem(50px) 0 1.25rem 0;
+				}
+			}
+			.poi {
+				margin: 0 em(-15px);
+				h3 {
+					margin: 0;
+					a {
+						color: $master-color;
+						text-decoration: none;
+						&:hover {
+							text-decoration: underline;
+						}
+					}
+				}
+				.col {
+					padding: em(10px) em(15px) em(35px) em(15px);
+				}
+			}
+			.structure-header {
+				margin: em(30px) 0 em(30px) 0;
+			}
+			.structure {
+				margin: 0 em(-15px);
+				h3 {
+					margin: 0;
+					a {
+						color: $master-color;
+						text-decoration: none;
+						&:hover {
+							text-decoration: underline;
+						}
+					}
+				}
+				.col {
+					padding: em(10px) em(15px) em(35px) em(15px);
+				}
+			}
+		}
+	}
+ 
+	#grids {
+		#grids-header {
+			background: #ff3500 url("../images/bg_grids.jpg") no-repeat 0% 0%;
+			color: #fff;
+			padding-bottom: em(110px);
+			h1 {
+				color: #fff;
+			}
+			h3 {
+				color: #ff7263;
+			}
+			.btn {
+				margin: em(20px) 0 0 0;
+				@include button($border: 1px solid #fff, $border-radius: 0,$font-size: em(14px), $font-weight: 600, $background: #fff, $text-color: #1d1d1d, 
+								$height: rem(40px), $width: rem(210px), $darken-text: true);	
+			}
+		}
+		#grids-docs {
+			.overview {
+			}
+			.preview-grids {
+				padding: 0 em(10px);
+				.row {
+					margin-bottom: em(8px);
+					.col {
+						@include transition(all, 300ms, ease-out);
+						background: #f8f8f8;
+						border: 1px solid #e4e4e4;
+						font-size: em(12px);
+						line-height: rem(30px);
+						height: rem(30px);
+						&:hover {
+							background: darken(#f8f8f8, 5%);
+						}
+					}
+				}
+			}
+		}
+	}
+
+	#iconic {
+		#iconic-header {
+			background: #19a5b9 url("../images/bg_iconic.jpg") repeat;
+			color: #fff;
+			h1 {
+				color: #fff;
+			}
+			h3 {
+				color: #b5f4fd;
+			}
+			.btn {
+				margin: em(20px) 0 0 0;
+				@include button($border: 1px solid #fff, $border-radius: 0,$font-size: em(14px), $font-weight: 600, $background: #fff, $text-color: #1d1d1d, 
+								$height: rem(40px), $width: rem(210px), $darken-text: true);	
+			}
+			.icons {
+				margin: 0 0 0 rem(50px);
+				i {
+					font-size: rem(62px);
+					display: inline-block;
+					width: rem(84px);
+					height: rem(84px);
+					text-align: center;
+					margin: 0 0 rem(5px) 0;
+				}
+			}
+		}
+
+		#iconic-docs {
+			.howto {}
+			.preview {
+				.highlights {
+					color: #19a5b9;
+				}
+				.icons {
+					margin: em(30px) 0 em(25px) em(-10px);
+					i {
+						color: #303030;
+						width: rem(31px);
+						height: rem(31px);
+						margin: 0 0 rem(10px) rem(4px);
+						display: inline-block;
+						text-align: center;
+						cursor: pointer;
+					}
+				}
+			}
+		}
+	}
+
+	#the-end {
+		background: #d52f19 url("../images/bg_the-end.jpg");
+		color: #fff;
+		.row {
+			.col {
+				h4 {
+					color: #fff;
+					font-size: em(42px);
+					margin: 0 0 rem(20px) 0;
+				}
+				.subheader {
+					color: #f4f4f4;
+					padding: 0 0 em(20px) 0;
+				}
+				.btn {
+					&.submit-ideas {
+					@include button($border: 1px solid #fff, $border-radius: 0,$font-size: em(16px), $background: none, $text-color: #fff, 
+										$height: rem(45px), $width: rem(290px), $darken-text: true);	
+					}
+				}
+			}
+		}
+	}
+
+	.footer {
+		background: #1d1d1d;
+		color: #4e4e4e;
+		padding: em(70px) 0 em(80px) em(50px);
+		h5 {
+			font-weight: 400;
+			font-size: em(14px);
+			color: #4e4e4e;
+			margin: 0;
+			padding: 0;
+		}
+		.lastcommit {
+			.feed {
+				color: $master-color;
+				font-weight: bold;
+				padding: 0 0 em(30px) 0;
+				margin: 0 0 em(30px) 0;
+				background: url("../images/bg_footer_bar.png") no-repeat 0 100%;
+			}
+		}
+		.followus {
+			ul {
+				@include inline-list($item-margin: em(2px), $color: #fff, $font-size: em(16px), $link-color: $master-color, $font-weight: 600);
+				margin: 0;
+			}
+			padding: 0 0 rem(30px) 0;
+			background: url("../images/bg_footer_bar.png") no-repeat 0 100%;
+		}
+		.copyright {
+			font-size: em(14px);
+			padding: em(40px) 0 em(35px) 0; 
+		}
+		.linkbuilding {
+			ul {
+				@include inline-list($item-margin: em(2px), $color: #fff, $font-size: em(14px), $link-color: $master-color, $font-weight: 300);
+			}
+		}
+	}
+
+}
+
+@media #{$small} {
+	.doc-box {
+		padding: em(50px) em(30px) em(50px) em(30px);
+	}
+}
+
+@media #{$medium} {
+	.doc-box {
+		padding: em(60px) em(50px) em(60px) em(50px);
+	}
+	.teaser {
+		.medium-8 {
+			padding: 0 0 0 em(50px) !important;
+		}
+	}
+}
+
+@media #{$large} {
+	.sidebar {
+		&.menu {
+			width: em(260px);
+			& > .inlinemenu-wrapper {
+				display: block;
+			}
+			& > .inlinemenu-view {
+				display: none;
+			}
+		}
+		&.content {
+			margin: 0 0 0 em(260px);
+		}
+	}
+}

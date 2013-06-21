@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Header -->
+		{% include header.html %}
+	</head>
+	<body class="preload">
+
+		<div class="sidebar menu fixed">
+			<!-- Sidebar -->
+			{% include sidebar.html %}
+		</div>
+		<div class="sidebar content">
+		
+			{{ content }}
+
+			<div class="footer">
+				{% include footer.html %}
+			</div>
+		</div>
+
+		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+		<script type="text/javascript" src="/public/javascripts/cssandbox.js"></script>
+		<script type="text/javascript" src="/public/javascripts/jquery.pagescroller.lite.js"></script>
+		<script type="text/javascript" src="/public/javascripts/docs.js"></script>
+
+
+	</body>
+</html>
