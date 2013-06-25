@@ -1,4 +1,4 @@
-# [CSSandbox v0.0.13](http://www.thepixelsandbox.com)
+# [CSSandbox v0.1.0](http://www.thepixelsandbox.com)
 Simple yet powerfull responsive mobile first framework
 
 
@@ -7,7 +7,7 @@ Fell free to download it from here.
 
 
 ## How to use it
-Please note that the documentation is - work in progress, and is not available for public, yet<br>
+Please note that the documentation is "work in progress", and is not available for the public, yet<br>
 You can always read the code to get started.
 
 
