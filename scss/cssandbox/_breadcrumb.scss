@@ -7,9 +7,9 @@ $breadcrumb-height: 40px !default;
 $breadcrumb-padding: 15px !default;
 
 // Breadcrumb seperator variables
-$breadcrumb-seperation-width: 4px !default;
-$breadcrumb-seperation-background: url("../images/bg_breadcrumb.png") no-repeat 50% 50% !default;
-$breadcrumb-seperation-text: ">" !default;
+$breadcrumb-seperation-width: auto !default;
+$breadcrumb-seperation-background: none !default;
+$breadcrumb-seperation-text: "»" !default;
 
 .breadcrumb {
   height: $breadcrumb-height;
