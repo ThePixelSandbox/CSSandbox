@@ -101,20 +101,20 @@ $portrait: "only screen and (orientation: portrait)";
 /* ==========================================================================
    Medium breakpoint
    ========================================================================== */
-@media #{$medium} {
+@media #{$small} {
 	@include break-point($name: "medium", $max-width: $medium-max-width);
 }
 
 /* ==========================================================================
    Large breakpoint
    ========================================================================== */
-@media #{$large} {
+@media #{$medium} {
 	@include break-point($name: "large", $max-width: $large-max-width);
 }
 
 /* ==========================================================================
    Big breakpoint
    ========================================================================== */
-@media #{$big} {
+@media #{$large} {
 	@include break-point($name: "big", $max-width: $big-max-width);
 }
