@@ -2,5 +2,41 @@
 //  Version 0.1.1
 //  Read the docs for more information howto use
 
+// Breadcrumb variables
+$breadcrumb-height: 40px !default;
+$breadcrumb-padding: 15px !default;
+
+// Breadcrumb seperator variables
+$breadcrumb-seperation-width: 4px !default;
+$breadcrumb-seperation-background: url("../images/bg_breadcrumb.png") no-repeat 50% 50% !default;
+$breadcrumb-seperation-text: ">" !default;
+
 .breadcrumb {
+  height: $breadcrumb-height;
+	line-height: $breadcrumb-height;
+	.crumb {
+		display: inline-block;
+		vertical-align: top;
+		height: $breadcrumb-height;
+		&.home {
+			
+		}
+		&:after {
+			@if $breadcrumb-seperation-background != none {
+				text-indent: -9999px;
+			}
+			content: $breadcrumb-seperation-text;
+			display: inline-block;
+			vertical-align: top;
+			width: $breadcrumb-seperation-width;
+			background: $breadcrumb-seperation-background;
+			padding: 0 $breadcrumb-padding;
+		}
+		&.last {
+			&:after {
+				display: none;
+				content: "";
+			}
+		}
+	}
 }
