@@ -12,14 +12,19 @@ $breadcrumb-seperation-background: none !default;
 $breadcrumb-seperation-text: "»" !default;
 
 .breadcrumb {
-  height: $breadcrumb-height;
+	height: $breadcrumb-height;
 	line-height: $breadcrumb-height;
 	.crumb {
 		display: inline-block;
 		vertical-align: top;
 		height: $breadcrumb-height;
-		&.home {
-			
+		i {
+			font-size: $breadcrumb-height / 2;
+			line-height: $breadcrumb-height;
+			color: $breadcrumb-icon-color;
+			&:hover {
+				color: $master-color;
+			}
 		}
 		&:after {
 			@if $breadcrumb-seperation-background != none {
@@ -32,7 +37,8 @@ $breadcrumb-seperation-text: "»" !default;
 			background: $breadcrumb-seperation-background;
 			padding: 0 $breadcrumb-padding;
 		}
-		&.last {
+		&.active {
+			color: $master-color;
 			&:after {
 				display: none;
 				content: "";
