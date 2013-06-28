@@ -2,11 +2,15 @@
 //  Version 0.1.1
 //  Read the docs for more information howto use
 
-// Breadcrumb variables
+// Global
 $breadcrumb-height: 40px !default;
 $breadcrumb-padding: 15px !default;
+$breadcrumb-font-color: $master-base-color !default;
 
-// Breadcrumb seperator variables
+// If chosing to have a icon
+$breadcrumb-icon-color: $master-base-color !default;
+
+// Seperator variables
 $breadcrumb-seperation-width: auto !default;
 $breadcrumb-seperation-background: none !default;
 $breadcrumb-seperation-text: "»" !default;
@@ -18,7 +22,9 @@ $breadcrumb-seperation-text: "»" !default;
 		display: inline-block;
 		vertical-align: top;
 		height: $breadcrumb-height;
+		color: $breadcrumb-font-color;
 		i {
+			@include transition(color, 200ms, ease-out);
 			font-size: $breadcrumb-height / 2;
 			line-height: $breadcrumb-height;
 			color: $breadcrumb-icon-color;
@@ -36,6 +42,12 @@ $breadcrumb-seperation-text: "»" !default;
 			width: $breadcrumb-seperation-width;
 			background: $breadcrumb-seperation-background;
 			padding: 0 $breadcrumb-padding;
+		}
+		& > a {
+			color: $breadcrumb-font-color;
+			&:hover {
+				color: $master-color;
+			}
 		}
 		&.active {
 			color: $master-color;
