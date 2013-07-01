@@ -163,6 +163,31 @@
 
 
 // *****************************************
+// ** Tables variables
+// ** Req. _tables.scss
+// *****************************************
+
+// ** Global
+// $table-padding: em(10px);
+
+// ** Table header
+// $table-head-background: transparent;
+// $table-head-weight: $headings-font-weight;
+
+// ** Table cell
+// $table-cell-background: transparent;
+// $table-cell-odd-background: transparent;
+// $table-cell-even-background: transparent;
+
+// ** Border
+// $table-border: 1px solid #ccc; 
+// $table-cell-border-top: none; 
+// $table-cell-border-right: none; 
+// $table-cell-border-bottom: 1px solid #ccc; 
+// $table-cell-border-left: none; 
+
+
+// *****************************************
 // ** Icon fonts variables **
 // ** Req. _icon-fonts.scss
 // *****************************************

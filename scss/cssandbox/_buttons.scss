@@ -87,9 +87,9 @@ $button-font-weight:		600 !default;
 .button,
 input[type="button"] {
 
-	@include button($border: $button-border, $border-radius: $button-border-radius, 
-		$font-size: $button-font-size, $font-weight: $button-font-weight, $background: $button-background, 
-		$text-color: $button-color, $darken-text: false, $height: rem(40px), $left-right-padding: rem(10px) );
+	@include button($border: $button-border, $border-radius: $button-border-radius,
+		$font-size: $button-font-size, $font-weight: $button-font-weight, $background: $button-background,
+		$text-color: $button-color, $darken-text: false, $height: rem(40px), $left-right-padding: rem(10px));
 
 	// Button sizes
 	&.small {

@@ -1,0 +1,71 @@
+//
+//  Version 0.1.1
+//  Read the docs for more information howto use
+
+// Global
+$table-padding: em(10px) !default;
+
+// Table header
+$table-head-background: transparent !default;
+$table-head-weight: $headings-font-weight !default;
+
+// Table cell
+$table-cell-background: transparent !default;
+$table-cell-odd-background: transparent !default;
+$table-cell-even-background: transparent !default;
+
+// Border
+$table-border: 1px solid #ccc !default; 
+$table-cell-border-top: none !default; 
+$table-cell-border-right: none !default; 
+$table-cell-border-bottom: 1px solid #ccc !default; 
+$table-cell-border-left: none !default; 
+
+
+// Traditionals tables
+table {
+	thead {
+		tr {
+			background: $table-head-background;
+			th {
+				font-weight: $table-head-weight;
+			}
+		}
+	}
+	tbody {
+		tr {
+			td {
+				background: $table-cell-background;
+			}
+		}
+	}
+}
+
+// Div tables
+.table {
+	width: 100%;
+	height: auto;
+	display: table;
+	border: $table-border;
+	.tr {
+		display: table-row;
+		.td {
+			display: table-cell;
+			padding: $table-padding;
+			border-top: $table-cell-border-top;
+			border-right: $table-cell-border-right;
+			border-bottom: $table-cell-border-bottom;
+			border-left: $table-cell-border-left;
+		}
+		&:nth-child(even) {
+			background: $table-cell-even-background;
+		}
+		&:nth-child(odd) {
+			background: $table-cell-odd-background;
+		}
+		&.header {
+			background: $table-head-background;
+			font-weight: $table-head-weight;
+		}
+	}
+}
