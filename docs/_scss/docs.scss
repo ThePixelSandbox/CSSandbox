@@ -164,6 +164,37 @@ body {
 			p {
 				font-weight: 300;
 			}
+			&.orange {
+				background-color: #ff3500;
+				color: #fff;
+				padding-bottom: em(110px);
+				h1 {
+					color: #fff;
+				}
+				h3 {
+					color: #ff7263;
+				}
+				.btn {
+					margin: em(20px) 0 0 0;
+					@include button($border: 1px solid #fff, $border-radius: 0,$font-size: em(14px), $font-weight: 600, $background: #fff, $text-color: #1d1d1d, 
+									$height: rem(40px), $width: rem(210px), $darken-text: true);	
+				}
+			}
+			&.blue {
+				background-color: #19a5b9;
+				color: #fff;
+				h1 {
+					color: #fff;
+				}
+				h3 {
+					color: #b5f4fd;
+				}
+				.btn {
+					margin: em(20px) 0 0 0;
+					@include button($border: 1px solid #fff, $border-radius: 0,$font-size: em(14px), $font-weight: 600, $background: #fff, $text-color: #1d1d1d, 
+									$height: rem(40px), $width: rem(210px), $darken-text: true);	
+				}
+			}
 		}
 	}
 
@@ -260,22 +291,12 @@ body {
 	#grids {
 		#grids-header {
 			background: #ff3500 url("../images/bg_grids.jpg") no-repeat 0% 0%;
-			color: #fff;
-			padding-bottom: em(110px);
-			h1 {
-				color: #fff;
-			}
-			h3 {
-				color: #ff7263;
-			}
-			.btn {
-				margin: em(20px) 0 0 0;
-				@include button($border: 1px solid #fff, $border-radius: 0,$font-size: em(14px), $font-weight: 600, $background: #fff, $text-color: #1d1d1d, 
-								$height: rem(40px), $width: rem(210px), $darken-text: true);	
-			}
 		}
 		#grids-docs {
 			.overview {
+			}
+			.mixins {
+				margin: em(20px) 0 0 0;
 			}
 			.preview-grids {
 				padding: 0 em(10px);
@@ -297,21 +318,18 @@ body {
 		}
 	}
 
+	#navigation {
+		#navigation-header {
+
+		}
+		#navigation-docs {
+
+		}
+	}
+
 	#iconic {
 		#iconic-header {
 			background: #19a5b9 url("../images/bg_iconic.jpg") repeat;
-			color: #fff;
-			h1 {
-				color: #fff;
-			}
-			h3 {
-				color: #b5f4fd;
-			}
-			.btn {
-				margin: em(20px) 0 0 0;
-				@include button($border: 1px solid #fff, $border-radius: 0,$font-size: em(14px), $font-weight: 600, $background: #fff, $text-color: #1d1d1d, 
-								$height: rem(40px), $width: rem(210px), $darken-text: true);	
-			}
 			.icons {
 				margin: 0 0 0 rem(50px);
 				i {

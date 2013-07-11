@@ -1,4 +1,4 @@
-<div id="grids-header" class="doc-box header">
+<div id="grids-header" class="doc-box header orange">
 	<div class="row">
 		<div class="col medium-4">
 			<h1>The Grid</h1>
@@ -44,6 +44,51 @@
 			<div class="row">
 				<div class="col small-1">1</div><div class="col small-5">5</div><div class="col small-6">6</div>
 			</div>
+		</div>
+	</div>
+	<div class="row mixins">
+		<div class="col small-12">
+			<h3 class="gray">Creating your own grid</h3>
+			<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti.</p>
+
+{% highlight scss linenos %}
+@media only screen and (min-width: em(500px)) {
+	@include break-point($name: "inbetween", $max-width: em(720px));
+}
+{% endhighlight %}
+
+		</div>
+	</div>
+	<div class="row variables">
+		<div class="col small-12">
+			<h3 class="gray">Grid SCSS Variables</h3>
+			<p>Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti.</p>
+
+{% highlight scss linenos %}
+// Max lenght per breakpoint row
+$small-max-width: none;
+$medium-max-width: none;
+$large-max-width: none;
+$big-max-width: 1280px;
+
+// Number of columns, space between and position
+$grid-collumns: 12;
+$grid-gutter: em(20px);
+$grid-float: center;
+
+// Grid breakpoints
+$small-break: em(480px);
+$medium-break: em(768px);
+$large-break: em(960px);
+$big-break: em(1280px);
+
+// Default float
+$grid-col-float: left;
+
+// Offset from left/right
+$offset-direction: left;
+{% endhighlight %}
+
 		</div>
 	</div>
 </div>
