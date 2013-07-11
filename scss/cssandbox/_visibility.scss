@@ -34,7 +34,7 @@
 }
 
 // Small visibility breakpoint
-@media #{$small} {
+@media #{$screen} {
 	.show-small,
 	.show-small-up { 
 		display: inherit !important;
@@ -53,7 +53,7 @@
 }
 
 // Medium visibility breakpoint
-@media #{$medium} {
+@media #{$small} {
 	.show-medium,
 	.show-small-up,
 	.show-medium-up { 
@@ -71,7 +71,7 @@
 }
 
 // Large visibility breakpoint
-@media #{$large} {
+@media #{$medium} {
 	.show-large,
 	.show-small-up,
 	.show-medium-up,
@@ -90,7 +90,7 @@
 }
 
 // Big visibility breakpoint
-@media #{$big} {
+@media #{$large} {
 	.show-big,
 	.show-small-up,
 	.show-medium-up, 
