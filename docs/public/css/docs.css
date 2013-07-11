@@ -1,6 +1,7 @@
+@charset "CP850";
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,700,300");
 /* ==========================================================================
-   CSSandbox version 0.0.11
+   CSSandbox version 0.1.0
    http://www.thepixelsandbox.com | https://github.com/ThePixelSandbox/CSSandbox
    MIT License
    ========================================================================== */
@@ -196,6 +197,11 @@ body {
   -o-box-sizing: border-box;
   box-sizing: border-box; }
 
+.clear:after {
+  clear: both;
+  content: " ";
+  display: table; }
+
 .noTransition, body.preload * {
   -webkit-transition: none !important;
   -moz-transition: none !important;
@@ -237,7 +243,7 @@ body {
      Small breakpoint
      ========================================================================== */
   .row {
-    max-width: auto; }
+    max-width: none; }
 
   .small-1 {
     width: 8.33333%; }
@@ -313,9 +319,9 @@ body {
 /* ==========================================================================
    Medium breakpoint
    ========================================================================== */
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 30em) {
   .row {
-    max-width: auto; }
+    max-width: none; }
 
   .medium-1 {
     width: 8.33333%; }
@@ -391,9 +397,9 @@ body {
 /* ==========================================================================
    Large breakpoint
    ========================================================================== */
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 48em) {
   .row {
-    max-width: auto; }
+    max-width: none; }
 
   .large-1 {
     width: 8.33333%; }
@@ -469,7 +475,7 @@ body {
 /* ==========================================================================
    Big breakpoint
    ========================================================================== */
-@media only screen and (min-width: 80em) {
+@media only screen and (min-width: 60em) {
   .row {
     max-width: 1000px; }
 
@@ -568,7 +574,7 @@ body {
 .hide-large-down {
   display: none !important; }
 
-@media only screen and (min-width: 30em) {
+@media only screen {
   .show-small,
   .show-small-up {
     display: inherit !important; }
@@ -583,7 +589,7 @@ body {
 
   .hide-small {
     display: none !important; } }
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 30em) {
   .show-medium,
   .show-small-up,
   .show-medium-up {
@@ -598,7 +604,7 @@ body {
 
   .hide-medium {
     display: none !important; } }
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 48em) {
   .show-large,
   .show-small-up,
   .show-medium-up,
@@ -615,7 +621,7 @@ body {
 
   .hide-large {
     display: none !important; } }
-@media only screen and (min-width: 80em) {
+@media only screen and (min-width: 60em) {
   .show-big,
   .show-small-up,
   .show-medium-up,
@@ -705,6 +711,42 @@ h6 {
 
 .sidebar.fixed {
   position: fixed; }
+
+.breadcrumb {
+  height: 40px;
+  line-height: 40px; }
+  .breadcrumb .crumb {
+    display: inline-block;
+    vertical-align: top;
+    height: 40px;
+    color: #555555; }
+    .breadcrumb .crumb i {
+      -webkit-transition: color 200ms ease-out;
+      -moz-transition: color 200ms ease-out;
+      -ms-transition: color 200ms ease-out;
+      -o-transition: color 200ms ease-out;
+      transition: color 200ms ease-out;
+      font-size: 20px;
+      line-height: 40px;
+      color: #555555; }
+      .breadcrumb .crumb i:hover {
+        color: #ff2f19; }
+    .breadcrumb .crumb:after {
+      content: "»";
+      display: inline-block;
+      vertical-align: top;
+      width: auto;
+      background: none;
+      padding: 0 15px; }
+    .breadcrumb .crumb > a {
+      color: #555555; }
+      .breadcrumb .crumb > a:hover {
+        color: #ff2f19; }
+    .breadcrumb .crumb.active {
+      color: #ff2f19; }
+      .breadcrumb .crumb.active:after {
+        display: none;
+        content: ""; }
 
 /* ==========================================================================
    Button styles
@@ -884,6 +926,35 @@ input[type="button"] {
     .button.alert:hover,
     input[type="button"].alert:hover {
       background: #d10000; }
+
+table thead tr {
+  background: transparent; }
+  table thead tr th {
+    font-weight: 600; }
+table tbody tr td {
+  background: transparent; }
+
+.table {
+  width: 100%;
+  height: auto;
+  display: table;
+  border: 1px solid #cccccc; }
+  .table .tr {
+    display: table-row; }
+    .table .tr .td {
+      display: table-cell;
+      padding: 0.625em;
+      border-top: none;
+      border-right: none;
+      border-bottom: 1px solid #cccccc;
+      border-left: none; }
+    .table .tr:nth-child(even) {
+      background: transparent; }
+    .table .tr:nth-child(odd) {
+      background: transparent; }
+    .table .tr.header {
+      background: transparent;
+      font-weight: 600; }
 
 /* ==========================================================================
    Icon classes

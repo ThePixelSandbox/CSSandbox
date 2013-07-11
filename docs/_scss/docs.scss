@@ -1,24 +1,18 @@
-// Use this stylesheet to your custom codes.
-// Remember to import _settings.scss
-@import "_settings.scss"; 
-
-// Feel free to pull out files you dont need
-// It's not recommended to out comment normalize, grids and global
-// The framework is made upon these files
-@import
-  "cssandbox/normalize",
-  "cssandbox/global", 
-  "cssandbox/grids",
-  "cssandbox/visibility",
-  "cssandbox/typography",
-  "cssandbox/forms",
-  "cssandbox/top-nav",
-  "cssandbox/side-nav",
-  "cssandbox/inline-nav",
-  "cssandbox/buttons",
-  "cssandbox/tabels",
-  "cssandbox/icon-fonts"; 
-
+// Import components
+@import "settings";
+@import "cssandbox/normalize",
+		"cssandbox/global", 
+		"cssandbox/grids",
+		"cssandbox/visibility",
+		"cssandbox/typography",
+		"cssandbox/forms",
+		"cssandbox/top-nav",
+		"cssandbox/side-nav",
+		"cssandbox/inline-nav",
+		"cssandbox/breadcrumb",
+		"cssandbox/buttons",
+		"cssandbox/tables",
+		"cssandbox/icon-fonts"; 
 
 // Custom stylesheet
 $orange: #ff2f19;

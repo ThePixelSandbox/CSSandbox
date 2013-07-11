@@ -70,7 +70,7 @@ $portrait: "only screen and (orientation: portrait)";
 	.row {
 		@if $grid-float == center { 
 			margin: 0 auto;
-		} @else if $pixels == right {
+		} @else if $grid-float == right {
 			float: right;
 		}
 		position: relative;
