@@ -62,6 +62,7 @@
 // $medium-max-width: none;
 // $large-max-width: none;
 // $big-max-width: 1280px;
+// $huge-max-width: 1280px;
 
 // ** Number of columns, space between and position
 // $grid-collumns: 12;
@@ -69,10 +70,10 @@
 // $grid-float: center;
 
 // ** Grid breakpoints
-// $small-break: em(480px);
-// $medium-break: em(768px);
-// $large-break: em(960px);
-// $big-break: em(1280px);
+// $medium-min-width: em(480px);
+// $large-min-width: em(768px);
+// $big-min-width: em(960px);
+// $huge-min-width: em(1280px);
 
 // ** Default float
 // $grid-col-float: left;

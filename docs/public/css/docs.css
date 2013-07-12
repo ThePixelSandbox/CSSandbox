@@ -551,6 +551,84 @@ body {
   .big-offset-12 {
     margin-left: 100%; } }
 /* ==========================================================================
+   Huge breakpoint
+   ========================================================================== */
+@media only screen and (min-width: 80em) {
+  .row {
+    max-width: 1280px; }
+
+  .big-1 {
+    width: 8.33333%; }
+
+  .big-offset-1 {
+    margin-left: 8.33333%; }
+
+  .big-2 {
+    width: 16.66667%; }
+
+  .big-offset-2 {
+    margin-left: 16.66667%; }
+
+  .big-3 {
+    width: 25%; }
+
+  .big-offset-3 {
+    margin-left: 25%; }
+
+  .big-4 {
+    width: 33.33333%; }
+
+  .big-offset-4 {
+    margin-left: 33.33333%; }
+
+  .big-5 {
+    width: 41.66667%; }
+
+  .big-offset-5 {
+    margin-left: 41.66667%; }
+
+  .big-6 {
+    width: 50%; }
+
+  .big-offset-6 {
+    margin-left: 50%; }
+
+  .big-7 {
+    width: 58.33333%; }
+
+  .big-offset-7 {
+    margin-left: 58.33333%; }
+
+  .big-8 {
+    width: 66.66667%; }
+
+  .big-offset-8 {
+    margin-left: 66.66667%; }
+
+  .big-9 {
+    width: 75%; }
+
+  .big-offset-9 {
+    margin-left: 75%; }
+
+  .big-10 {
+    width: 83.33333%; }
+
+  .big-offset-10 {
+    margin-left: 83.33333%; }
+
+  .big-11 {
+    width: 91.66667%; }
+
+  .big-offset-11 {
+    margin-left: 91.66667%; }
+
+  .big-12 {
+    width: 100%; }
+
+  .big-offset-12 {
+    margin-left: 100%; } }
+/* ==========================================================================
    Visibility
    ========================================================================== */
 .show-small,

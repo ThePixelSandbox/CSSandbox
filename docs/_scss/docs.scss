@@ -15,11 +15,11 @@
 		"cssandbox/icon-fonts"; 
 
 // Custom stylesheet
-$orange: #ff2f19;
+$orange: #ff2f19; 
 
 html,
 body {
-	height: 100%;
+	height: 100%; 
 }
 
 @media #{$screen} {
@@ -430,13 +430,13 @@ body {
 
 }
 
-@media #{$small} {
+@media #{$medium} {
 	.doc-box {
 		padding: em(50px) em(30px) em(50px) em(30px);
 	}
 }
 
-@media #{$medium} {
+@media #{$large} {
 	.doc-box {
 		padding: em(60px) em(50px) em(60px) em(50px);
 	}
@@ -447,7 +447,7 @@ body {
 	}
 }
 
-@media #{$large} {
+@media #{$big} {
 	.sidebar {
 		&.menu {
 			width: em(260px);

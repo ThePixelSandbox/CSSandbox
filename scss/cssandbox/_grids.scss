@@ -9,6 +9,7 @@ $small-max-width: 		none !default;
 $medium-max-width: 		none !default;
 $large-max-width: 		none !default;
 $big-max-width: 		1280px !default;
+$huge-max-width: 		1280px !default;
 
 // Number of columns, space between and position
 $grid-collumns: 		12 !default;
@@ -27,7 +28,7 @@ $grid-col-float: 		left !default;
 // Offset from left/right
 $offset-direction: 		left !default;
 
-//Find the opposite to default float
+// Find the opposite to default float
 $grid-opposite: opposite-position($offset-direction);
 
 // Querys
@@ -125,5 +126,5 @@ $portrait: "only screen and (orientation: portrait)";
    Huge breakpoint
    ========================================================================== */
 @media #{$huge} {
-	@include break-point($name: "big", $max-width: $big-max-width);
+	@include break-point($name: "big", $max-width: $huge-max-width);
 }
