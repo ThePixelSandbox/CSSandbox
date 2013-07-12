@@ -1776,6 +1776,11 @@ body {
         #grids #grids-docs .preview-grids .row .col:hover {
           background: #ebebeb; }
 
+  #navigation #top-navigation-docs {
+    padding-bottom: 0; }
+  #navigation #inline-navigation-docs {
+    padding-bottom: 0; }
+
   #iconic #iconic-header {
     background: #19a5b9 url("../images/bg_iconic.jpg") repeat; }
     #iconic #iconic-header .icons {
