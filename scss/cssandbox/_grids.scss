@@ -9,7 +9,6 @@ $small-max-width: 		none !default;
 $medium-max-width: 		none !default;
 $large-max-width: 		none !default;
 $big-max-width: 		1280px !default;
-$huge-max-width: 		1280px !default;
 
 // Number of columns, space between and position
 $grid-collumns: 		12 !default;
@@ -20,7 +19,6 @@ $grid-float:			center !default;
 $medium-min-width: 		em(480px) !default;
 $large-min-width: 		em(768px) !default;
 $big-min-width: 		em(960px) !default;
-$huge-min-width:		em(1280px) !default;
 
 // Default float
 $grid-col-float: 		left !default;
@@ -36,7 +34,6 @@ $screen: "only screen";
 $medium: "only screen and (min-width:"#{$medium-min-width}")";
 $large: "only screen and (min-width:"#{$large-min-width}")";
 $big: "only screen and (min-width:"#{$big-min-width}")";
-$huge: "only screen and (min-width:"#{$huge-min-width}")";
 $landscape: "only screen and (orientation: landscape)";
 $portrait: "only screen and (orientation: portrait)"; 
 
@@ -120,11 +117,4 @@ $portrait: "only screen and (orientation: portrait)";
    ========================================================================== */
 @media #{$big} {
 	@include break-point($name: "big", $max-width: $big-max-width);
-}
-
-/* ==========================================================================
-   Huge breakpoint
-   ========================================================================== */
-@media #{$huge} {
-	@include break-point($name: "big", $max-width: $huge-max-width);
 }

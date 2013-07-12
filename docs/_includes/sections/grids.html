@@ -24,26 +24,57 @@
 	<div class="row overview">
 		<div class="col small-12 preview-grids">
 			<div class="row">
-				<div class="col small-3">3</div><div class="col small-6">6</div><div class="col small-3">3</div>
+				<div class="col small-3 medium-4 large-2 big-3">..</div>
+				<div class="col small-6 medium-4 large-4 big-6">..</div>
+				<div class="col small-3 medium-4 large-6 big-3">..</div>
 			</div>
 			<div class="row">
-				<div class="col small-6">6</div><div class="col small-6">6</div>
+				<div class="col small-6">6</div>
+				<div class="col small-6">6</div>
 			</div>
 			<div class="row">
-				<div class="col small-10">10</div><div class="col small-2">2</div>
+				<div class="col small-10 big-6">..</div>
+				<div class="col small-2 big-6">..</div>
 			</div>
 			<div class="row">
-				<div class="col small-3">3</div><div class="col small-3">3</div><div class="col small-3">3</div><div class="col small-3">3</div>
+				<div class="col small-3">3</div>
+				<div class="col small-3">3</div>
+				<div class="col small-3">3</div>
+				<div class="col small-3">3</div>
 			</div>
 			<div class="row">
-				<div class="col small-8">8</div><div class="col small-4">4</div>
+				<div class="col small-8">8</div>
+				<div class="col small-4">4</div>
 			</div>
 			<div class="row">
-				<div class="col small-7">7</div><div class="col small-5">5</div>
+				<div class="col small-7">7</div>
+				<div class="col small-5">5</div>
 			</div>
 			<div class="row">
-				<div class="col small-1">1</div><div class="col small-5">5</div><div class="col small-6">6</div>
+				<div class="col small-1">1</div>
+				<div class="col small-5">5</div>
+				<div class="col small-6">6</div>
 			</div>
+		</div>
+	</div>
+	<div class="row grid-mockup">
+		<div class="col small-12">
+{% highlight html linenos %}
+<div class="row">
+	<div class="col small-3 medium-4 large-2 big-3">..</div>
+	<div class="col small-6 medium-4 large-4 big-6">..</div>
+	<div class="col small-3 medium-4 large-6 big-3">..</div>
+</div>
+<div class="row">
+	<div class="col small-6">6</div>
+	<div class="col small-6">6</div>
+</div>
+<div class="row">
+	<div class="col small-10 big-6">..</div>
+	<div class="col small-2 big-6">..</div>
+</div>
+....
+{% endhighlight %}
 		</div>
 	</div>
 	<div class="row mixins">
@@ -70,6 +101,7 @@ $small-max-width: none;
 $medium-max-width: none;
 $large-max-width: none;
 $big-max-width: 1280px;
+$huge-max-width: 1280px;
 
 // Number of columns, space between and position
 $grid-collumns: 12;
@@ -77,10 +109,9 @@ $grid-gutter: em(20px);
 $grid-float: center;
 
 // Grid breakpoints
-$small-break: em(480px);
-$medium-break: em(768px);
-$large-break: em(960px);
-$big-break: em(1280px);
+$medium-min-width: em(480px);
+$large-min-width: em(768px);
+$big-min-width: em(960px);
 
 // Default float
 $grid-col-float: left;
