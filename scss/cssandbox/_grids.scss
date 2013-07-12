@@ -45,6 +45,7 @@ $portrait: "only screen and (orientation: portrait)";
 // Generate breakpoint classes
 @mixin break-point($name, $max-width) {
 	.row { max-width: $max-width; }
+	.#{$name}-offset-0 { margin-#{$offset-direction}: 0; }
 	@for $i from 1 through $grid-collumns {
 		.#{$name}#{-$i} { width: gridCalculator($i, $grid-collumns) }
 		.#{$name}-offset#{-$i} { margin-#{$offset-direction}: gridCalculator($i, $grid-collumns) }
