@@ -1,5 +1,7 @@
 //
-// Version 0.1.1
+// Version 1.0.0 Alpha
+// This is submitted as "final", and will most licky now recive major corrections
+
 // Read the docs for more information howto use
 // See the docs on how to make your own breakpoints
 
@@ -14,10 +16,10 @@ $grid-gutter: 			em(20px) !default;
 $grid-float:			center !default;
 
 // Grid breakpoints
-$small-break: 			em(480px) !default;
-$medium-break: 			em(768px) !default;
-$large-break: 			em(960px) !default;
-$big-break: 			em(1280px) !default;
+$medium-min-width: 		em(480px) !default;
+$large-min-width: 		em(768px) !default;
+$big-min-width: 		em(960px) !default;
+$huge-min-width:		em(1280px) !default;
 
 // Default float
 $grid-col-float: 		left !default;
@@ -30,10 +32,10 @@ $grid-opposite: opposite-position($offset-direction);
 
 // Querys
 $screen: "only screen";
-$small: "only screen and (min-width:"#{$small-break}")";
-$medium: "only screen and (min-width:"#{$medium-break}")";
-$large: "only screen and (min-width:"#{$large-break}")";
-$big: "only screen and (min-width:"#{$big-break}")";
+$medium: "only screen and (min-width:"#{$medium-min-width}")";
+$large: "only screen and (min-width:"#{$large-min-width}")";
+$big: "only screen and (min-width:"#{$big-min-width}")";
+$huge: "only screen and (min-width:"#{$huge-min-width}")";
 $landscape: "only screen and (orientation: landscape)";
 $portrait: "only screen and (orientation: portrait)"; 
 
@@ -101,20 +103,27 @@ $portrait: "only screen and (orientation: portrait)";
 /* ==========================================================================
    Medium breakpoint
    ========================================================================== */
-@media #{$small} {
+@media #{$medium} {
 	@include break-point($name: "medium", $max-width: $medium-max-width);
 }
 
 /* ==========================================================================
    Large breakpoint
    ========================================================================== */
-@media #{$medium} {
+@media #{$large} {
 	@include break-point($name: "large", $max-width: $large-max-width);
 }
 
 /* ==========================================================================
    Big breakpoint
    ========================================================================== */
-@media #{$large} {
+@media #{$big} {
+	@include break-point($name: "big", $max-width: $big-max-width);
+}
+
+/* ==========================================================================
+   Huge breakpoint
+   ========================================================================== */
+@media #{$huge} {
 	@include break-point($name: "big", $max-width: $big-max-width);
 }
