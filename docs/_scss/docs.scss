@@ -24,6 +24,7 @@ body {
 
 @media #{$screen} {
 
+	// Sidebar to contain links
 	.sidebar {
 		@include transition(all, 300ms, ease-out);
 		&.menu {
@@ -124,6 +125,7 @@ body {
 		}
 	}
 
+	// Doc-box to wrap documentation
 	.doc-box {
 		padding: em(40px) em(20px) em(40px) em(20px);
 		& > .row {
@@ -201,176 +203,174 @@ body {
 		}
 	}
 
-	#welcome {
-		#welcome-header {
-			background: url("../images/bg_welcome.jpg") no-repeat 0% 100%;
+	// #welcome
+	#welcome-header {
+		background: url("../images/bg_welcome.jpg") no-repeat 0% 100%;
+		h1 {
+			margin: 0 0 rem(20px) 0;
+			font-size: rem(48px);
+			font-weight: 600;
+		}
+		h2 {
+			&.subheader {
+				font-size: rem(22px);
+				font-weight: 400;
+				color: #575757;
+				.highlights {
+					font-weight: 500;
+					color: $orange;
+				}
+			}
+			margin: 0 0 rem(20px) 0;
+		}
+		p {
+			margin: 0 0 em(40px);
+			color: #1d1d1d;
+		}
+		.btn {
+			&.visit-github {
+				margin: 0 0 rem(50px) 0;
+				@include button($border: 1px solid #fff, $border-radius: 0,$font-size: em(16px), $background: none, $text-color: #fff, 
+								$height: rem(45px), $width: rem(290px), $darken-text: true);	
+				&:hover a {
+					color: black !important;
+				}
+			}
+		}
+	}
+
+
+	// #getting-started
+	#getting-started-docs {
+		.poi-teaser {
+			padding: 0 0 em(20px) 0;
 			h1 {
-				margin: 0 0 rem(20px) 0;
-				font-size: rem(48px);
-				font-weight: 600;
+				font-size: rem(34px);
+			}
+			.subheader {
+				font-size: em(18px);
+				line-height: 150%;
 			}
 			h2 {
-				&.subheader {
-					font-size: rem(22px);
-					font-weight: 400;
-					color: #575757;
-					.highlights {
-						font-weight: 500;
-						color: $orange;
+				margin: rem(50px) 0 1.25rem 0;
+			}
+		}
+		.poi {
+			margin: 0 em(-15px);
+			h3 {
+				margin: 0;
+				a {
+					color: $master-color;
+					text-decoration: none;
+					&:hover {
+						text-decoration: underline;
 					}
 				}
-				margin: 0 0 rem(20px) 0;
 			}
-			p {
-				margin: 0 0 em(40px);
-				color: #1d1d1d;
+			.col {
+				padding: em(10px) em(15px) em(35px) em(15px);
 			}
-			.btn {
-				&.visit-github {
-					margin: 0 0 rem(50px) 0;
-					@include button($border: 1px solid #fff, $border-radius: 0,$font-size: em(16px), $background: none, $text-color: #fff, 
-									$height: rem(45px), $width: rem(290px), $darken-text: true);	
-					&:hover a {
-						color: black !important;
+		}
+		.structure-header {
+			margin: em(30px) 0 em(30px) 0;
+		}
+		.structure {
+			margin: 0 em(-15px);
+			h3 {
+				margin: 0;
+				a {
+					color: $master-color;
+					text-decoration: none;
+					&:hover {
+						text-decoration: underline;
 					}
 				}
+			}
+			.col {
+				padding: em(10px) em(15px) em(35px) em(15px);
 			}
 		}
 	}
 
-	#getting-started {
-		#getting-started-docs {
-			.poi-teaser {
-				padding: 0 0 em(20px) 0;
-				h1 {
-					font-size: rem(34px);
-				}
-				.subheader {
-					font-size: em(18px);
-					line-height: 150%;
-				}
-				h2 {
-					margin: rem(50px) 0 1.25rem 0;
-				}
-			}
-			.poi {
-				margin: 0 em(-15px);
-				h3 {
-					margin: 0;
-					a {
-						color: $master-color;
-						text-decoration: none;
-						&:hover {
-							text-decoration: underline;
-						}
-					}
-				}
-				.col {
-					padding: em(10px) em(15px) em(35px) em(15px);
-				}
-			}
-			.structure-header {
-				margin: em(30px) 0 em(30px) 0;
-			}
-			.structure {
-				margin: 0 em(-15px);
-				h3 {
-					margin: 0;
-					a {
-						color: $master-color;
-						text-decoration: none;
-						&:hover {
-							text-decoration: underline;
-						}
-					}
-				}
-				.col {
-					padding: em(10px) em(15px) em(35px) em(15px);
-				}
-			}
-		}
-	}
  
-	#grids {
-		#grids-header {
-			background: #ff3500 url("../images/bg_grids.jpg") no-repeat 0% 0%;
+	// #grids
+	#grids-header {
+		background: #ff3500 url("../images/bg_grids.jpg") no-repeat 0% 0%;
+	}
+	#grids-docs {
+		.overview {
 		}
-		#grids-docs {
-			.overview {
-			}
-			.preview-grids {
-				padding: 0 em(10px);
-				.row {
-					margin-bottom: em(8px);
-					.col {
-						@include transition(all, 300ms, ease-out);
-						background: #f8f8f8;
-						border: 1px solid #e4e4e4;
-						font-size: em(12px);
-						line-height: rem(30px);
-						height: rem(30px);
-						&:hover {
-							background: darken(#f8f8f8, 5%);
-						}
+		.preview-grids {
+			padding: 0 em(10px);
+			.row {
+				margin-bottom: em(8px);
+				.col {
+					@include transition(all, 300ms, ease-out);
+					background: #f8f8f8;
+					border: 1px solid #e4e4e4;
+					font-size: em(12px);
+					line-height: rem(30px);
+					height: rem(30px);
+					&:hover {
+						background: darken(#f8f8f8, 5%);
 					}
 				}
 			}
 		}
 	}
 
-	#navigation {
-		#navigation-header {
+	// #navigation
+	#navigation-header {
 
-		}
-		#top-navigation-docs {
-			padding-bottom: 0;
-		}
-		#inline-navigation-docs {
-			padding-bottom: 0;
-		}
-		#breadcrumb-navigation-docs {
+	}
+	#navigation-top-docs {
+		padding-bottom: 0;
+	}
+	#navigation-inline-docs {
+		padding-bottom: 0;
+	}
+	#navigation-breadcrumb-docs {
 
-		}
 	}
 
-	#iconic {
-		#iconic-header {
-			background: #19a5b9 url("../images/bg_iconic.jpg") repeat;
+
+	// #iconic
+	#iconic-header {
+		background: #19a5b9 url("../images/bg_iconic.jpg") repeat;
+		.icons {
+			margin: 0 0 0 rem(50px);
+			i {
+				font-size: rem(62px);
+				display: inline-block;
+				width: rem(84px);
+				height: rem(84px);
+				text-align: center;
+				margin: 0 0 rem(5px) 0;
+			}
+		}
+	}
+	#iconic-docs {
+		.howto {}
+		.preview {
+			.highlights {
+				color: #19a5b9;
+			}
 			.icons {
-				margin: 0 0 0 rem(50px);
+				margin: em(30px) 0 0 em(-10px);
 				i {
-					font-size: rem(62px);
+					color: #303030;
+					width: rem(31px);
+					height: rem(31px);
+					margin: 0 0 rem(10px) rem(4px);
 					display: inline-block;
-					width: rem(84px);
-					height: rem(84px);
 					text-align: center;
-					margin: 0 0 rem(5px) 0;
-				}
-			}
-		}
-
-		#iconic-docs {
-			.howto {}
-			.preview {
-				.highlights {
-					color: #19a5b9;
-				}
-				.icons {
-					margin: em(30px) 0 0 em(-10px);
-					i {
-						color: #303030;
-						width: rem(31px);
-						height: rem(31px);
-						margin: 0 0 rem(10px) rem(4px);
-						display: inline-block;
-						text-align: center;
-						cursor: pointer;
-					}
+					cursor: pointer;
 				}
 			}
 		}
 	}
 
+	// #the-end
 	#the-end {
 		background: #d52f19 url("../images/bg_the-end.jpg");
 		color: #fff;
@@ -437,12 +437,14 @@ body {
 }
 
 @media #{$medium} {
+	// Fixing docbox padding (less padding on small screens)
 	.doc-box {
 		padding: em(50px) em(30px) em(50px) em(30px);
 	}
 }
 
 @media #{$large} {
+	// Fixing docbox padding (less padding on small screens)
 	.doc-box {
 		padding: em(60px) em(50px) em(60px) em(50px);
 	}
@@ -454,6 +456,7 @@ body {
 }
 
 @media #{$big} {
+	// Making the sidebar 260width, so its always shown.
 	.sidebar {
 		&.menu {
 			width: em(260px);

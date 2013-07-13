@@ -1664,25 +1664,25 @@ body {
     .doc-box .header-box {
       margin: 2.1875em 0 0 0; }
 
-  #welcome #welcome-header {
+  #welcome-header {
     background: url("../images/bg_welcome.jpg") no-repeat 0% 100%; }
-    #welcome #welcome-header h1 {
+    #welcome-header h1 {
       margin: 0 0 1.25rem 0;
       font-size: 3rem;
       font-weight: 600; }
-    #welcome #welcome-header h2 {
+    #welcome-header h2 {
       margin: 0 0 1.25rem 0; }
-      #welcome #welcome-header h2.subheader {
+      #welcome-header h2.subheader {
         font-size: 1.375rem;
         font-weight: 400;
         color: #575757; }
-        #welcome #welcome-header h2.subheader .highlights {
+        #welcome-header h2.subheader .highlights {
           font-weight: 500;
           color: #ff2f19; }
-    #welcome #welcome-header p {
+    #welcome-header p {
       margin: 0 0 2.5em;
       color: #1d1d1d; }
-    #welcome #welcome-header .btn.visit-github {
+    #welcome-header .btn.visit-github {
       margin: 0 0 3.125rem 0;
       width: 18.125rem;
       min-height: 2.8125rem;
@@ -1704,65 +1704,66 @@ body {
       -ms-transition: background-color 200ms linear;
       -o-transition: background-color 200ms linear;
       transition: background-color 200ms linear; }
-      #welcome #welcome-header .btn.visit-github a {
+      #welcome-header .btn.visit-github a {
         margin: 0 -10px;
         padding: 0 10px;
         display: block;
         width: auto;
         height: 100%; }
-      #welcome #welcome-header .btn.visit-github, #welcome #welcome-header .btn.visit-github a {
+      #welcome-header .btn.visit-github, #welcome-header .btn.visit-github a {
         color: white; }
-      #welcome #welcome-header .btn.visit-github a:hover {
+      #welcome-header .btn.visit-github a:hover {
         color: #cccccc; }
-      #welcome #welcome-header .btn.visit-github:hover {
+      #welcome-header .btn.visit-github:hover {
         color: #cccccc; }
-      #welcome #welcome-header .btn.visit-github,
-      #welcome #welcome-header .btn.visit-github a {
+      #welcome-header .btn.visit-github,
+      #welcome-header .btn.visit-github a {
         text-decoration: none !important; }
-      #welcome #welcome-header .btn.visit-github:hover a {
+      #welcome-header .btn.visit-github:hover a {
         color: black !important; }
 
-  #getting-started #getting-started-docs .poi-teaser {
+  #getting-started-docs .poi-teaser {
     padding: 0 0 1.25em 0; }
-    #getting-started #getting-started-docs .poi-teaser h1 {
+    #getting-started-docs .poi-teaser h1 {
       font-size: 2.125rem; }
-    #getting-started #getting-started-docs .poi-teaser .subheader {
+    #getting-started-docs .poi-teaser .subheader {
       font-size: 1.125em;
       line-height: 150%; }
-    #getting-started #getting-started-docs .poi-teaser h2 {
+    #getting-started-docs .poi-teaser h2 {
       margin: 3.125rem 0 1.25rem 0; }
-  #getting-started #getting-started-docs .poi {
+  #getting-started-docs .poi {
     margin: 0 -0.9375em; }
-    #getting-started #getting-started-docs .poi h3 {
+    #getting-started-docs .poi h3 {
       margin: 0; }
-      #getting-started #getting-started-docs .poi h3 a {
+      #getting-started-docs .poi h3 a {
         color: #ff2f19;
         text-decoration: none; }
-        #getting-started #getting-started-docs .poi h3 a:hover {
+        #getting-started-docs .poi h3 a:hover {
           text-decoration: underline; }
-    #getting-started #getting-started-docs .poi .col {
+    #getting-started-docs .poi .col {
       padding: 0.625em 0.9375em 2.1875em 0.9375em; }
-  #getting-started #getting-started-docs .structure-header {
+  #getting-started-docs .structure-header {
     margin: 1.875em 0 1.875em 0; }
-  #getting-started #getting-started-docs .structure {
+  #getting-started-docs .structure {
     margin: 0 -0.9375em; }
-    #getting-started #getting-started-docs .structure h3 {
+    #getting-started-docs .structure h3 {
       margin: 0; }
-      #getting-started #getting-started-docs .structure h3 a {
+      #getting-started-docs .structure h3 a {
         color: #ff2f19;
         text-decoration: none; }
-        #getting-started #getting-started-docs .structure h3 a:hover {
+        #getting-started-docs .structure h3 a:hover {
           text-decoration: underline; }
-    #getting-started #getting-started-docs .structure .col {
+    #getting-started-docs .structure .col {
       padding: 0.625em 0.9375em 2.1875em 0.9375em; }
 
-  #grids #grids-header {
+  #grids-header {
     background: #ff3500 url("../images/bg_grids.jpg") no-repeat 0% 0%; }
-  #grids #grids-docs .preview-grids {
+
+  #grids-docs .preview-grids {
     padding: 0 0.625em; }
-    #grids #grids-docs .preview-grids .row {
+    #grids-docs .preview-grids .row {
       margin-bottom: 0.5em; }
-      #grids #grids-docs .preview-grids .row .col {
+      #grids-docs .preview-grids .row .col {
         -webkit-transition: all 300ms ease-out;
         -moz-transition: all 300ms ease-out;
         -ms-transition: all 300ms ease-out;
@@ -1773,30 +1774,32 @@ body {
         font-size: 0.75em;
         line-height: 1.875rem;
         height: 1.875rem; }
-        #grids #grids-docs .preview-grids .row .col:hover {
+        #grids-docs .preview-grids .row .col:hover {
           background: #ebebeb; }
 
-  #navigation #top-navigation-docs {
-    padding-bottom: 0; }
-  #navigation #inline-navigation-docs {
+  #navigation-top-docs {
     padding-bottom: 0; }
 
-  #iconic #iconic-header {
+  #navigation-inline-docs {
+    padding-bottom: 0; }
+
+  #iconic-header {
     background: #19a5b9 url("../images/bg_iconic.jpg") repeat; }
-    #iconic #iconic-header .icons {
+    #iconic-header .icons {
       margin: 0 0 0 3.125rem; }
-      #iconic #iconic-header .icons i {
+      #iconic-header .icons i {
         font-size: 3.875rem;
         display: inline-block;
         width: 5.25rem;
         height: 5.25rem;
         text-align: center;
         margin: 0 0 0.3125rem 0; }
-  #iconic #iconic-docs .preview .highlights {
+
+  #iconic-docs .preview .highlights {
     color: #19a5b9; }
-  #iconic #iconic-docs .preview .icons {
+  #iconic-docs .preview .icons {
     margin: 1.875em 0 0 -0.625em; }
-    #iconic #iconic-docs .preview .icons i {
+    #iconic-docs .preview .icons i {
       color: #303030;
       width: 1.9375rem;
       height: 1.9375rem;
