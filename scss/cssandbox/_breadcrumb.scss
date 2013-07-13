@@ -15,6 +15,11 @@ $breadcrumb-seperation-width: auto !default;
 $breadcrumb-seperation-background: none !default;
 $breadcrumb-seperation-text: "»" !default;
 
+
+/* ==========================================================================
+   Breadcrumb-navigation
+   ========================================================================== */
+
 .breadcrumb {
 	height: $breadcrumb-height;
 	line-height: $breadcrumb-height;
