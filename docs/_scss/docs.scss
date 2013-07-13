@@ -143,6 +143,9 @@ body {
 			&.orange {
 				border-bottom: 3px solid $orange;
 			}
+			&.black {
+				border-bottom: 3px solid #202020;
+			}
 		}
 		h3 {
 			font-size: rem(22px);
@@ -195,6 +198,22 @@ body {
 					margin: em(20px) 0 0 0;
 					@include button($border: 1px solid #fff, $border-radius: 0,$font-size: em(14px), $font-weight: 600, $background: #fff, $text-color: #1d1d1d, 
 									$height: rem(40px), $width: rem(210px), $darken-text: true);	
+				}
+			}
+			&.black {
+				background-color: #202020;
+				color: #fff;
+				padding-bottom: em(110px);
+				h1 {
+					color: #fff;
+				}
+				h3 {
+					color: #545454;
+				}
+				.btn {
+					margin: em(20px) 0 0 0;
+					@include button($border: none, $border-radius: 0,$font-size: em(14px), $font-weight: 600, $background: #ff2f19, $text-color: #fff, 
+									$height: rem(40px), $width: rem(210px), $darken-text: false);	
 				}
 			}
 		}
@@ -334,6 +353,7 @@ body {
 
 	// #typography
 	#typography-header {
+		background: #19a5b9 url("../images/bg_typography.png") repeat;
 	}
 	#typography-docs {
 	}
@@ -341,6 +361,7 @@ body {
 
 	// #buttons
 	#buttons-header {
+		background: #19a5b9 url("../images/bg_iconic.jpg") repeat;
 	}
 	#buttons-docs {
 	}

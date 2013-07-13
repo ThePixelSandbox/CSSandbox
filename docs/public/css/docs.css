@@ -1572,6 +1572,8 @@ body {
         border-bottom: 3px solid #19a5b9; }
       .doc-box h2.orange {
         border-bottom: 3px solid #ff2f19; }
+      .doc-box h2.black {
+        border-bottom: 3px solid #202020; }
     .doc-box h3 {
       font-size: 1.375rem;
       margin: 0.625rem 0 0.9375rem 0;
@@ -1678,6 +1680,49 @@ body {
           color: black; }
         .doc-box.header.blue .btn,
         .doc-box.header.blue .btn a {
+          text-decoration: none !important; }
+    .doc-box.header.black {
+      background-color: #202020;
+      color: #fff;
+      padding-bottom: 6.875em; }
+      .doc-box.header.black h1 {
+        color: #fff; }
+      .doc-box.header.black h3 {
+        color: #545454; }
+      .doc-box.header.black .btn {
+        margin: 1.25em 0 0 0;
+        width: 13.125rem;
+        min-height: 2.5rem;
+        line-height: 2.5rem;
+        padding: 0 10px;
+        font-size: 0.875em;
+        background: #ff2f19;
+        color: white;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+        border: none;
+        background: #ff2f19;
+        display: inline-block;
+        font-weight: 600;
+        text-align: center;
+        -webkit-transition: background-color 200ms linear;
+        -moz-transition: background-color 200ms linear;
+        -ms-transition: background-color 200ms linear;
+        -o-transition: background-color 200ms linear;
+        transition: background-color 200ms linear; }
+        .doc-box.header.black .btn a {
+          margin: 0 -10px;
+          padding: 0 10px;
+          display: block;
+          width: auto;
+          height: 100%; }
+        .doc-box.header.black .btn, .doc-box.header.black .btn a {
+          color: white; }
+        .doc-box.header.black .btn:hover {
+          background: #ea1600; }
+        .doc-box.header.black .btn,
+        .doc-box.header.black .btn a {
           text-decoration: none !important; }
     .doc-box .header-box {
       margin: 2.1875em 0 0 0; }
@@ -1800,6 +1845,12 @@ body {
 
   #navigation-inline-docs {
     padding-bottom: 0; }
+
+  #typography-header {
+    background: #19a5b9 url("../images/bg_typography.png") repeat; }
+
+  #buttons-header {
+    background: #19a5b9 url("../images/bg_iconic.jpg") repeat; }
 
   #iconic-header {
     background: #19a5b9 url("../images/bg_iconic.jpg") repeat; }
