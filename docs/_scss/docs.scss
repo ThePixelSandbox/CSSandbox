@@ -16,13 +16,20 @@
 
 // Custom stylesheet
 $orange: #ff2f19; 
-mixins
-html,
-body {
-	height: 100%; 
-}
+$gray: #e5e5e5;
 
 @media #{$screen} {
+
+	html,
+	body {
+		height: 100%; 
+	}
+
+	p {
+		&.aftercode {
+			padding-top: em(16px);
+		}
+	}
 
 	// Sidebar to contain links
 	.sidebar {
@@ -152,7 +159,7 @@ body {
 			margin: rem(10px) 0 rem(15px) 0;
 			padding: 0 0 rem(15px) 0;
 			&.gray {
-				border-bottom: 1px solid #e5e5e5;
+				border-bottom: 1px solid $gray;
 			}
 		}
 		&.header {
@@ -348,6 +355,18 @@ body {
 		padding-bottom: 0;
 	}
 	#navigation-breadcrumb-docs {
+		.preview {
+			.breadcrumb {
+				border-top: 1px solid lighten($gray, 3%);
+				border-bottom: 1px solid lighten($gray, 3%);
+				padding: em(8px) 0;
+				margin: 0 0 em(20px) 0;
+				height: auto;
+			}
+			.home a {
+				text-decoration: none;
+			}
+		}
 	}
 
 

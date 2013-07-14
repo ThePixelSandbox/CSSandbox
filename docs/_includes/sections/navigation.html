@@ -43,7 +43,50 @@
 			<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
 		</div>
 	</div>
-	<div class="row">
+	<div class="row preview">
+		<div class="col small-12">
+			<div class="breadcrumb">
+			    <div class="crumb home"><a href="/"><i class="iconic-home"></i></a></div>
+		        <div class="crumb"><a href="#navigation-breadcrumb-docs">CSSandbox</a></div>
+		        <div class="crumb"><a href="#navigation-breadcrumb-docs">Navigation</a></div>
+		        <div class="crumb active">Breadcrumbs</div>
+			</div>
+		</div>
+	</div>
+	<div class="row code-preview">
+		<div class="col small-12">
 
+{% highlight html linenos %}
+<div class="breadcrumb">
+    <div class="crumb home"><a href="/"><i class="iconic-home"></i></a></div>
+    <div class="crumb"><a href="#navigation-breadcrumb-docs">CSSandbox</a></div>
+    <div class="crumb"><a href="#navigation-breadcrumb-docs">Navigation</a></div>
+    <div class="crumb active">Breadcrumbs</div>
+</div>
+{% endhighlight %}
+
+		</div>
+	</div>
+	<div class="row variables header-box">
+		<div class="col small-12">
+			<h3 class="gray">Breadcrumb SCSS Variables</h3>
+			<p>Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti.</p>
+
+{% highlight scss linenos %}
+// Global
+$breadcrumb-height: em(40px);
+$breadcrumb-padding: em(15px);
+$breadcrumb-font-color: $master-base-color;
+
+// If chosing to have a icon
+$breadcrumb-icon-color: $master-base-color;
+
+// Seperator variables
+$breadcrumb-seperation-width: auto;
+$breadcrumb-seperation-background: none;
+$breadcrumb-seperation-text: ">";
+{% endhighlight %}
+
+		</div>
 	</div>
 </div>

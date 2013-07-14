@@ -1,5 +1,5 @@
 //
-// Version 0.1.1
+// Version 0.1.2
 // Read the docs for more information howto use
 
 // Calulations in pixels insted of em/rem
@@ -42,6 +42,7 @@ $master-base-color:		#555555 !default;
 }
 
 // Global mixins
+// This mixin is used to generate CSS3 transitions
 @mixin transition($property, $time: 200ms, $type: linear) {
 	-webkit-transition: $property $time $type;
 	-moz-transition: $property $time $type;
@@ -50,6 +51,7 @@ $master-base-color:		#555555 !default;
 	transition: $property $time $type;
 }
 
+// Secure your placeholder styles crossbrowser
 @mixin placeholder($color: #cccccc, $font-size: $font-size) {
 	&::-webkit-input-placeholder { color: $color; font-size: $font-size; }
 	&:-moz-placeholder { color: $color; font-size: $font-size; }

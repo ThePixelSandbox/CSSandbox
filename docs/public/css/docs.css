@@ -1475,12 +1475,14 @@ table tbody tr td {
 .iconic-spin_alt:before {
   content: '\e037'; }
 
-mixins
-html,
-body {
-  height: 100%; }
-
 @media only screen {
+  html,
+  body {
+    height: 100%; }
+
+  p.aftercode {
+    padding-top: 1em; }
+
   .sidebar {
     -webkit-transition: all 300ms ease-out;
     -moz-transition: all 300ms ease-out;
@@ -1845,6 +1847,15 @@ body {
 
   #navigation-inline-docs {
     padding-bottom: 0; }
+
+  #navigation-breadcrumb-docs .preview .breadcrumb {
+    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+    padding: 0.5em 0;
+    margin: 0 0 1.25em 0;
+    height: auto; }
+  #navigation-breadcrumb-docs .preview .home a {
+    text-decoration: none; }
 
   #typography-header {
     background: #19a5b9 url("../images/bg_typography.png") repeat; }
