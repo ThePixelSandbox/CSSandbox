@@ -55,7 +55,6 @@ $portrait: "only screen and (orientation: portrait)";
 /* ==========================================================================
    Grid styles
    ========================================================================== */
-
 @media #{$screen} {
 
 	.col {
@@ -94,7 +93,6 @@ $portrait: "only screen and (orientation: portrait)";
 	/* ==========================================================================
 	   Small breakpoint
 	   ========================================================================== */
-
 	@include break-point($name: "small", $max-width: $small-max-width);
 
 }
