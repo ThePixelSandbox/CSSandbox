@@ -366,7 +366,7 @@ $gray: #e5e5e5;
 				margin: 0 0 em(20px) 0;
 				height: auto;
 			}
-			.home a {
+			.home a { 
 				text-decoration: none;
 			}
 		}
@@ -386,6 +386,14 @@ $gray: #e5e5e5;
 		background: #19a5b9 url("../images/bg_iconic.jpg") repeat;
 	}
 	#buttons-docs {
+		.preview {
+			.button {
+				margin: 0 em(3px) em(10px) 0;
+			}
+		}
+		.code-preview {
+			margin: em(10px) 0 0 0;
+		}
 	}
 
 

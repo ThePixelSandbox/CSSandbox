@@ -801,7 +801,7 @@ input[type="button"] {
   -o-transition: background-color 200ms linear;
   transition: background-color 200ms linear;
   /* ==========================================================================
-     Button color classes
+     Button color classes / Disable class
      ========================================================================== */ }
   .button a,
   input[type="button"] a {
@@ -884,11 +884,10 @@ input[type="button"] {
   .button.disable, .button.disable > a,
   input[type="button"].disable,
   input[type="button"].disable > a {
-    background: #bdbbb7;
     pointer-events: none;
                       /* Does not Work in IE, to disable links in IE 
 						 or older browsers use Javascript */
-    opacity: 0.6;
+    opacity: 0.5;
     cursor: default; }
   .button.warning,
   input[type="button"].warning {
@@ -1865,6 +1864,11 @@ table tbody tr td {
 
   #buttons-header {
     background: #19a5b9 url("../images/bg_iconic.jpg") repeat; }
+
+  #buttons-docs .preview .button {
+    margin: 0 0.1875em 0.625em 0; }
+  #buttons-docs .code-preview {
+    margin: 0.625em 0 0 0; }
 
   #iconic-header {
     background: #19a5b9 url("../images/bg_iconic.jpg") repeat; }

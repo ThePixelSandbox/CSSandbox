@@ -112,16 +112,15 @@ input[type="button"] {
 	}
 
 	/* ==========================================================================
-	   Button color classes
+	   Button color classes / Disable class
 	   ========================================================================== */
 
 	&.disable {
 		&,
 		& > a {
-			background: #bdbbb7;
 			pointer-events: none; /* Does not Work in IE, to disable links in IE 
 									 or older browsers use Javascript */
-			opacity: 0.6;
+			opacity: 0.5;
 			cursor: default;
 		}
 	}
