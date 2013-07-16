@@ -1581,150 +1581,149 @@ table tbody tr td {
       padding: 0 0 0.9375rem 0; }
       .doc-box h3.gray {
         border-bottom: 1px solid #e5e5e5; }
-    .doc-box.header h1 {
-      color: #fff;
-      margin: 0 0 0.3125rem 0; }
-    .doc-box.header h3 {
-      color: #fff;
-      font-weight: 400;
-      margin: 0 0 1.875rem 0;
-      padding: 0; }
-    .doc-box.header p {
-      font-weight: 300; }
-    .doc-box.header.orange {
-      background-color: #ff3500;
-      color: #fff;
-      padding-bottom: 6.875em; }
-      .doc-box.header.orange h1 {
-        color: #fff; }
-      .doc-box.header.orange h3 {
-        color: #ff7263; }
-      .doc-box.header.orange .btn {
-        margin: 1.25em 0 0 0;
-        width: 13.125rem;
-        min-height: 2.5rem;
-        line-height: 2.5rem;
-        padding: 0 10px;
-        font-size: 0.875em;
-        background: white;
-        color: #1d1d1d;
-        -webkit-border-radius: 0;
-        -moz-border-radius: 0;
-        border-radius: 0;
-        border: 1px solid white;
-        background: white;
-        display: inline-block;
-        font-weight: 600;
-        text-align: center;
-        -webkit-transition: background-color 200ms linear;
-        -moz-transition: background-color 200ms linear;
-        -ms-transition: background-color 200ms linear;
-        -o-transition: background-color 200ms linear;
-        transition: background-color 200ms linear; }
-        .doc-box.header.orange .btn a {
-          margin: 0 -10px;
-          padding: 0 10px;
-          display: block;
-          width: auto;
-          height: 100%; }
-        .doc-box.header.orange .btn, .doc-box.header.orange .btn a {
-          color: #1d1d1d; }
-        .doc-box.header.orange .btn a:hover {
-          color: black; }
-        .doc-box.header.orange .btn:hover {
-          background: #e8e8e8;
-          color: black; }
-        .doc-box.header.orange .btn,
-        .doc-box.header.orange .btn a {
-          text-decoration: none !important; }
-    .doc-box.header.blue {
-      background-color: #19a5b9;
+    .doc-box.header {
       color: #fff; }
-      .doc-box.header.blue h1 {
-        color: #fff; }
-      .doc-box.header.blue h3 {
-        color: #b5f4fd; }
-      .doc-box.header.blue .btn {
-        margin: 1.25em 0 0 0;
-        width: 13.125rem;
-        min-height: 2.5rem;
-        line-height: 2.5rem;
-        padding: 0 10px;
-        font-size: 0.875em;
-        background: white;
-        color: #1d1d1d;
-        -webkit-border-radius: 0;
-        -moz-border-radius: 0;
-        border-radius: 0;
-        border: 1px solid white;
-        background: white;
-        display: inline-block;
-        font-weight: 600;
-        text-align: center;
-        -webkit-transition: background-color 200ms linear;
-        -moz-transition: background-color 200ms linear;
-        -ms-transition: background-color 200ms linear;
-        -o-transition: background-color 200ms linear;
-        transition: background-color 200ms linear; }
-        .doc-box.header.blue .btn a {
-          margin: 0 -10px;
+      .doc-box.header h1 {
+        color: #fff;
+        margin: 0 0 0.3125rem 0; }
+      .doc-box.header h3 {
+        color: #fff;
+        font-weight: 400;
+        margin: 0 0 1.875rem 0;
+        padding: 0; }
+      .doc-box.header p {
+        font-weight: 300; }
+      .doc-box.header.orange {
+        background-color: #ff3500;
+        padding-bottom: 6.875em; }
+        .doc-box.header.orange h1 {
+          color: #fff; }
+        .doc-box.header.orange h3 {
+          color: #ff7263; }
+        .doc-box.header.orange .btn {
+          margin: 1.25em 0 0 0;
+          width: 13.125rem;
+          min-height: 2.5rem;
+          line-height: 2.5rem;
           padding: 0 10px;
-          display: block;
-          width: auto;
-          height: 100%; }
-        .doc-box.header.blue .btn, .doc-box.header.blue .btn a {
-          color: #1d1d1d; }
-        .doc-box.header.blue .btn a:hover {
-          color: black; }
-        .doc-box.header.blue .btn:hover {
-          background: #e8e8e8;
-          color: black; }
-        .doc-box.header.blue .btn,
-        .doc-box.header.blue .btn a {
-          text-decoration: none !important; }
-    .doc-box.header.black {
-      background-color: #202020;
-      color: #fff;
-      padding-bottom: 6.875em; }
-      .doc-box.header.black h1 {
-        color: #fff; }
-      .doc-box.header.black h3 {
-        color: #545454; }
-      .doc-box.header.black .btn {
-        margin: 1.25em 0 0 0;
-        width: 13.125rem;
-        min-height: 2.5rem;
-        line-height: 2.5rem;
-        padding: 0 10px;
-        font-size: 0.875em;
-        background: #ff2f19;
-        color: white;
-        -webkit-border-radius: 0;
-        -moz-border-radius: 0;
-        border-radius: 0;
-        border: none;
-        background: #ff2f19;
-        display: inline-block;
-        font-weight: 600;
-        text-align: center;
-        -webkit-transition: background-color 200ms linear;
-        -moz-transition: background-color 200ms linear;
-        -ms-transition: background-color 200ms linear;
-        -o-transition: background-color 200ms linear;
-        transition: background-color 200ms linear; }
-        .doc-box.header.black .btn a {
-          margin: 0 -10px;
+          font-size: 0.875em;
+          background: white;
+          color: #1d1d1d;
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          border-radius: 0;
+          border: 1px solid white;
+          background: white;
+          display: inline-block;
+          font-weight: 600;
+          text-align: center;
+          -webkit-transition: background-color 200ms linear;
+          -moz-transition: background-color 200ms linear;
+          -ms-transition: background-color 200ms linear;
+          -o-transition: background-color 200ms linear;
+          transition: background-color 200ms linear; }
+          .doc-box.header.orange .btn a {
+            margin: 0 -10px;
+            padding: 0 10px;
+            display: block;
+            width: auto;
+            height: 100%; }
+          .doc-box.header.orange .btn, .doc-box.header.orange .btn a {
+            color: #1d1d1d; }
+          .doc-box.header.orange .btn a:hover {
+            color: black; }
+          .doc-box.header.orange .btn:hover {
+            background: #e8e8e8;
+            color: black; }
+          .doc-box.header.orange .btn,
+          .doc-box.header.orange .btn a {
+            text-decoration: none !important; }
+      .doc-box.header.blue {
+        background-color: #19a5b9; }
+        .doc-box.header.blue h1 {
+          color: #fff; }
+        .doc-box.header.blue h3 {
+          color: #b5f4fd; }
+        .doc-box.header.blue .btn {
+          margin: 1.25em 0 0 0;
+          width: 13.125rem;
+          min-height: 2.5rem;
+          line-height: 2.5rem;
           padding: 0 10px;
-          display: block;
-          width: auto;
-          height: 100%; }
-        .doc-box.header.black .btn, .doc-box.header.black .btn a {
-          color: white; }
-        .doc-box.header.black .btn:hover {
-          background: #ea1600; }
-        .doc-box.header.black .btn,
-        .doc-box.header.black .btn a {
-          text-decoration: none !important; }
+          font-size: 0.875em;
+          background: white;
+          color: #1d1d1d;
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          border-radius: 0;
+          border: 1px solid white;
+          background: white;
+          display: inline-block;
+          font-weight: 600;
+          text-align: center;
+          -webkit-transition: background-color 200ms linear;
+          -moz-transition: background-color 200ms linear;
+          -ms-transition: background-color 200ms linear;
+          -o-transition: background-color 200ms linear;
+          transition: background-color 200ms linear; }
+          .doc-box.header.blue .btn a {
+            margin: 0 -10px;
+            padding: 0 10px;
+            display: block;
+            width: auto;
+            height: 100%; }
+          .doc-box.header.blue .btn, .doc-box.header.blue .btn a {
+            color: #1d1d1d; }
+          .doc-box.header.blue .btn a:hover {
+            color: black; }
+          .doc-box.header.blue .btn:hover {
+            background: #e8e8e8;
+            color: black; }
+          .doc-box.header.blue .btn,
+          .doc-box.header.blue .btn a {
+            text-decoration: none !important; }
+      .doc-box.header.black {
+        background-color: #202020;
+        padding-bottom: 6.875em; }
+        .doc-box.header.black h1 {
+          color: #fff; }
+        .doc-box.header.black h3 {
+          color: #545454; }
+        .doc-box.header.black .btn {
+          margin: 1.25em 0 0 0;
+          width: 13.125rem;
+          min-height: 2.5rem;
+          line-height: 2.5rem;
+          padding: 0 10px;
+          font-size: 0.875em;
+          background: #ff2f19;
+          color: white;
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          border-radius: 0;
+          border: none;
+          background: #ff2f19;
+          display: inline-block;
+          font-weight: 600;
+          text-align: center;
+          -webkit-transition: background-color 200ms linear;
+          -moz-transition: background-color 200ms linear;
+          -ms-transition: background-color 200ms linear;
+          -o-transition: background-color 200ms linear;
+          transition: background-color 200ms linear; }
+          .doc-box.header.black .btn a {
+            margin: 0 -10px;
+            padding: 0 10px;
+            display: block;
+            width: auto;
+            height: 100%; }
+          .doc-box.header.black .btn, .doc-box.header.black .btn a {
+            color: white; }
+          .doc-box.header.black .btn:hover {
+            background: #ea1600; }
+          .doc-box.header.black .btn,
+          .doc-box.header.black .btn a {
+            text-decoration: none !important; }
     .doc-box .header-box {
       margin: 2.1875em 0 0 0; }
 

@@ -163,6 +163,7 @@ $gray: #e5e5e5;
 			}
 		}
 		&.header {
+			color: #fff;
 			h1 {
 				color: #fff;
 				margin: 0 0 rem(5px) 0;
@@ -178,7 +179,6 @@ $gray: #e5e5e5;
 			}
 			&.orange {
 				background-color: #ff3500;
-				color: #fff;
 				padding-bottom: em(110px);
 				h1 {
 					color: #fff;
@@ -194,7 +194,6 @@ $gray: #e5e5e5;
 			}
 			&.blue {
 				background-color: #19a5b9;
-				color: #fff;
 				h1 {
 					color: #fff;
 				}
@@ -209,7 +208,6 @@ $gray: #e5e5e5;
 			}
 			&.black {
 				background-color: #202020;
-				color: #fff;
 				padding-bottom: em(110px);
 				h1 {
 					color: #fff;
