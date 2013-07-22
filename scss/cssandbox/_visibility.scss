@@ -33,6 +33,16 @@
 	display: none !important;
 }
 
+.show-landscape,
+.show-portrait {
+	display: none !important;
+}
+
+.hide-landscape,
+.hide-portrait {
+	display: none !important;
+}
+
 // Small visibility breakpoint
 @media #{$screen} {
 	.show-small,
@@ -105,5 +115,19 @@
 	}
 	.hide-big { 
 		display: none !important;
+	}
+}
+
+// Landscape
+@media #{$landscape} {
+	.show-landscape {
+		display: inherit !important;
+	}
+}
+
+// Portrait
+@media #{$portrait} {
+	.show-portrait {
+		display: inherit !important;
 	}
 }
