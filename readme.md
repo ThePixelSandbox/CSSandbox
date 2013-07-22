@@ -1,4 +1,4 @@
-# [CSSandbox v0.1.1](http://www.thepixelsandbox.com)
+# [CSSandbox v0.1.2](http://www.thepixelsandbox.com)
 Simple yet powerfull responsive mobile first framework<br>
 Next major release will be 0.2 wich contains the draft of the docs, followed by hotfixes releases.
 
