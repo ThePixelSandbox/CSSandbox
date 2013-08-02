@@ -3,23 +3,25 @@
 //  Read the docs for more information howto use
 
 // Global
-$table-padding: em(10px) !default;
+$table-padding:				em(10px) !default;
 
 // Table header
-$table-head-background: transparent !default;
-$table-head-weight: $headings-font-weight !default;
+$table-head-background:			transparent !default;
+$table-head-weight:			$headings-font-weight !default;
+$table-head-align:			center !default;
 
 // Table cell
-$table-cell-background: transparent !default;
-$table-cell-odd-background: transparent !default;
-$table-cell-even-background: transparent !default;
+$table-cell-align:			left !default;
+$table-cell-background:			transparent !default;
+$table-cell-odd-background:		transparent !default;
+$table-cell-even-background:		transparent !default;
 
 // Border
-$table-border: 1px solid #ccc !default; 
-$table-cell-border-top: none !default; 
-$table-cell-border-right: none !default; 
-$table-cell-border-bottom: 1px solid #ccc !default; 
-$table-cell-border-left: none !default; 
+$table-border:				1px solid #ccc !default; 
+$table-cell-border-top:			none !default; 
+$table-cell-border-right:		none !default; 
+$table-cell-border-bottom:		1px solid #ccc !default; 
+$table-cell-border-left:		none !default; 
 
 
 /* ==========================================================================
@@ -34,6 +36,7 @@ table {
 		tr {
 			background: $table-head-background;
 			th {
+				text-align: $table-head-align;
 				font-weight: $table-head-weight;
 				padding: $table-padding;
 				border-top: $table-cell-border-top;
@@ -46,6 +49,7 @@ table {
 	tbody {
 		tr {
 			td {
+				text-align: $table-cell-align;
 				background: $table-cell-background;
 				padding: $table-padding;
 				border-top: $table-cell-border-top;
@@ -74,6 +78,7 @@ table {
 		display: table-row;
 		.td {
 			display: table-cell;
+			text-align: $table-cell-align;
 			padding: $table-padding;
 			border-top: $table-cell-border-top;
 			border-right: $table-cell-border-right;
@@ -89,6 +94,9 @@ table {
 		&.header {
 			background: $table-head-background;
 			font-weight: $table-head-weight;
+			td {
+				text-align: $table-head-align;
+			}
 		}
 	}
 }
