@@ -172,8 +172,10 @@
 // ** Table header
 // $table-head-background: transparent;
 // $table-head-weight: $headings-font-weight;
+// $table-head-align: center;
 
 // ** Table cell
+// $table-cell-align: left;
 // $table-cell-background: transparent;
 // $table-cell-odd-background: transparent;
 // $table-cell-even-background: transparent;
@@ -181,7 +183,7 @@
 // ** Border
 // $table-border: 1px solid #ccc; 
 // $table-cell-border-top: none; 
-// $table-cell-border-right: none; 
+// $table-cell-border-right: 1px solid #ccc; 
 // $table-cell-border-bottom: 1px solid #ccc; 
 // $table-cell-border-left: none; 
 
