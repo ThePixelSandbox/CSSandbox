@@ -66,7 +66,7 @@ $button-font-weight:		600 !default;
 	a {
 		&:hover {
 			@if $darken-text == true { 
-				color: darken($color, 20%);
+				color: darken($color, 20%) !important;;
 			}
 		}
 	}
@@ -75,7 +75,7 @@ $button-font-weight:		600 !default;
 			background: darken($background, 9%);
 		}
 		@if $darken-text == true { 
-			color: darken($color, 20%);
+			color: darken($color, 20%) !important;;
 		}
 	}
 }
