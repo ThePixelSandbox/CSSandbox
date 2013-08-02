@@ -61,7 +61,7 @@ $button-font-weight:		600 !default;
 	background: $background;
 	color: $color;
 	&, a {
-		color: $color;
+		color: $color !important; // Secure that the color dosn't get overwritten by a general ruel
 	}
 	a {
 		&:hover {
