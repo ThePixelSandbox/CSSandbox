@@ -1,5 +1,5 @@
 //
-//  Version 0.1.2
+//  Version 0.1.3
 //  Read the docs for more information howto use
 
 // Global
@@ -27,12 +27,19 @@ $table-cell-border-left: none !default;
    ========================================================================== */
 
 // Traditionals tables
+// Tabular data 
 table {
+	border: $table-border;
 	thead {
 		tr {
 			background: $table-head-background;
 			th {
 				font-weight: $table-head-weight;
+				padding: $table-padding;
+				border-top: $table-cell-border-top;
+				border-right: $table-cell-border-right;
+				border-bottom: $table-cell-border-bottom;
+				border-left: $table-cell-border-left;
 			}
 		}
 	}
@@ -40,12 +47,24 @@ table {
 		tr {
 			td {
 				background: $table-cell-background;
+				padding: $table-padding;
+				border-top: $table-cell-border-top;
+				border-right: $table-cell-border-right;
+				border-bottom: $table-cell-border-bottom;
+				border-left: $table-cell-border-left;
+			}
+			&:nth-child(even) {
+				background: $table-cell-even-background;
+			}
+			&:nth-child(odd) {
+				background: $table-cell-odd-background;
 			}
 		}
 	}
 }
 
 // Div tables
+// Use for none tabular data 
 .table {
 	width: 100%;
 	height: auto;
