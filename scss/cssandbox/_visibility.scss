@@ -2,7 +2,6 @@
 //  Version 0.2.0
 //  Read the docs for more information howto use
 
-
 /* ==========================================================================
    Visibility
    ========================================================================== */
@@ -41,6 +40,72 @@
 .hide-landscape,
 .hide-portrait {
 	display: none !important;
+}
+
+// Playing with tables
+table {
+	&.show-small,
+	&.show-medium-down,
+	&.show-large-down,
+	&.hide-small,
+	&.hide-medium,
+	&.hide-medium-up,
+	&.hide-large,
+	&.hide-large-up,
+	&.hide-big { display: table; }
+}
+thead {
+	&.show-small,
+	&.show-medium-down,
+	&.show-large-down,
+	&.hide-small,
+	&.hide-medium,
+	&.hide-medium-up,
+	&.hide-large,
+	&.hide-large-up,
+	&.hide-big { 
+		display: table-header-group !important; 
+	}
+}
+tbody {
+	&.show-small,
+	&.show-medium-down,
+	&.show-large-down,
+	&.hide-small,
+	&.hide-medium,
+	&.hide-medium-up,
+	&.hide-large,
+	&.hide-large-up,
+	&.hide-big { 
+		display: table-row-group !important; 
+	}
+}
+tr {
+	&.show-small,
+	&.show-medium-down,
+	&.show-large-down,
+	&.hide-small,
+	&.hide-medium,
+	&.hide-medium-up,
+	&.hide-large,
+	&.hide-large-up,
+	&.hide-big { 
+		display: table-row !important; 
+	}
+}
+td, 
+th {
+	&.show-small,
+	&.show-medium-down,
+	&.show-large-down,
+	&.hide-small,
+	&.hide-medium,
+	&.hide-medium-up,
+	&.hide-large,
+	&.hide-large-up,
+	&.hide-big { 
+		display: table-cell !important; 
+	}
 }
 
 // Small visibility breakpoint
@@ -86,7 +151,7 @@
 	.show-small-up,
 	.show-medium-up,
 	.show-large-up { 
-		display: inherit !important; 
+		display: inherit !important;
 		&.inline {
 			display: inline !important;
 		}
