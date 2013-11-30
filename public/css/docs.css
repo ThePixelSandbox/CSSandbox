@@ -1,6 +1,7 @@
+@charset "CP850";
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,700,300");
 /* ==========================================================================
-   CSSandbox version 0.0.11
+   CSSandbox version 0.1.1
    http://www.thepixelsandbox.com | https://github.com/ThePixelSandbox/CSSandbox
    MIT License
    ========================================================================== */
@@ -196,6 +197,11 @@ body {
   -o-box-sizing: border-box;
   box-sizing: border-box; }
 
+.clear:after {
+  clear: both;
+  content: " ";
+  display: table; }
+
 .noTransition, body.preload * {
   -webkit-transition: none !important;
   -moz-transition: none !important;
@@ -237,7 +243,10 @@ body {
      Small breakpoint
      ========================================================================== */
   .row {
-    max-width: auto; }
+    max-width: none; }
+
+  .small-offset-0 {
+    margin-left: 0; }
 
   .small-1 {
     width: 8.33333%; }
@@ -313,9 +322,12 @@ body {
 /* ==========================================================================
    Medium breakpoint
    ========================================================================== */
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 30em) {
   .row {
-    max-width: auto; }
+    max-width: none; }
+
+  .medium-offset-0 {
+    margin-left: 0; }
 
   .medium-1 {
     width: 8.33333%; }
@@ -391,9 +403,12 @@ body {
 /* ==========================================================================
    Large breakpoint
    ========================================================================== */
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 48em) {
   .row {
-    max-width: auto; }
+    max-width: none; }
+
+  .large-offset-0 {
+    margin-left: 0; }
 
   .large-1 {
     width: 8.33333%; }
@@ -469,9 +484,12 @@ body {
 /* ==========================================================================
    Big breakpoint
    ========================================================================== */
-@media only screen and (min-width: 80em) {
+@media only screen and (min-width: 60em) {
   .row {
     max-width: 1000px; }
+
+  .big-offset-0 {
+    margin-left: 0; }
 
   .big-1 {
     width: 8.33333%; }
@@ -568,7 +586,7 @@ body {
 .hide-large-down {
   display: none !important; }
 
-@media only screen and (min-width: 30em) {
+@media only screen {
   .show-small,
   .show-small-up {
     display: inherit !important; }
@@ -583,7 +601,7 @@ body {
 
   .hide-small {
     display: none !important; } }
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 30em) {
   .show-medium,
   .show-small-up,
   .show-medium-up {
@@ -598,7 +616,7 @@ body {
 
   .hide-medium {
     display: none !important; } }
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 48em) {
   .show-large,
   .show-small-up,
   .show-medium-up,
@@ -615,7 +633,7 @@ body {
 
   .hide-large {
     display: none !important; } }
-@media only screen and (min-width: 80em) {
+@media only screen and (min-width: 60em) {
   .show-big,
   .show-small-up,
   .show-medium-up,
@@ -703,8 +721,59 @@ h5 {
 h6 {
   font-size: 0.85em; }
 
+/* ==========================================================================
+   Form style
+   ========================================================================== */
+/* ==========================================================================
+   Top-navigation
+   ========================================================================== */
+/* ==========================================================================
+   Sidebar
+   ========================================================================== */
 .sidebar.fixed {
   position: fixed; }
+
+/* ==========================================================================
+   Inline-navigation
+   ========================================================================== */
+/* ==========================================================================
+   Breadcrumb-navigation
+   ========================================================================== */
+.breadcrumb {
+  height: 40px;
+  line-height: 40px; }
+  .breadcrumb .crumb {
+    display: inline-block;
+    vertical-align: top;
+    height: 40px;
+    color: #555555; }
+    .breadcrumb .crumb i {
+      -webkit-transition: color 200ms ease-out;
+      -moz-transition: color 200ms ease-out;
+      -ms-transition: color 200ms ease-out;
+      -o-transition: color 200ms ease-out;
+      transition: color 200ms ease-out;
+      font-size: 20px;
+      line-height: 40px;
+      color: #555555; }
+      .breadcrumb .crumb i:hover {
+        color: #ff2f19; }
+    .breadcrumb .crumb:after {
+      content: "»";
+      display: inline-block;
+      vertical-align: top;
+      width: auto;
+      background: none;
+      padding: 0 15px; }
+    .breadcrumb .crumb > a {
+      color: #555555; }
+      .breadcrumb .crumb > a:hover {
+        color: #ff2f19; }
+    .breadcrumb .crumb.active {
+      color: #ff2f19; }
+      .breadcrumb .crumb.active:after {
+        display: none;
+        content: ""; }
 
 /* ==========================================================================
    Button styles
@@ -732,7 +801,7 @@ input[type="button"] {
   -o-transition: background-color 200ms linear;
   transition: background-color 200ms linear;
   /* ==========================================================================
-     Button color classes
+     Button color classes / Disable class
      ========================================================================== */ }
   .button a,
   input[type="button"] a {
@@ -815,11 +884,10 @@ input[type="button"] {
   .button.disable, .button.disable > a,
   input[type="button"].disable,
   input[type="button"].disable > a {
-    background: #bdbbb7;
     pointer-events: none;
                       /* Does not Work in IE, to disable links in IE 
 						 or older browsers use Javascript */
-    opacity: 0.6;
+    opacity: 0.5;
     cursor: default; }
   .button.warning,
   input[type="button"].warning {
@@ -884,6 +952,38 @@ input[type="button"] {
     .button.alert:hover,
     input[type="button"].alert:hover {
       background: #d10000; }
+
+/* ==========================================================================
+   Table styles
+   ========================================================================== */
+table thead tr {
+  background: transparent; }
+  table thead tr th {
+    font-weight: 600; }
+table tbody tr td {
+  background: transparent; }
+
+.table {
+  width: 100%;
+  height: auto;
+  display: table;
+  border: 1px solid #cccccc; }
+  .table .tr {
+    display: table-row; }
+    .table .tr .td {
+      display: table-cell;
+      padding: 0.625em;
+      border-top: none;
+      border-right: none;
+      border-bottom: 1px solid #cccccc;
+      border-left: none; }
+    .table .tr:nth-child(even) {
+      background: transparent; }
+    .table .tr:nth-child(odd) {
+      background: transparent; }
+    .table .tr.header {
+      background: transparent;
+      font-weight: 600; }
 
 /* ==========================================================================
    Icon classes
@@ -1374,11 +1474,14 @@ input[type="button"] {
 .iconic-spin_alt:before {
   content: '\e037'; }
 
-html,
-body {
-  height: 100%; }
-
 @media only screen {
+  html,
+  body {
+    height: 100%; }
+
+  p.aftercode {
+    padding-top: 1em; }
+
   .sidebar {
     -webkit-transition: all 300ms ease-out;
     -moz-transition: all 300ms ease-out;
@@ -1470,42 +1573,179 @@ body {
         border-bottom: 3px solid #19a5b9; }
       .doc-box h2.orange {
         border-bottom: 3px solid #ff2f19; }
+      .doc-box h2.black {
+        border-bottom: 3px solid #202020; }
     .doc-box h3 {
       font-size: 1.375rem;
       margin: 0.625rem 0 0.9375rem 0;
       padding: 0 0 0.9375rem 0; }
       .doc-box h3.gray {
         border-bottom: 1px solid #e5e5e5; }
-    .doc-box.header h1 {
-      color: #fff;
-      margin: 0 0 0.3125rem 0; }
-    .doc-box.header h3 {
-      color: #fff;
-      font-weight: 400;
-      margin: 0 0 1.875rem 0;
-      padding: 0; }
-    .doc-box.header p {
-      font-weight: 300; }
+    .doc-box.header {
+      color: #fff; }
+      .doc-box.header h1 {
+        color: #fff;
+        margin: 0 0 0.3125rem 0; }
+      .doc-box.header h3 {
+        color: #fff;
+        font-weight: 400;
+        margin: 0 0 1.875rem 0;
+        padding: 0; }
+      .doc-box.header p {
+        font-weight: 300; }
+      .doc-box.header.orange {
+        background-color: #ff3500;
+        padding-bottom: 6.875em; }
+        .doc-box.header.orange h1 {
+          color: #fff; }
+        .doc-box.header.orange h3 {
+          color: #ff7263; }
+        .doc-box.header.orange .btn {
+          margin: 1.25em 0 0 0;
+          width: 13.125rem;
+          min-height: 2.5rem;
+          line-height: 2.5rem;
+          padding: 0 10px;
+          font-size: 0.875em;
+          background: white;
+          color: #1d1d1d;
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          border-radius: 0;
+          border: 1px solid white;
+          background: white;
+          display: inline-block;
+          font-weight: 600;
+          text-align: center;
+          -webkit-transition: background-color 200ms linear;
+          -moz-transition: background-color 200ms linear;
+          -ms-transition: background-color 200ms linear;
+          -o-transition: background-color 200ms linear;
+          transition: background-color 200ms linear; }
+          .doc-box.header.orange .btn a {
+            margin: 0 -10px;
+            padding: 0 10px;
+            display: block;
+            width: auto;
+            height: 100%; }
+          .doc-box.header.orange .btn, .doc-box.header.orange .btn a {
+            color: #1d1d1d; }
+          .doc-box.header.orange .btn a:hover {
+            color: black; }
+          .doc-box.header.orange .btn:hover {
+            background: #e8e8e8;
+            color: black; }
+          .doc-box.header.orange .btn,
+          .doc-box.header.orange .btn a {
+            text-decoration: none !important; }
+      .doc-box.header.blue {
+        background-color: #19a5b9; }
+        .doc-box.header.blue h1 {
+          color: #fff; }
+        .doc-box.header.blue h3 {
+          color: #b5f4fd; }
+        .doc-box.header.blue .btn {
+          margin: 1.25em 0 0 0;
+          width: 13.125rem;
+          min-height: 2.5rem;
+          line-height: 2.5rem;
+          padding: 0 10px;
+          font-size: 0.875em;
+          background: white;
+          color: #1d1d1d;
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          border-radius: 0;
+          border: 1px solid white;
+          background: white;
+          display: inline-block;
+          font-weight: 600;
+          text-align: center;
+          -webkit-transition: background-color 200ms linear;
+          -moz-transition: background-color 200ms linear;
+          -ms-transition: background-color 200ms linear;
+          -o-transition: background-color 200ms linear;
+          transition: background-color 200ms linear; }
+          .doc-box.header.blue .btn a {
+            margin: 0 -10px;
+            padding: 0 10px;
+            display: block;
+            width: auto;
+            height: 100%; }
+          .doc-box.header.blue .btn, .doc-box.header.blue .btn a {
+            color: #1d1d1d; }
+          .doc-box.header.blue .btn a:hover {
+            color: black; }
+          .doc-box.header.blue .btn:hover {
+            background: #e8e8e8;
+            color: black; }
+          .doc-box.header.blue .btn,
+          .doc-box.header.blue .btn a {
+            text-decoration: none !important; }
+      .doc-box.header.black {
+        background-color: #202020;
+        padding-bottom: 6.875em; }
+        .doc-box.header.black h1 {
+          color: #fff; }
+        .doc-box.header.black h3 {
+          color: #545454; }
+        .doc-box.header.black .btn {
+          margin: 1.25em 0 0 0;
+          width: 13.125rem;
+          min-height: 2.5rem;
+          line-height: 2.5rem;
+          padding: 0 10px;
+          font-size: 0.875em;
+          background: #ff2f19;
+          color: white;
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          border-radius: 0;
+          border: none;
+          background: #ff2f19;
+          display: inline-block;
+          font-weight: 600;
+          text-align: center;
+          -webkit-transition: background-color 200ms linear;
+          -moz-transition: background-color 200ms linear;
+          -ms-transition: background-color 200ms linear;
+          -o-transition: background-color 200ms linear;
+          transition: background-color 200ms linear; }
+          .doc-box.header.black .btn a {
+            margin: 0 -10px;
+            padding: 0 10px;
+            display: block;
+            width: auto;
+            height: 100%; }
+          .doc-box.header.black .btn, .doc-box.header.black .btn a {
+            color: white; }
+          .doc-box.header.black .btn:hover {
+            background: #ea1600; }
+          .doc-box.header.black .btn,
+          .doc-box.header.black .btn a {
+            text-decoration: none !important; }
+    .doc-box .header-box {
+      margin: 2.1875em 0 0 0; }
 
-  #welcome #welcome-header {
-    background: url("../images/bg_welcome.jpg") no-repeat 100% 0%; }
-    #welcome #welcome-header h1 {
+  #welcome-header {
+    background: url("../images/bg_welcome.jpg") no-repeat 0% 100%; }
+    #welcome-header h1 {
       margin: 0 0 1.25rem 0;
       font-size: 3rem;
       font-weight: 600; }
-    #welcome #welcome-header h2 {
+    #welcome-header h2 {
       margin: 0 0 1.25rem 0; }
-      #welcome #welcome-header h2.subheader {
+      #welcome-header h2.subheader {
         font-size: 1.375rem;
         font-weight: 400;
         color: #575757; }
-        #welcome #welcome-header h2.subheader .highlights {
+        #welcome-header h2.subheader .highlights {
           font-weight: 500;
           color: #ff2f19; }
-    #welcome #welcome-header p {
+    #welcome-header p {
       margin: 0 0 2.5em;
       color: #1d1d1d; }
-    #welcome #welcome-header .btn.visit-github {
+    #welcome-header .btn.visit-github {
       margin: 0 0 3.125rem 0;
       width: 18.125rem;
       min-height: 2.8125rem;
@@ -1527,109 +1767,66 @@ body {
       -ms-transition: background-color 200ms linear;
       -o-transition: background-color 200ms linear;
       transition: background-color 200ms linear; }
-      #welcome #welcome-header .btn.visit-github a {
+      #welcome-header .btn.visit-github a {
         margin: 0 -10px;
         padding: 0 10px;
         display: block;
         width: auto;
         height: 100%; }
-      #welcome #welcome-header .btn.visit-github, #welcome #welcome-header .btn.visit-github a {
+      #welcome-header .btn.visit-github, #welcome-header .btn.visit-github a {
         color: white; }
-      #welcome #welcome-header .btn.visit-github a:hover {
+      #welcome-header .btn.visit-github a:hover {
         color: #cccccc; }
-      #welcome #welcome-header .btn.visit-github:hover {
+      #welcome-header .btn.visit-github:hover {
         color: #cccccc; }
-      #welcome #welcome-header .btn.visit-github,
-      #welcome #welcome-header .btn.visit-github a {
+      #welcome-header .btn.visit-github,
+      #welcome-header .btn.visit-github a {
         text-decoration: none !important; }
-      #welcome #welcome-header .btn.visit-github:hover a {
+      #welcome-header .btn.visit-github:hover a {
         color: black !important; }
 
-  #getting-started #getting-started-docs .poi-teaser {
+  #getting-started-docs .poi-teaser {
     padding: 0 0 1.25em 0; }
-    #getting-started #getting-started-docs .poi-teaser h1 {
+    #getting-started-docs .poi-teaser h1 {
       font-size: 2.125rem; }
-    #getting-started #getting-started-docs .poi-teaser .subheader {
+    #getting-started-docs .poi-teaser .subheader {
       font-size: 1.125em;
       line-height: 150%; }
-    #getting-started #getting-started-docs .poi-teaser h2 {
+    #getting-started-docs .poi-teaser h2 {
       margin: 3.125rem 0 1.25rem 0; }
-  #getting-started #getting-started-docs .poi {
+  #getting-started-docs .poi {
     margin: 0 -0.9375em; }
-    #getting-started #getting-started-docs .poi h3 {
+    #getting-started-docs .poi h3 {
       margin: 0; }
-      #getting-started #getting-started-docs .poi h3 a {
+      #getting-started-docs .poi h3 a {
         color: #ff2f19;
         text-decoration: none; }
-        #getting-started #getting-started-docs .poi h3 a:hover {
+        #getting-started-docs .poi h3 a:hover {
           text-decoration: underline; }
-    #getting-started #getting-started-docs .poi .col {
+    #getting-started-docs .poi .col {
       padding: 0.625em 0.9375em 2.1875em 0.9375em; }
-  #getting-started #getting-started-docs .structure-header {
+  #getting-started-docs .structure-header {
     margin: 1.875em 0 1.875em 0; }
-  #getting-started #getting-started-docs .structure {
+  #getting-started-docs .structure {
     margin: 0 -0.9375em; }
-    #getting-started #getting-started-docs .structure h3 {
+    #getting-started-docs .structure h3 {
       margin: 0; }
-      #getting-started #getting-started-docs .structure h3 a {
+      #getting-started-docs .structure h3 a {
         color: #ff2f19;
         text-decoration: none; }
-        #getting-started #getting-started-docs .structure h3 a:hover {
+        #getting-started-docs .structure h3 a:hover {
           text-decoration: underline; }
-    #getting-started #getting-started-docs .structure .col {
+    #getting-started-docs .structure .col {
       padding: 0.625em 0.9375em 2.1875em 0.9375em; }
 
-  #grids #grids-header {
-    background: #ff3500 url("../images/bg_grids.jpg") no-repeat 0% 0%;
-    color: #fff;
-    padding-bottom: 6.875em; }
-    #grids #grids-header h1 {
-      color: #fff; }
-    #grids #grids-header h3 {
-      color: #ff7263; }
-    #grids #grids-header .btn {
-      margin: 1.25em 0 0 0;
-      width: 13.125rem;
-      min-height: 2.5rem;
-      line-height: 2.5rem;
-      padding: 0 10px;
-      font-size: 0.875em;
-      background: white;
-      color: #1d1d1d;
-      -webkit-border-radius: 0;
-      -moz-border-radius: 0;
-      border-radius: 0;
-      border: 1px solid white;
-      background: white;
-      display: inline-block;
-      font-weight: 600;
-      text-align: center;
-      -webkit-transition: background-color 200ms linear;
-      -moz-transition: background-color 200ms linear;
-      -ms-transition: background-color 200ms linear;
-      -o-transition: background-color 200ms linear;
-      transition: background-color 200ms linear; }
-      #grids #grids-header .btn a {
-        margin: 0 -10px;
-        padding: 0 10px;
-        display: block;
-        width: auto;
-        height: 100%; }
-      #grids #grids-header .btn, #grids #grids-header .btn a {
-        color: #1d1d1d; }
-      #grids #grids-header .btn a:hover {
-        color: black; }
-      #grids #grids-header .btn:hover {
-        background: #e8e8e8;
-        color: black; }
-      #grids #grids-header .btn,
-      #grids #grids-header .btn a {
-        text-decoration: none !important; }
-  #grids #grids-docs .preview-grids {
+  #grids-header {
+    background: #ff3500 url("../images/bg_grids.jpg") no-repeat 0% 0%; }
+
+  #grids-docs .preview-grids {
     padding: 0 0.625em; }
-    #grids #grids-docs .preview-grids .row {
+    #grids-docs .preview-grids .row {
       margin-bottom: 0.5em; }
-      #grids #grids-docs .preview-grids .row .col {
+      #grids-docs .preview-grids .row .col {
         -webkit-transition: all 300ms ease-out;
         -moz-transition: all 300ms ease-out;
         -ms-transition: all 300ms ease-out;
@@ -1640,68 +1837,55 @@ body {
         font-size: 0.75em;
         line-height: 1.875rem;
         height: 1.875rem; }
-        #grids #grids-docs .preview-grids .row .col:hover {
+        #grids-docs .preview-grids .row .col:hover {
           background: #ebebeb; }
 
-  #iconic #iconic-header {
-    background: #19a5b9 url("../images/bg_iconic.jpg") repeat;
-    color: #fff; }
-    #iconic #iconic-header h1 {
-      color: #fff; }
-    #iconic #iconic-header h3 {
-      color: #b5f4fd; }
-    #iconic #iconic-header .btn {
-      margin: 1.25em 0 0 0;
-      width: 13.125rem;
-      min-height: 2.5rem;
-      line-height: 2.5rem;
-      padding: 0 10px;
-      font-size: 0.875em;
-      background: white;
-      color: #1d1d1d;
-      -webkit-border-radius: 0;
-      -moz-border-radius: 0;
-      border-radius: 0;
-      border: 1px solid white;
-      background: white;
-      display: inline-block;
-      font-weight: 600;
-      text-align: center;
-      -webkit-transition: background-color 200ms linear;
-      -moz-transition: background-color 200ms linear;
-      -ms-transition: background-color 200ms linear;
-      -o-transition: background-color 200ms linear;
-      transition: background-color 200ms linear; }
-      #iconic #iconic-header .btn a {
-        margin: 0 -10px;
-        padding: 0 10px;
-        display: block;
-        width: auto;
-        height: 100%; }
-      #iconic #iconic-header .btn, #iconic #iconic-header .btn a {
-        color: #1d1d1d; }
-      #iconic #iconic-header .btn a:hover {
-        color: black; }
-      #iconic #iconic-header .btn:hover {
-        background: #e8e8e8;
-        color: black; }
-      #iconic #iconic-header .btn,
-      #iconic #iconic-header .btn a {
-        text-decoration: none !important; }
-    #iconic #iconic-header .icons {
+  #navigation-top-docs {
+    padding-bottom: 0; }
+
+  #navigation-sidebar-docs {
+    padding-bottom: 0; }
+
+  #navigation-inline-docs {
+    padding-bottom: 0; }
+
+  #navigation-breadcrumb-docs .preview .breadcrumb {
+    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+    padding: 0.5em 0;
+    margin: 0 0 1.25em 0;
+    height: auto; }
+  #navigation-breadcrumb-docs .preview .home a {
+    text-decoration: none; }
+
+  #typography-header {
+    background: #19a5b9 url("../images/bg_typography.png") repeat; }
+
+  #buttons-header {
+    background: #19a5b9 url("../images/bg_iconic.jpg") repeat; }
+
+  #buttons-docs .preview .button {
+    margin: 0 0.1875em 0.625em 0; }
+  #buttons-docs .code-preview {
+    margin: 0.625em 0 0 0; }
+
+  #iconic-header {
+    background: #19a5b9 url("../images/bg_iconic.jpg") repeat; }
+    #iconic-header .icons {
       margin: 0 0 0 3.125rem; }
-      #iconic #iconic-header .icons i {
+      #iconic-header .icons i {
         font-size: 3.875rem;
         display: inline-block;
         width: 5.25rem;
         height: 5.25rem;
         text-align: center;
         margin: 0 0 0.3125rem 0; }
-  #iconic #iconic-docs .preview .highlights {
+
+  #iconic-docs .preview .highlights {
     color: #19a5b9; }
-  #iconic #iconic-docs .preview .icons {
-    margin: 1.875em 0 1.5625em -0.625em; }
-    #iconic #iconic-docs .preview .icons i {
+  #iconic-docs .preview .icons {
+    margin: 1.875em 0 0 -0.625em; }
+    #iconic-docs .preview .icons i {
       color: #303030;
       width: 1.9375rem;
       height: 1.9375rem;
