@@ -3,21 +3,21 @@
 //  Read the docs for more information howto use
 
 // Global
-$table-padding:				em(10px) !default;
+$table-padding:					em(10px) !default;
 
 // Table header
 $table-head-background:			transparent !default;
-$table-head-weight:			$headings-font-weight !default;
-$table-head-align:			center !default;
+$table-head-weight:				$headings-font-weight !default;
+$table-head-align:				center !default;
 
 // Table cell
-$table-cell-align:			left !default;
+$table-cell-align:				left !default;
 $table-cell-background:			transparent !default;
 $table-cell-odd-background:		transparent !default;
-$table-cell-even-background:		transparent !default;
+$table-cell-even-background:	transparent !default;
 
 // Border
-$table-border:				1px solid #ccc !default; 
+$table-border:					1px solid #ccc !default; 
 $table-cell-border-top:			none !default; 
 $table-cell-border-right:		none !default; 
 $table-cell-border-bottom:		1px solid #ccc !default; 
