@@ -188,7 +188,8 @@ $gray: #e5e5e5;
 				}
 				.btn {
 					margin: em(20px) 0 0 0;
-					@include button($border: 1px solid #fff, $border-radius: 0,$font-size: em(14px), $font-weight: 600, $background: #fff, $text-color: #1d1d1d, 
+					@include button($border: 1px solid #fff, $border-radius: 0,$font-size: em(14px), 
+									$font-weight: 600, $background: #fff, $text-color: #1d1d1d, 
 									$height: rem(40px), $width: rem(210px), $darken-text: true);	
 				}
 			}
@@ -202,7 +203,8 @@ $gray: #e5e5e5;
 				}
 				.btn {
 					margin: em(20px) 0 0 0;
-					@include button($border: 1px solid #fff, $border-radius: 0,$font-size: em(14px), $font-weight: 600, $background: #fff, $text-color: #1d1d1d, 
+					@include button($border: 1px solid #fff, $border-radius: 0,$font-size: em(14px), 
+									$font-weight: 600, $background: #fff, $text-color: #1d1d1d, 
 									$height: rem(40px), $width: rem(210px), $darken-text: true);	
 				}
 			}
@@ -217,7 +219,8 @@ $gray: #e5e5e5;
 				}
 				.btn {
 					margin: em(20px) 0 0 0;
-					@include button($border: none, $border-radius: 0,$font-size: em(14px), $font-weight: 600, $background: #ff2f19, $text-color: #fff, 
+					@include button($border: none, $border-radius: 0,$font-size: em(14px), 
+									$font-weight: 600, $background: #ff2f19, $text-color: #fff, 
 									$height: rem(40px), $width: rem(210px), $darken-text: false);	
 				}
 			}
@@ -254,7 +257,8 @@ $gray: #e5e5e5;
 		.btn {
 			&.visit-github {
 				margin: 0 0 rem(50px) 0;
-				@include button($border: 1px solid #fff, $border-radius: 0,$font-size: em(16px), $background: none, $text-color: #fff, 
+				@include button($border: 1px solid #fff, $border-radius: 0,$font-size: em(16px), 
+								$background: none, $text-color: #fff, 
 								$height: rem(45px), $width: rem(290px), $darken-text: true);	
 				&:hover a {
 					color: black !important;
@@ -455,8 +459,9 @@ $gray: #e5e5e5;
 				}
 				.btn {
 					&.submit-ideas {
-					@include button($border: 1px solid #fff, $border-radius: 0,$font-size: em(16px), $background: none, $text-color: #fff, 
-										$height: rem(45px), $width: rem(290px), $darken-text: true);	
+					@include button($border: 1px solid #fff, $border-radius: 0,$font-size: em(16px), 
+									$background: none, $text-color: #fff, 
+									$height: rem(45px), $width: rem(290px), $darken-text: true);	
 					}
 				}
 			}
@@ -485,7 +490,8 @@ $gray: #e5e5e5;
 		}
 		.followus {
 			ul {
-				@include inline-list($item-margin: em(2px), $color: #fff, $font-size: em(16px), $link-color: $master-color, $font-weight: 600);
+				@include inline-list($item-margin: em(2px), $color: #fff, $font-size: em(16px), 
+									$link-color: $master-color, $font-weight: 600);
 				margin: 0;
 			}
 			padding: 0 0 rem(30px) 0;
@@ -497,7 +503,8 @@ $gray: #e5e5e5;
 		}
 		.linkbuilding {
 			ul {
-				@include inline-list($item-margin: em(2px), $color: #fff, $font-size: em(14px), $link-color: $master-color, $font-weight: 300);
+				@include inline-list($item-margin: em(2px), $color: #fff, $font-size: em(14px), 
+									$link-color: $master-color, $font-weight: 300);
 			}
 		}
 	}
