@@ -171,22 +171,25 @@
 // $table-font-size: 1em;
 
 // ** Table header
-// $table-head-background: #F1F1F1;
+// $table-head-background: transparent;
 // $table-head-weight: $headings-font-weight;
 // $table-head-align: center;
+// $table-head-font-size: 1.2em;
 
 // ** Table cell
 // $table-cell-align: center;
 // $table-cell-background: transparent;
+// $table-cell-background-hover: #F4F4F4;
 // $table-cell-odd-background: transparent;
-// $table-cell-even-background:	#F9F9F9;
+// $table-cell-even-background: transparent;
 
 // ** Table footer
 // $table-foot-background: transparent;
 // $table-foot-align: center;
+// $table-foot-border: none;
 
 // ** Border
-// $table-border: 1px solid #ccc;
+// $table-border: none;
 // $table-cell-border-top: none;
 // $table-cell-border-right: none;
 // $table-cell-border-bottom: 1px solid #ccc;

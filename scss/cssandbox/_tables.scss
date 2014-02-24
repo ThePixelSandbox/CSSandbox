@@ -7,22 +7,25 @@ $table-padding:					em(10px) !default;
 $table-font-size:				1em !default;
 
 // Table header
-$table-head-background:			#F1F1F1 !default;
+$table-head-background:			transparent !default;
 $table-head-weight:				$headings-font-weight !default;
 $table-head-align:				center !default;
+$table-head-font-size:			1.2em !default;
 
 // Table cell
 $table-cell-align:				center !default;
 $table-cell-background:			transparent !default;
+$table-cell-background-hover:	#F4F4F4 !default;
 $table-cell-odd-background:		transparent !default;
-$table-cell-even-background:	#F9F9F9 !default;
+$table-cell-even-background:	transparent !default;
 
 // Table footer
 $table-foot-background:			transparent !default;
 $table-foot-align:				center !default;
+$table-foot-border: 			none !default;
 
 // Border
-$table-border:					1px solid #ccc !default;
+$table-border:					none !default;
 $table-cell-border-top:			none !default;
 $table-cell-border-right:		none !default;
 $table-cell-border-bottom:		1px solid #ccc !default;
@@ -47,11 +50,17 @@ table {
 			th {
 				text-align: $table-head-align;
 				font-weight: $table-head-weight;
+				font-size: $table-head-font-size;
 			}
 		}
 	}
 	tbody {
 		tr {
+			&:hover {
+				td {
+					background: $table-cell-background-hover;
+				}
+			}
 			td {
 				text-align: $table-cell-align;
 				background: $table-cell-background;
@@ -69,6 +78,7 @@ table {
 			td {
 				text-align: $table-foot-align;
 				background: $table-foot-background;
+				border: $table-foot-border;
 			}
 		}
 	}
