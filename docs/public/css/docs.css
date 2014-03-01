@@ -1,13 +1,13 @@
-@charset "CP850";
-@import url("http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,700,300");
+@charset "UTF-8";
 /* ==========================================================================
-   CSSandbox version 0.1.1
+   CSSandbox version 0.1.2
    http://www.thepixelsandbox.com | https://github.com/ThePixelSandbox/CSSandbox
    MIT License
    ========================================================================== */
 /* ==========================================================================
    Normalize.css v2.1.2 | git.io/normalize | MIT License 
    ========================================================================== */
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,700,300");
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
   display: block; }
 
@@ -586,6 +586,38 @@ body {
 .hide-large-down {
   display: none !important; }
 
+.show-landscape,
+.show-portrait {
+  display: none !important; }
+
+.hide-landscape,
+.hide-portrait {
+  display: none !important; }
+
+table.show-small, table.show-medium-down, table.show-large-down, table.hide-small, table.hide-medium, table.hide-medium-up, table.hide-large, table.hide-large-up, table.hide-big {
+  display: table; }
+
+thead.show-small, thead.show-medium-down, thead.show-large-down, thead.hide-small, thead.hide-medium, thead.hide-medium-up, thead.hide-large, thead.hide-large-up, thead.hide-big {
+  display: table-header-group !important; }
+
+tbody.show-small, tbody.show-medium-down, tbody.show-large-down, tbody.hide-small, tbody.hide-medium, tbody.hide-medium-up, tbody.hide-large, tbody.hide-large-up, tbody.hide-big {
+  display: table-row-group !important; }
+
+tr.show-small, tr.show-medium-down, tr.show-large-down, tr.hide-small, tr.hide-medium, tr.hide-medium-up, tr.hide-large, tr.hide-large-up, tr.hide-big {
+  display: table-row !important; }
+
+td.show-small, td.show-medium-down, td.show-large-down, td.hide-small, td.hide-medium, td.hide-medium-up, td.hide-large, td.hide-large-up, td.hide-big,
+th.show-small,
+th.show-medium-down,
+th.show-large-down,
+th.hide-small,
+th.hide-medium,
+th.hide-medium-up,
+th.hide-large,
+th.hide-large-up,
+th.hide-big {
+  display: table-cell !important; }
+
 @media only screen {
   .show-small,
   .show-small-up {
@@ -650,6 +682,12 @@ body {
 
   .hide-big {
     display: none !important; } }
+@media only screen and (orientation: landscape) {
+  .show-landscape {
+    display: inherit !important; } }
+@media only screen and (orientation: portrait) {
+  .show-portrait {
+    display: inherit !important; } }
 /* ==========================================================================
    Typography
    ========================================================================== */
@@ -813,7 +851,7 @@ input[type="button"] {
   .button, .button a,
   input[type="button"],
   input[type="button"] a {
-    color: white; }
+    color: white !important; }
   .button:hover,
   input[type="button"]:hover {
     background: #ea1600; }
@@ -896,14 +934,14 @@ input[type="button"] {
     .button.warning, .button.warning a,
     input[type="button"].warning,
     input[type="button"].warning a {
-      color: #8f6f19; }
+      color: #8f6f19 !important; }
     .button.warning a:hover,
     input[type="button"].warning a:hover {
-      color: #382c0a; }
+      color: #382c0a !important; }
     .button.warning:hover,
     input[type="button"].warning:hover {
       background: #e2a500;
-      color: #382c0a; }
+      color: #382c0a !important; }
   .button.info,
   input[type="button"].info {
     background: #2489c5;
@@ -911,7 +949,7 @@ input[type="button"] {
     .button.info, .button.info a,
     input[type="button"].info,
     input[type="button"].info a {
-      color: white; }
+      color: white !important; }
     .button.info:hover,
     input[type="button"].info:hover {
       background: #1d6e9e; }
@@ -922,7 +960,7 @@ input[type="button"] {
     .button.success, .button.success a,
     input[type="button"].success,
     input[type="button"].success a {
-      color: white; }
+      color: white !important; }
     .button.success:hover,
     input[type="button"].success:hover {
       background: #009e65; }
@@ -933,14 +971,14 @@ input[type="button"] {
     .button.unknown, .button.unknown a,
     input[type="button"].unknown,
     input[type="button"].unknown a {
-      color: #ebebeb; }
+      color: #ebebeb !important; }
     .button.unknown a:hover,
     input[type="button"].unknown a:hover {
-      color: #b8b8b8; }
+      color: #b8b8b8 !important; }
     .button.unknown:hover,
     input[type="button"].unknown:hover {
       background: #0c0c0c;
-      color: #b8b8b8; }
+      color: #b8b8b8 !important; }
   .button.alert,
   input[type="button"].alert {
     background: red;
@@ -948,7 +986,7 @@ input[type="button"] {
     .button.alert, .button.alert a,
     input[type="button"].alert,
     input[type="button"].alert a {
-      color: white; }
+      color: white !important; }
     .button.alert:hover,
     input[type="button"].alert:hover {
       background: #d10000; }
@@ -956,22 +994,48 @@ input[type="button"] {
 /* ==========================================================================
    Table styles
    ========================================================================== */
-table thead tr {
-  background: transparent; }
-  table thead tr th {
-    font-weight: 600; }
-table tbody tr td {
-  background: transparent; }
+table {
+  border: none;
+  width: 100%; }
+  table.fixed {
+    width: auto; }
+  table thead tr {
+    background: transparent; }
+    table thead tr th {
+      text-align: center;
+      font-weight: 600;
+      font-size: 1.2em; }
+  table tbody tr:hover td {
+    background: #f4f4f4; }
+  table tbody tr td {
+    text-align: center;
+    background: transparent; }
+  table tbody tr:nth-child(even) {
+    background: transparent; }
+  table tbody tr:nth-child(odd) {
+    background: transparent; }
+  table tfoot tr td {
+    text-align: center;
+    background: transparent;
+    border: none; }
+  table td, table th {
+    font-size: 1em;
+    padding: 0.625em;
+    border-top: none;
+    border-right: none;
+    border-bottom: 1px solid #cccccc;
+    border-left: none; }
 
 .table {
   width: 100%;
   height: auto;
   display: table;
-  border: 1px solid #cccccc; }
+  border: none; }
   .table .tr {
     display: table-row; }
     .table .tr .td {
       display: table-cell;
+      text-align: center;
       padding: 0.625em;
       border-top: none;
       border-right: none;
@@ -984,6 +1048,8 @@ table tbody tr td {
     .table .tr.header {
       background: transparent;
       font-weight: 600; }
+      .table .tr.header td {
+        text-align: center; }
 
 /* ==========================================================================
    Icon classes
@@ -1474,6 +1540,9 @@ table tbody tr td {
 .iconic-spin_alt:before {
   content: '\e037'; }
 
+/* ==========================================================================
+   Documentation specific
+   ========================================================================== */
 @media only screen {
   html,
   body {
@@ -1629,12 +1698,12 @@ table tbody tr td {
             width: auto;
             height: 100%; }
           .doc-box.header.orange .btn, .doc-box.header.orange .btn a {
-            color: #1d1d1d; }
+            color: #1d1d1d !important; }
           .doc-box.header.orange .btn a:hover {
-            color: black; }
+            color: black !important; }
           .doc-box.header.orange .btn:hover {
             background: #e8e8e8;
-            color: black; }
+            color: black !important; }
           .doc-box.header.orange .btn,
           .doc-box.header.orange .btn a {
             text-decoration: none !important; }
@@ -1673,12 +1742,12 @@ table tbody tr td {
             width: auto;
             height: 100%; }
           .doc-box.header.blue .btn, .doc-box.header.blue .btn a {
-            color: #1d1d1d; }
+            color: #1d1d1d !important; }
           .doc-box.header.blue .btn a:hover {
-            color: black; }
+            color: black !important; }
           .doc-box.header.blue .btn:hover {
             background: #e8e8e8;
-            color: black; }
+            color: black !important; }
           .doc-box.header.blue .btn,
           .doc-box.header.blue .btn a {
             text-decoration: none !important; }
@@ -1718,7 +1787,7 @@ table tbody tr td {
             width: auto;
             height: 100%; }
           .doc-box.header.black .btn, .doc-box.header.black .btn a {
-            color: white; }
+            color: white !important; }
           .doc-box.header.black .btn:hover {
             background: #ea1600; }
           .doc-box.header.black .btn,
@@ -1774,11 +1843,11 @@ table tbody tr td {
         width: auto;
         height: 100%; }
       #welcome-header .btn.visit-github, #welcome-header .btn.visit-github a {
-        color: white; }
+        color: white !important; }
       #welcome-header .btn.visit-github a:hover {
-        color: #cccccc; }
+        color: #cccccc !important; }
       #welcome-header .btn.visit-github:hover {
-        color: #cccccc; }
+        color: #cccccc !important; }
       #welcome-header .btn.visit-github,
       #welcome-header .btn.visit-github a {
         text-decoration: none !important; }
@@ -1840,12 +1909,8 @@ table tbody tr td {
         #grids-docs .preview-grids .row .col:hover {
           background: #ebebeb; }
 
-  #navigation-top-docs {
-    padding-bottom: 0; }
-
-  #navigation-sidebar-docs {
-    padding-bottom: 0; }
-
+  #navigation-top-docs,
+  #navigation-sidebar-docs,
   #navigation-inline-docs {
     padding-bottom: 0; }
 
@@ -1868,6 +1933,9 @@ table tbody tr td {
     margin: 0 0.1875em 0.625em 0; }
   #buttons-docs .code-preview {
     margin: 0.625em 0 0 0; }
+
+  #data-forms-docs {
+    padding-bottom: 0px; }
 
   #iconic-header {
     background: #19a5b9 url("../images/bg_iconic.jpg") repeat; }
@@ -1932,11 +2000,11 @@ table tbody tr td {
         width: auto;
         height: 100%; }
       #the-end .row .col .btn.submit-ideas, #the-end .row .col .btn.submit-ideas a {
-        color: white; }
+        color: white !important; }
       #the-end .row .col .btn.submit-ideas a:hover {
-        color: #cccccc; }
+        color: #cccccc !important; }
       #the-end .row .col .btn.submit-ideas:hover {
-        color: #cccccc; }
+        color: #cccccc !important; }
       #the-end .row .col .btn.submit-ideas,
       #the-end .row .col .btn.submit-ideas a {
         text-decoration: none !important; }

@@ -353,14 +353,8 @@ $gray: #e5e5e5;
 	}
 
 	// #navigation
-	#navigation-header {
-	}
-	#navigation-top-docs {
-		padding-bottom: 0;
-	}
-	#navigation-sidebar-docs {
-		padding-bottom: 0;
-	}
+	#navigation-top-docs, 
+	#navigation-sidebar-docs, 
 	#navigation-inline-docs {
 		padding-bottom: 0;
 	}
@@ -384,8 +378,6 @@ $gray: #e5e5e5;
 	#typography-header {
 		background: #19a5b9 url("../images/bg_typography.png") repeat;
 	}
-	#typography-docs {
-	}
 
 
 	// #buttons
@@ -404,10 +396,9 @@ $gray: #e5e5e5;
 	}
 
 
-	// #forms
-	#forms-header {
-	}
-	#forms-docs {
+	// #data
+	#data-forms-docs {
+		padding-bottom: 0px;
 	}
 
 
